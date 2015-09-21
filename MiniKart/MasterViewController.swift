@@ -7,12 +7,13 @@
 //
 
 import UIKit
+import FlintConnectSDK
 
 class MasterViewController: UITableViewController {
 
   var detailViewController: DetailViewController? = nil
   var objects = [AnyObject]()
-
+  var orderItems = [FlintOrderItem]()
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -38,9 +39,19 @@ class MasterViewController: UITableViewController {
   }
 
   func insertNewObject(sender: AnyObject) {
-    objects.insert(NSDate(), atIndex: 0)
-    let indexPath = NSIndexPath(forRow: 0, inSection: 0)
-    self.tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
+    // create mock order
+    let orderItem = FlintOrderItem()
+    orderItem.name = "Preset Item"
+    orderItem.quantity = 1
+    orderItem.price = 15
+    orderItem.taxAmount = 3
+    orderItems.append(orderItem)
+    
+    if let paymentViewController = FlintUI.paymentViewControllerWithOrderItems(orderItems, delegate: self) {
+      let navigationController = UINavigationController(rootViewController: paymentViewController)
+      navigationController.modalPresentationStyle = .FormSheet
+      splitViewController?.presentViewController(navigationController, animated: true, completion: nil)
+    }
   }
 
   // MARK: - Segues
@@ -88,8 +99,17 @@ class MasterViewController: UITableViewController {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
     }
   }
-
-  //  MARK: - Interaction
-  
 }
 
+
+
+extension MasterViewController: FlintTransactionDelegate {
+
+  func transactionDidCancel(canceledStep: FlintTransactionCancelableStep, autoTimeout autoTimeOut: Bool) {
+    
+  }
+  
+  func transactionDidComplete(userInfo: [NSObject : AnyObject]!) {
+    FlintUI.restartPaymentFlowWithOrderItems(orderItems, delegate: self)
+  }
+}

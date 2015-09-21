@@ -19,7 +19,7 @@ IB_DESIGNABLE
 /**
  *  access to current card brand
  */
-@property (assign, nonatomic, readonly) FlintCreditCardType cardBrand;
+@property (assign, nonatomic, readonly) FlintCreditCardType cardType;
 
 #pragma mark - IBInspectable
 

@@ -108,6 +108,15 @@ typedef void(^FlintTextFieldValidationHandler)(FlintTextFieldState validationSta
 @property (assign, nonatomic) NSInteger secureMaskLength;
 
 /*!
+ *  @brief lock validation delegate call back.
+ *
+ *  @discussion If this is set to YES, delegate call back for validation won't happen.
+ *
+ *  @default NO
+ */
+@property (assign, nonatomic) BOOL validationLock;
+
+/*!
  *  @brief Set the text programatically with masking apply.
  *
  *  @param text the raw text
