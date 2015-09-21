@@ -15,6 +15,8 @@
 		4FDF6FEF1BB08CE30029FEAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FDF6FED1BB08CE30029FEAE /* LaunchScreen.storyboard */; };
 		4FDF6FFA1BB08CE30029FEAE /* MiniKartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDF6FF91BB08CE30029FEAE /* MiniKartTests.swift */; };
 		4FDF70051BB08CE30029FEAE /* MiniKartUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDF70041BB08CE30029FEAE /* MiniKartUITests.swift */; };
+		4FDF701A1BB093A60029FEAE /* FlintConnectSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FDF70191BB093A60029FEAE /* FlintConnectSDK.framework */; };
+		4FDF701B1BB093A60029FEAE /* FlintConnectSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4FDF70191BB093A60029FEAE /* FlintConnectSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		4FDF70151BB08FD70029FEAE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4FDF701B1BB093A60029FEAE /* FlintConnectSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		4FDF6FDF1BB08CE30029FEAE /* MiniKart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniKart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FDF6FE21BB08CE30029FEAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +65,7 @@
 		4FDF70001BB08CE30029FEAE /* MiniKartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniKartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FDF70041BB08CE30029FEAE /* MiniKartUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniKartUITests.swift; sourceTree = "<group>"; };
 		4FDF70061BB08CE30029FEAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FDF70191BB093A60029FEAE /* FlintConnectSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FlintConnectSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FDF701A1BB093A60029FEAE /* FlintConnectSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +97,7 @@
 		4FDF6FD61BB08CE30029FEAE = {
 			isa = PBXGroup;
 			children = (
+				4FDF70191BB093A60029FEAE /* FlintConnectSDK.framework */,
 				4FDF6FE11BB08CE30029FEAE /* MiniKart */,
 				4FDF6FF81BB08CE30029FEAE /* MiniKartTests */,
 				4FDF70031BB08CE30029FEAE /* MiniKartUITests */,
@@ -138,6 +157,7 @@
 				4FDF6FDB1BB08CE30029FEAE /* Sources */,
 				4FDF6FDC1BB08CE30029FEAE /* Frameworks */,
 				4FDF6FDD1BB08CE30029FEAE /* Resources */,
+				4FDF70151BB08FD70029FEAE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -400,6 +420,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MiniKart/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flint.MiniKart;
@@ -412,6 +437,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MiniKart/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flint.MiniKart;
