@@ -39,6 +39,9 @@ class MasterViewController: UITableViewController {
   }
 
   func insertNewObject(sender: AnyObject) {
+    orderItems.removeAll()
+    splitViewController?.toggleMasterView()
+    
     // create mock order
     let orderItem = FlintOrderItem()
     orderItem.name = "Preset Item"
@@ -106,7 +109,7 @@ class MasterViewController: UITableViewController {
 extension MasterViewController: FlintTransactionDelegate {
 
   func transactionDidCancel(canceledStep: FlintTransactionCancelableStep, autoTimeout autoTimeOut: Bool) {
-    
+    splitViewController?.dismissViewControllerAnimated(true, completion: nil)
   }
   
   func transactionDidComplete(userInfo: [NSObject : AnyObject]!) {

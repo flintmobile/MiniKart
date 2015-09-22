@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4FDDF9BB1BB0A9ED004FF2F1 /* FlintConnectSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FDDF9BA1BB0A9ED004FF2F1 /* FlintConnectSDK.framework */; };
 		4FDDF9BC1BB0A9ED004FF2F1 /* FlintConnectSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4FDDF9BA1BB0A9ED004FF2F1 /* FlintConnectSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4FDDF9BE1BB1D161004FF2F1 /* UISplitViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDDF9BD1BB1D161004FF2F1 /* UISplitViewControllerExtensions.swift */; settings = {ASSET_TAGS = (); }; };
 		4FDF6FE31BB08CE30029FEAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDF6FE21BB08CE30029FEAE /* AppDelegate.swift */; };
 		4FDF6FE51BB08CE30029FEAE /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDF6FE41BB08CE30029FEAE /* MasterViewController.swift */; };
 		4FDF6FE71BB08CE30029FEAE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDF6FE61BB08CE30029FEAE /* DetailViewController.swift */; };
@@ -52,6 +53,7 @@
 
 /* Begin PBXFileReference section */
 		4FDDF9BA1BB0A9ED004FF2F1 /* FlintConnectSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FlintConnectSDK.framework; sourceTree = "<group>"; };
+		4FDDF9BD1BB1D161004FF2F1 /* UISplitViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISplitViewControllerExtensions.swift; sourceTree = "<group>"; };
 		4FDF6FDF1BB08CE30029FEAE /* MiniKart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniKart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FDF6FE21BB08CE30029FEAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FDF6FE41BB08CE30029FEAE /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 		4FDF6FE11BB08CE30029FEAE /* MiniKart */ = {
 			isa = PBXGroup;
 			children = (
+				4FDDF9BD1BB1D161004FF2F1 /* UISplitViewControllerExtensions.swift */,
 				4FDF6FE21BB08CE30029FEAE /* AppDelegate.swift */,
 				4FDF6FE41BB08CE30029FEAE /* MasterViewController.swift */,
 				4FDF6FE61BB08CE30029FEAE /* DetailViewController.swift */,
@@ -215,6 +218,7 @@
 				TargetAttributes = {
 					4FDF6FDE1BB08CE30029FEAE = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = A3Q326E9GT;
 					};
 					4FDF6FF41BB08CE30029FEAE = {
 						CreatedOnToolsVersion = 7.0;
@@ -279,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FDF6FE71BB08CE30029FEAE /* DetailViewController.swift in Sources */,
+				4FDDF9BE1BB1D161004FF2F1 /* UISplitViewControllerExtensions.swift in Sources */,
 				4FDF6FE51BB08CE30029FEAE /* MasterViewController.swift in Sources */,
 				4FDF6FE31BB08CE30029FEAE /* AppDelegate.swift in Sources */,
 			);
@@ -371,7 +376,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -409,7 +414,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -420,6 +425,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -437,6 +443,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
