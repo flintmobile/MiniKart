@@ -26,6 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     FlintAPIConfig.sharedInstance().environment = .EnvironmentStaging
     FlintAPIConfig.sharedInstance().username = "test0001@mailinator.com"
     FlintAPIConfig.sharedInstance().password = "T3st1ng1"
+    FlintAPIConfig.sharedInstance().logLevel = .APILogLevelDebug
     
     FlintService.sharedInstance().startServiceWithCompletion {
       status, userInfo -> Void in
