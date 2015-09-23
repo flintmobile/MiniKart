@@ -11,6 +11,7 @@
 		4FDDF9BE1BB1D161004FF2F1 /* UISplitViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDDF9BD1BB1D161004FF2F1 /* UISplitViewControllerExtensions.swift */; };
 		4FDDF9C01BB20C72004FF2F1 /* FlintConnectSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FDDF9BF1BB20C72004FF2F1 /* FlintConnectSDK.framework */; };
 		4FDDF9C11BB20C72004FF2F1 /* FlintConnectSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4FDDF9BF1BB20C72004FF2F1 /* FlintConnectSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4FDDF9CE1BB3687D004FF2F1 /* MKPopupController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FDDF9CD1BB3687D004FF2F1 /* MKPopupController.m */; settings = {ASSET_TAGS = (); }; };
 		4FDF6FE31BB08CE30029FEAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDF6FE21BB08CE30029FEAE /* AppDelegate.swift */; };
 		4FDF6FE51BB08CE30029FEAE /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDF6FE41BB08CE30029FEAE /* MasterViewController.swift */; };
 		4FDF6FE71BB08CE30029FEAE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDF6FE61BB08CE30029FEAE /* DetailViewController.swift */; };
@@ -55,6 +56,9 @@
 /* Begin PBXFileReference section */
 		4FDDF9BD1BB1D161004FF2F1 /* UISplitViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISplitViewControllerExtensions.swift; sourceTree = "<group>"; };
 		4FDDF9BF1BB20C72004FF2F1 /* FlintConnectSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FlintConnectSDK.framework; sourceTree = "<group>"; };
+		4FDDF9C81BB36744004FF2F1 /* MiniKart-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MiniKart-Bridging-Header.h"; sourceTree = "<group>"; };
+		4FDDF9CC1BB3687D004FF2F1 /* MKPopupController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKPopupController.h; sourceTree = "<group>"; };
+		4FDDF9CD1BB3687D004FF2F1 /* MKPopupController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKPopupController.m; sourceTree = "<group>"; };
 		4FDF6FDF1BB08CE30029FEAE /* MiniKart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniKart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FDF6FE21BB08CE30029FEAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FDF6FE41BB08CE30029FEAE /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +105,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4FDDF9CF1BB368D1004FF2F1 /* Objc Wrapper */ = {
+			isa = PBXGroup;
+			children = (
+				4FDDF9C81BB36744004FF2F1 /* MiniKart-Bridging-Header.h */,
+				4FDDF9CC1BB3687D004FF2F1 /* MKPopupController.h */,
+				4FDDF9CD1BB3687D004FF2F1 /* MKPopupController.m */,
+			);
+			name = "Objc Wrapper";
+			sourceTree = "<group>";
+		};
 		4FDF6FD61BB08CE30029FEAE = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +141,7 @@
 		4FDF6FE11BB08CE30029FEAE /* MiniKart */ = {
 			isa = PBXGroup;
 			children = (
+				4FDDF9CF1BB368D1004FF2F1 /* Objc Wrapper */,
 				4FDDF9BD1BB1D161004FF2F1 /* UISplitViewControllerExtensions.swift */,
 				4FDF6FE21BB08CE30029FEAE /* AppDelegate.swift */,
 				4FDF6FE41BB08CE30029FEAE /* MasterViewController.swift */,
@@ -240,6 +255,7 @@
 		4FDF6FD71BB08CE30029FEAE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = Flint;
 				TargetAttributes = {
@@ -360,6 +376,7 @@
 				4FDF6FE71BB08CE30029FEAE /* DetailViewController.swift in Sources */,
 				4FDDF9BE1BB1D161004FF2F1 /* UISplitViewControllerExtensions.swift in Sources */,
 				4FDF6FE51BB08CE30029FEAE /* MasterViewController.swift in Sources */,
+				4FDDF9CE1BB3687D004FF2F1 /* MKPopupController.m in Sources */,
 				4FDF6FE31BB08CE30029FEAE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -501,6 +518,7 @@
 			baseConfigurationReference = 8545EB77AE6DF19912672107 /* Pods-MiniKart.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -511,6 +529,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flint.MiniKart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MiniKart/MiniKart-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -520,6 +540,7 @@
 			baseConfigurationReference = 501E05000885B3725BDBABDF /* Pods-MiniKart.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -530,6 +551,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flint.MiniKart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MiniKart/MiniKart-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
