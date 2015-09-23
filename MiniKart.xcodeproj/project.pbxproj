@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4FDDF9BE1BB1D161004FF2F1 /* UISplitViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDDF9BD1BB1D161004FF2F1 /* UISplitViewControllerExtensions.swift */; settings = {ASSET_TAGS = (); }; };
+		339B85DA2F0E461231849384 /* Pods_MiniKart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 695CDCAB0C6EB3D692452E4B /* Pods_MiniKart.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		4FDDF9BE1BB1D161004FF2F1 /* UISplitViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDDF9BD1BB1D161004FF2F1 /* UISplitViewControllerExtensions.swift */; };
 		4FDDF9C01BB20C72004FF2F1 /* FlintConnectSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FDDF9BF1BB20C72004FF2F1 /* FlintConnectSDK.framework */; };
 		4FDDF9C11BB20C72004FF2F1 /* FlintConnectSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4FDDF9BF1BB20C72004FF2F1 /* FlintConnectSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4FDF6FE31BB08CE30029FEAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDF6FE21BB08CE30029FEAE /* AppDelegate.swift */; };
@@ -68,6 +69,9 @@
 		4FDF70001BB08CE30029FEAE /* MiniKartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniKartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FDF70041BB08CE30029FEAE /* MiniKartUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniKartUITests.swift; sourceTree = "<group>"; };
 		4FDF70061BB08CE30029FEAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		501E05000885B3725BDBABDF /* Pods-MiniKart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiniKart.release.xcconfig"; path = "Pods/Target Support Files/Pods-MiniKart/Pods-MiniKart.release.xcconfig"; sourceTree = "<group>"; };
+		695CDCAB0C6EB3D692452E4B /* Pods_MiniKart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiniKart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8545EB77AE6DF19912672107 /* Pods-MiniKart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiniKart.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MiniKart/Pods-MiniKart.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FDDF9C01BB20C72004FF2F1 /* FlintConnectSDK.framework in Frameworks */,
+				339B85DA2F0E461231849384 /* Pods_MiniKart.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +109,8 @@
 				4FDF6FF81BB08CE30029FEAE /* MiniKartTests */,
 				4FDF70031BB08CE30029FEAE /* MiniKartUITests */,
 				4FDF6FE01BB08CE30029FEAE /* Products */,
+				CAA042FCD431E0CA91616550 /* Pods */,
+				7CBFDD41CE05DC530A7BDB76 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,6 +157,23 @@
 			path = MiniKartUITests;
 			sourceTree = "<group>";
 		};
+		7CBFDD41CE05DC530A7BDB76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				695CDCAB0C6EB3D692452E4B /* Pods_MiniKart.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CAA042FCD431E0CA91616550 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8545EB77AE6DF19912672107 /* Pods-MiniKart.debug.xcconfig */,
+				501E05000885B3725BDBABDF /* Pods-MiniKart.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -157,10 +181,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4FDF70091BB08CE30029FEAE /* Build configuration list for PBXNativeTarget "MiniKart" */;
 			buildPhases = (
+				FD3A26C2FDA40BFF1AC31125 /* Check Pods Manifest.lock */,
 				4FDF6FDB1BB08CE30029FEAE /* Sources */,
 				4FDF6FDC1BB08CE30029FEAE /* Frameworks */,
 				4FDF6FDD1BB08CE30029FEAE /* Resources */,
 				4FDF70151BB08FD70029FEAE /* Embed Frameworks */,
+				96009227DF1454429E906B37 /* Embed Pods Frameworks */,
+				B21533C087659C8AF8D7971F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -276,6 +303,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		96009227DF1454429E906B37 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MiniKart/Pods-MiniKart-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B21533C087659C8AF8D7971F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MiniKart/Pods-MiniKart-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD3A26C2FDA40BFF1AC31125 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4FDF6FDB1BB08CE30029FEAE /* Sources */ = {
@@ -423,6 +498,7 @@
 		};
 		4FDF700A1BB08CE30029FEAE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8545EB77AE6DF19912672107 /* Pods-MiniKart.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -441,6 +517,7 @@
 		};
 		4FDF700B1BB08CE30029FEAE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 501E05000885B3725BDBABDF /* Pods-MiniKart.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
