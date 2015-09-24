@@ -26,10 +26,10 @@ class AddItemViewController: UIViewController {
   
   func initialize() {
     self.title = "Add Item"
-    self.contentSizeInPopup = CGSizeMake(320, 200)
+    self.contentSizeInPopup = CGSizeMake(310, 230)
     
     if UIDevice.isIpad() {
-      self.contentSizeInPopup = CGSizeMake(420, 300)
+      self.contentSizeInPopup = CGSizeMake(420, 230)
     }
   }
   
