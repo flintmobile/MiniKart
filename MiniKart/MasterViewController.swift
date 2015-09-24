@@ -91,9 +91,16 @@ class MasterViewController: UITableViewController {
   // MARK : - Actions
   
   func insertNewObject(sender: AnyObject) {
-    objects.insert(NSDate(), atIndex: 0)
-    let indexPath = NSIndexPath(forRow: 0, inSection: 0)
-    self.tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
+    guard let addItemViewController = UIStoryboard.viewControllerWithID("AddItemViewControllerID") else {
+      return
+    }
+    
+    let popupController = MKPopupController(rootViewController: addItemViewController)
+    popupController.presentInViewController(splitViewController)
+    
+//    objects.insert(NSDate(), atIndex: 0)
+//    let indexPath = NSIndexPath(forRow: 0, inSection: 0)
+//    self.tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
   }
   
   func takePayment(sender: AnyObject) {

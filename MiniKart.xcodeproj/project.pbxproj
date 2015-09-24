@@ -12,6 +12,9 @@
 		4FDDF9C01BB20C72004FF2F1 /* FlintConnectSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FDDF9BF1BB20C72004FF2F1 /* FlintConnectSDK.framework */; };
 		4FDDF9C11BB20C72004FF2F1 /* FlintConnectSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4FDDF9BF1BB20C72004FF2F1 /* FlintConnectSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4FDDF9CE1BB3687D004FF2F1 /* MKPopupController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FDDF9CD1BB3687D004FF2F1 /* MKPopupController.m */; settings = {ASSET_TAGS = (); }; };
+		4FDDF9D11BB4630E004FF2F1 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDDF9D01BB4630E004FF2F1 /* AddItemViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		4FDDF9D41BB4641D004FF2F1 /* UIStoryboardExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDDF9D31BB4641D004FF2F1 /* UIStoryboardExtensions.swift */; settings = {ASSET_TAGS = (); }; };
+		4FDDF9D61BB4773C004FF2F1 /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDDF9D51BB4773C004FF2F1 /* UIDeviceExtension.swift */; settings = {ASSET_TAGS = (); }; };
 		4FDF6FE31BB08CE30029FEAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDF6FE21BB08CE30029FEAE /* AppDelegate.swift */; };
 		4FDF6FE51BB08CE30029FEAE /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDF6FE41BB08CE30029FEAE /* MasterViewController.swift */; };
 		4FDF6FE71BB08CE30029FEAE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDF6FE61BB08CE30029FEAE /* DetailViewController.swift */; };
@@ -59,6 +62,9 @@
 		4FDDF9C81BB36744004FF2F1 /* MiniKart-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MiniKart-Bridging-Header.h"; sourceTree = "<group>"; };
 		4FDDF9CC1BB3687D004FF2F1 /* MKPopupController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKPopupController.h; sourceTree = "<group>"; };
 		4FDDF9CD1BB3687D004FF2F1 /* MKPopupController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKPopupController.m; sourceTree = "<group>"; };
+		4FDDF9D01BB4630E004FF2F1 /* AddItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
+		4FDDF9D31BB4641D004FF2F1 /* UIStoryboardExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtensions.swift; sourceTree = "<group>"; };
+		4FDDF9D51BB4773C004FF2F1 /* UIDeviceExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDeviceExtension.swift; sourceTree = "<group>"; };
 		4FDF6FDF1BB08CE30029FEAE /* MiniKart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniKart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FDF6FE21BB08CE30029FEAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FDF6FE41BB08CE30029FEAE /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +121,15 @@
 			name = "Objc Wrapper";
 			sourceTree = "<group>";
 		};
+		4FDDF9D21BB46408004FF2F1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4FDDF9D31BB4641D004FF2F1 /* UIStoryboardExtensions.swift */,
+				4FDDF9D51BB4773C004FF2F1 /* UIDeviceExtension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		4FDF6FD61BB08CE30029FEAE = {
 			isa = PBXGroup;
 			children = (
@@ -141,11 +156,13 @@
 		4FDF6FE11BB08CE30029FEAE /* MiniKart */ = {
 			isa = PBXGroup;
 			children = (
+				4FDDF9D21BB46408004FF2F1 /* Extensions */,
 				4FDDF9CF1BB368D1004FF2F1 /* Objc Wrapper */,
 				4FDDF9BD1BB1D161004FF2F1 /* UISplitViewControllerExtensions.swift */,
 				4FDF6FE21BB08CE30029FEAE /* AppDelegate.swift */,
 				4FDF6FE41BB08CE30029FEAE /* MasterViewController.swift */,
 				4FDF6FE61BB08CE30029FEAE /* DetailViewController.swift */,
+				4FDDF9D01BB4630E004FF2F1 /* AddItemViewController.swift */,
 				4FDF6FE81BB08CE30029FEAE /* Main.storyboard */,
 				4FDF6FEB1BB08CE30029FEAE /* Assets.xcassets */,
 				4FDF6FED1BB08CE30029FEAE /* LaunchScreen.storyboard */,
@@ -377,7 +394,10 @@
 				4FDDF9BE1BB1D161004FF2F1 /* UISplitViewControllerExtensions.swift in Sources */,
 				4FDF6FE51BB08CE30029FEAE /* MasterViewController.swift in Sources */,
 				4FDDF9CE1BB3687D004FF2F1 /* MKPopupController.m in Sources */,
+				4FDDF9D41BB4641D004FF2F1 /* UIStoryboardExtensions.swift in Sources */,
+				4FDDF9D61BB4773C004FF2F1 /* UIDeviceExtension.swift in Sources */,
 				4FDF6FE31BB08CE30029FEAE /* AppDelegate.swift in Sources */,
+				4FDDF9D11BB4630E004FF2F1 /* AddItemViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
