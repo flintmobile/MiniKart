@@ -13,7 +13,7 @@ import SESlideTableViewCell
 class MasterViewController: UITableViewController {
 
   var detailViewController: DetailViewController? = nil
-  var objects = [AnyObject]()
+  var menuItems = [MenuItem]()
   var orderItems = [FlintOrderItem]()
 
   override func loadView() {
@@ -46,9 +46,9 @@ class MasterViewController: UITableViewController {
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     if segue.identifier == "showDetail" {
         if let indexPath = self.tableView.indexPathForSelectedRow {
-            let object = objects[indexPath.row] as! NSDate
+            let menuItem = menuItems[indexPath.row]
             let controller = (segue.destinationViewController as! UINavigationController).topViewController as! DetailViewController
-            controller.detailItem = object
+            controller.detailItem = menuItem
             controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
             controller.navigationItem.leftItemsSupplementBackButton = true
         }
@@ -62,14 +62,14 @@ class MasterViewController: UITableViewController {
   }
 
   override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return objects.count
+    return menuItems.count
   }
 
   override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! SESlideTableViewCell
 
-    let object = objects[indexPath.row] as! NSDate
-    cell.textLabel!.text = object.description
+    let menuItem = menuItems[indexPath.row]
+    cell.textLabel!.text = menuItem.name
     cell.addLeftButtonWithText("  +   ", textColor: UIColor.whiteColor(), backgroundColor: UIColor.greenColor())
     cell.addLeftButtonWithText(" -    ", textColor: UIColor.whiteColor(), backgroundColor: UIColor.redColor())
     return cell
@@ -81,7 +81,7 @@ class MasterViewController: UITableViewController {
 
   override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
     if editingStyle == .Delete {
-        objects.removeAtIndex(indexPath.row)
+        menuItems.removeAtIndex(indexPath.row)
         tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
     } else if editingStyle == .Insert {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
@@ -91,16 +91,14 @@ class MasterViewController: UITableViewController {
   // MARK : - Actions
   
   func insertNewObject(sender: AnyObject) {
-    guard let addItemViewController = UIStoryboard.viewControllerWithID("AddItemViewControllerID") else {
+    guard let addItemViewController = UIStoryboard.viewControllerWithID("AddItemViewControllerID") as? AddItemViewController else {
       return
     }
     
+    addItemViewController.delegate = self
+    
     let popupController = MKPopupController(rootViewController: addItemViewController)
     popupController.presentInViewController(splitViewController)
-    
-//    objects.insert(NSDate(), atIndex: 0)
-//    let indexPath = NSIndexPath(forRow: 0, inSection: 0)
-//    self.tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
   }
   
   func takePayment(sender: AnyObject) {
@@ -123,7 +121,7 @@ class MasterViewController: UITableViewController {
   }
 }
 
-
+// MARK: - Extensions
 
 extension MasterViewController: FlintTransactionDelegate {
 
@@ -133,5 +131,18 @@ extension MasterViewController: FlintTransactionDelegate {
   
   func transactionDidComplete(userInfo: [NSObject : AnyObject]!) {
     FlintUI.restartPaymentFlowWithOrderItems(orderItems, delegate: self)
+  }
+}
+
+extension MasterViewController: AddItemViewControllerDelegate {
+  
+  func addItemViewController(itemViewController: AddItemViewController, didAddMenuItem item: MenuItem) {
+    menuItems.insert(item, atIndex: 0)
+    let indexPath = NSIndexPath(forRow: 0, inSection: 0)
+    self.tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
+  }
+  
+  func addItemViewController(itemViewController: AddItemViewController, didCancel cancel: Bool) {
+    
   }
 }

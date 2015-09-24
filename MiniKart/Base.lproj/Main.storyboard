@@ -178,12 +178,18 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iqf-9b-jR5">
                                         <rect key="frame" x="0.0" y="183" width="225" height="30"/>
                                         <state key="normal" title="Add"/>
+                                        <connections>
+                                            <action selector="handleAddButtonTapped:" destination="5R1-57-ihQ" eventType="touchUpInside" id="gO0-2r-iPJ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ae-Tl-iWH">
                                         <rect key="frame" x="226" y="176" width="224" height="44"/>
                                         <state key="normal" title="Cancel">
                                             <color key="titleColor" red="1" green="0.43052091840000001" blue="0.18093860140000001" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="handleCancelButtonTapped:" destination="5R1-57-ihQ" eventType="touchUpInside" id="z5K-ca-7Xi"/>
+                                        </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="38O-VO-ixP">
                                         <rect key="frame" x="-55" y="175" width="560" height="1"/>
@@ -269,6 +275,9 @@
                     <connections>
                         <outlet property="addLogoLabel" destination="Ysp-hp-eRI" id="dCh-UM-zRM"/>
                         <outlet property="logoImageView" destination="dB0-UR-2s9" id="qoK-xF-oqf"/>
+                        <outlet property="nameTextField" destination="YA5-Vk-eJZ" id="9rq-Rv-PwU"/>
+                        <outlet property="priceTextField" destination="Qyq-Ne-bSK" id="7aI-k0-Yf2"/>
+                        <outlet property="taxSwitch" destination="n0D-Sy-In6" id="J17-JK-TCY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oAl-JS-Mfl" userLabel="First Responder" sceneMemberID="firstResponder"/>

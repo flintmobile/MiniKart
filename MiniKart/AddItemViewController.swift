@@ -12,8 +12,13 @@ import TOCropViewController
 class AddItemViewController: UIViewController {
   
   @IBOutlet weak var logoImageView: UIImageView!
+  @IBOutlet weak var nameTextField: LineTextField!
+  @IBOutlet weak var priceTextField: LineTextField!
+  @IBOutlet weak var taxSwitch: UISwitch!
   @IBOutlet weak var addLogoLabel: UILabel!
+  
   weak var cropViewHolder: MKACropViewController?
+  var delegate: AddItemViewControllerDelegate?
   
   required init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
@@ -39,10 +44,27 @@ class AddItemViewController: UIViewController {
     logoImageView.round()
   }
   
+  // MARK: - Interaction
+  
   @IBAction func handleAddLogoButtonTapped(sender: AnyObject) {
     openPhotoAlbum()
   }
   
+  @IBAction func handleAddButtonTapped(sender: AnyObject) {
+    var menuItem = MenuItem()
+    menuItem.logo = logoImageView.image
+    menuItem.name = nameTextField.text
+    menuItem.price = priceTextField.floatValue()
+    menuItem.taxable = taxSwitch.on
+    
+    delegate?.addItemViewController(self, didAddMenuItem: menuItem)
+    self.popupController?.dismiss()
+  }
+  
+  @IBAction func handleCancelButtonTapped(sender: AnyObject) {
+    self.popupController?.dismiss()
+  }
+
   // MARK: - Image Handling
   
   func openPhotoAlbum() {
@@ -101,4 +123,11 @@ extension AddItemViewController: TOCropViewControllerDelegate {
       cropViewController.dismissViewControllerAnimated(true, completion: nil)
     }
   }
+}
+
+// MARK: - Protocol
+
+protocol AddItemViewControllerDelegate {
+  func addItemViewController(itemViewController: AddItemViewController, didAddMenuItem item: MenuItem);
+  func addItemViewController(itemViewController: AddItemViewController, didCancel cancel: Bool);
 }
