@@ -7,11 +7,12 @@
 //
 
 import UIKit
+import TOCropViewController
 
 class AddItemViewController: UIViewController {
   
   @IBOutlet weak var logoImageView: UIImageView!
-  var photoActionController: UIAlertController?
+  weak var cropViewHolder: MKACropViewController?
   
   required init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
@@ -33,31 +34,64 @@ class AddItemViewController: UIViewController {
   }
   
   @IBAction func handleAddLogoButtonTapped(sender: AnyObject) {
-    let actionController = UIAlertController(title: nil, message: nil, preferredStyle: .ActionSheet)
-    let photoAction = UIAlertAction(title: "Photo", style: .Default) { _ in
-      self.openPhotoAlbum()
-    }
-    let cameraAction = UIAlertAction(title: "Camera", style: .Default) { _ in
-      self.showCamera()
-    }
-    
-    actionController.addAction(photoAction)
-    actionController.addAction(cameraAction)
-    photoActionController = actionController
-    presentViewController(actionController, animated: true, completion: nil)
+    openPhotoAlbum()
   }
   
-  // MARK: Image Handling
-  
-  func showCamera() {
-    if let _photoActionController = photoActionController {
-      _photoActionController.dismissViewControllerAnimated(true, completion: nil)
-    }
-  }
+  // MARK: - Image Handling
   
   func openPhotoAlbum() {
-    if let _photoActionController = photoActionController {
-      _photoActionController.dismissViewControllerAnimated(true, completion: nil)
+    let imagePickerController = UIImagePickerController()
+    imagePickerController.sourceType = .PhotoLibrary
+    imagePickerController.allowsEditing = false
+    imagePickerController.delegate = self
+    
+    presentViewController(imagePickerController, animated: true, completion: nil)
+  }
+}
+
+// MARK: - Extensions
+
+extension AddItemViewController: UIImagePickerControllerDelegate {
+
+  func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
+    
+    picker.dismissViewControllerAnimated(true) {
+      let cropViewController = MKACropViewController(image: image)
+      cropViewController.delegate = self
+      self.cropViewHolder = cropViewController
+      
+      self.presentViewController(cropViewController, animated: true) {
+        cropViewController.toolbar.clampButton.enabled = false
+        cropViewController.toolbar.resetButtonTapped = { [unowned self] in
+          self.cropViewHolder?.cropView.resetLayoutToDefaultAnimated(true);
+          self.cropViewHolder?.cropView.setAspectLockEnabledWithAspectRatio(CGSizeMake(1, 1), animated: true)
+          self.cropViewHolder?.toolbar.clampButtonGlowing = false;
+        }
+        
+        cropViewController.cropView.setAspectLockEnabledWithAspectRatio(CGSizeMake(1, 1), animated: true)
+      }
+    }
+  }
+  
+  func imagePickerControllerDidCancel(picker: UIImagePickerController) {
+    picker.dismissViewControllerAnimated(true, completion: nil)
+  }
+}
+
+extension AddItemViewController: UINavigationControllerDelegate {
+
+}
+
+extension AddItemViewController: TOCropViewControllerDelegate {
+  
+  func cropViewController(cropViewController: TOCropViewController!, didCropToImage image: UIImage!, withRect cropRect: CGRect, angle: Int) {
+    logoImageView.image = image
+    cropViewController.dismissViewControllerAnimated(true, completion: nil)
+  }
+  
+  func cropViewController(cropViewController: TOCropViewController!, didFinishCancelled cancelled: Bool) {
+    if cancelled {
+      cropViewController.dismissViewControllerAnimated(true, completion: nil)
     }
   }
 }

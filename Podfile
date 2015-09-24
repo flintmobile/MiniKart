@@ -5,6 +5,7 @@ use_frameworks!
 target 'MiniKart' do
 pod 'SESlideTableViewCell'
 pod 'STPopup'
+pod 'TOCropViewController'
 end
 
 target 'MiniKartTests' do
