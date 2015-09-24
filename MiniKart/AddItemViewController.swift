@@ -34,6 +34,11 @@ class AddItemViewController: UIViewController {
     }
   }
   
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    logoImageView.round()
+  }
+  
   @IBAction func handleAddLogoButtonTapped(sender: AnyObject) {
     openPhotoAlbum()
   }
@@ -87,7 +92,7 @@ extension AddItemViewController: TOCropViewControllerDelegate {
   
   func cropViewController(cropViewController: TOCropViewController!, didCropToImage image: UIImage!, withRect cropRect: CGRect, angle: Int) {
     logoImageView.image = image
-    addLogoLabel.hidden = true
+    addLogoLabel.text = "Tap to change\nitem logo"
     cropViewController.dismissViewControllerAnimated(true, completion: nil)
   }
   

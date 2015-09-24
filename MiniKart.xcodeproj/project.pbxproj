@@ -17,6 +17,7 @@
 		4FDDF9D61BB4773C004FF2F1 /* UIDeviceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDDF9D51BB4773C004FF2F1 /* UIDeviceExtensions.swift */; settings = {ASSET_TAGS = (); }; };
 		4FDDF9DC1BB490D8004FF2F1 /* MKACropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FDDF9DB1BB490D8004FF2F1 /* MKACropViewController.m */; settings = {ASSET_TAGS = (); }; };
 		4FDDF9DE1BB4A4F0004FF2F1 /* LineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDDF9DD1BB4A4F0004FF2F1 /* LineTextField.swift */; settings = {ASSET_TAGS = (); }; };
+		4FDDF9E21BB4AA42004FF2F1 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDDF9E11BB4AA42004FF2F1 /* UIViewExtensions.swift */; settings = {ASSET_TAGS = (); }; };
 		4FDF6FE31BB08CE30029FEAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDF6FE21BB08CE30029FEAE /* AppDelegate.swift */; };
 		4FDF6FE51BB08CE30029FEAE /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDF6FE41BB08CE30029FEAE /* MasterViewController.swift */; };
 		4FDF6FE71BB08CE30029FEAE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDF6FE61BB08CE30029FEAE /* DetailViewController.swift */; };
@@ -70,6 +71,7 @@
 		4FDDF9DA1BB490D8004FF2F1 /* MKACropViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKACropViewController.h; sourceTree = "<group>"; };
 		4FDDF9DB1BB490D8004FF2F1 /* MKACropViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKACropViewController.m; sourceTree = "<group>"; };
 		4FDDF9DD1BB4A4F0004FF2F1 /* LineTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineTextField.swift; sourceTree = "<group>"; };
+		4FDDF9E11BB4AA42004FF2F1 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		4FDF6FDF1BB08CE30029FEAE /* MiniKart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniKart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FDF6FE21BB08CE30029FEAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FDF6FE41BB08CE30029FEAE /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 				4FDDF9D31BB4641D004FF2F1 /* UIStoryboardExtensions.swift */,
 				4FDDF9D51BB4773C004FF2F1 /* UIDeviceExtensions.swift */,
 				4FDDF9BD1BB1D161004FF2F1 /* UISplitViewControllerExtensions.swift */,
+				4FDDF9E11BB4AA42004FF2F1 /* UIViewExtensions.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -414,6 +417,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FDDF9E21BB4AA42004FF2F1 /* UIViewExtensions.swift in Sources */,
 				4FDF6FE71BB08CE30029FEAE /* DetailViewController.swift in Sources */,
 				4FDDF9BE1BB1D161004FF2F1 /* UISplitViewControllerExtensions.swift in Sources */,
 				4FDF6FE51BB08CE30029FEAE /* MasterViewController.swift in Sources */,
