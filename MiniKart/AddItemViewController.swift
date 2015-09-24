@@ -12,6 +12,7 @@ import TOCropViewController
 class AddItemViewController: UIViewController {
   
   @IBOutlet weak var logoImageView: UIImageView!
+  @IBOutlet weak var addLogoLabel: UILabel!
   weak var cropViewHolder: MKACropViewController?
   
   required init?(coder aDecoder: NSCoder) {
@@ -86,6 +87,7 @@ extension AddItemViewController: TOCropViewControllerDelegate {
   
   func cropViewController(cropViewController: TOCropViewController!, didCropToImage image: UIImage!, withRect cropRect: CGRect, angle: Int) {
     logoImageView.image = image
+    addLogoLabel.hidden = true
     cropViewController.dismissViewControllerAnimated(true, completion: nil)
   }
   
