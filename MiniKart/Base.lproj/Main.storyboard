@@ -163,11 +163,18 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yQW-0t-o2x" userLabel="Add Logo Button">
+                                        <rect key="frame" x="356" y="8" width="94" height="94"/>
+                                        <connections>
+                                            <action selector="handleAddLogoButtonTapped:" destination="5R1-57-ihQ" eventType="touchUpInside" id="8fK-Om-Fq4"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="160" id="1St-8k-2XO"/>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="450" id="2US-RS-3qv"/>
+                                    <constraint firstItem="yQW-0t-o2x" firstAttribute="width" secondItem="dB0-UR-2s9" secondAttribute="width" id="5yL-OX-JaC"/>
                                     <constraint firstItem="Qyq-Ne-bSK" firstAttribute="trailing" secondItem="YA5-Vk-eJZ" secondAttribute="trailing" id="8ev-S1-FcV"/>
                                     <constraint firstAttribute="bottom" secondItem="Ysp-hp-eRI" secondAttribute="bottom" constant="18" id="91B-6K-UON"/>
                                     <constraint firstItem="YA5-Vk-eJZ" firstAttribute="leading" secondItem="Z9u-Oi-V15" secondAttribute="leading" id="FmY-Ut-ot9"/>
@@ -178,14 +185,17 @@
                                     <constraint firstItem="Ysp-hp-eRI" firstAttribute="leading" secondItem="dB0-UR-2s9" secondAttribute="leading" id="PfL-K2-tr3"/>
                                     <constraint firstItem="dB0-UR-2s9" firstAttribute="top" secondItem="Z9u-Oi-V15" secondAttribute="top" constant="8" id="Qhi-3f-x9V"/>
                                     <constraint firstItem="whJ-gZ-8Nd" firstAttribute="leading" secondItem="YA5-Vk-eJZ" secondAttribute="leading" id="Wyy-nO-X4f"/>
+                                    <constraint firstItem="yQW-0t-o2x" firstAttribute="centerX" secondItem="dB0-UR-2s9" secondAttribute="centerX" id="Zuo-z0-4D1"/>
                                     <constraint firstItem="Ysp-hp-eRI" firstAttribute="trailing" secondItem="dB0-UR-2s9" secondAttribute="trailing" id="aHB-92-XfL"/>
                                     <constraint firstItem="dB0-UR-2s9" firstAttribute="leading" secondItem="YA5-Vk-eJZ" secondAttribute="trailing" constant="18" id="bg9-bD-f0u"/>
+                                    <constraint firstItem="yQW-0t-o2x" firstAttribute="height" secondItem="dB0-UR-2s9" secondAttribute="height" id="dGv-dp-RHk"/>
                                     <constraint firstAttribute="trailing" secondItem="Ysp-hp-eRI" secondAttribute="trailing" id="ebY-ce-Ulh"/>
                                     <constraint firstAttribute="trailing" secondItem="dB0-UR-2s9" secondAttribute="trailing" id="hKc-IX-yPe"/>
                                     <constraint firstItem="Qyq-Ne-bSK" firstAttribute="leading" secondItem="YA5-Vk-eJZ" secondAttribute="leading" id="naf-Ed-ok5"/>
                                     <constraint firstItem="Ysp-hp-eRI" firstAttribute="leading" secondItem="n0D-Sy-In6" secondAttribute="trailing" constant="20" id="rhY-t0-J7S"/>
                                     <constraint firstItem="Qyq-Ne-bSK" firstAttribute="top" secondItem="YA5-Vk-eJZ" secondAttribute="bottom" constant="27" id="tNY-Rs-iaa"/>
                                     <constraint firstItem="n0D-Sy-In6" firstAttribute="trailing" secondItem="YA5-Vk-eJZ" secondAttribute="trailing" id="tYX-FZ-f2N"/>
+                                    <constraint firstItem="yQW-0t-o2x" firstAttribute="centerY" secondItem="dB0-UR-2s9" secondAttribute="centerY" id="toj-UN-gRT"/>
                                     <constraint firstItem="dB0-UR-2s9" firstAttribute="top" secondItem="YA5-Vk-eJZ" secondAttribute="top" id="tp8-X9-Alm"/>
                                 </constraints>
                                 <variation key="default">
@@ -210,6 +220,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="logoImageView" destination="dB0-UR-2s9" id="qoK-xF-oqf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oAl-JS-Mfl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
