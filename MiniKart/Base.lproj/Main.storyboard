@@ -78,45 +78,45 @@
         <scene sceneID="smW-Zh-WAh">
             <objects>
                 <tableViewController title="Master" clearsSelectionOnViewWillAppear="NO" id="7bK-jq-Zjz" customClass="MasterViewController" customModule="MiniKart" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="110" sectionHeaderHeight="22" sectionFooterHeight="22" id="r7i-6Z-zg0">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="110" sectionHeaderHeight="22" sectionFooterHeight="22" id="r7i-6Z-zg0">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="separatorColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="110" id="WCw-Qf-5nD" customClass="MenuItemCell" customModule="MiniKart" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="86" width="600" height="110"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WCw-Qf-5nD" id="37f-cq-3Eg">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="110"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="109"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ProductAddImage" translatesAutoresizingMaskIntoConstraints="NO" id="S34-H4-z5T">
-                                            <rect key="frame" x="13" y="23" width="69" height="69"/>
+                                            <rect key="frame" x="13" y="18" width="73" height="73"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="S34-H4-z5T" secondAttribute="height" multiplier="1:1" id="Ujc-v4-Vfj"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="erH-2l-lXu">
-                                            <rect key="frame" x="540" y="23" width="52" height="31"/>
+                                            <rect key="frame" x="540" y="18" width="52" height="31"/>
                                             <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="22"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="x 0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c3o-Ug-cTc">
-                                            <rect key="frame" x="570" y="62" width="22" height="24"/>
+                                            <rect key="frame" x="570" y="57" width="22" height="24"/>
                                             <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WaV-kZ-Jgk">
-                                            <rect key="frame" x="92" y="44" width="431" height="48"/>
-                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="35"/>
+                                            <rect key="frame" x="96" y="37" width="427" height="36"/>
+                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="26"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="WaV-kZ-Jgk" firstAttribute="baseline" secondItem="c3o-Ug-cTc" secondAttribute="baseline" id="08d-hW-ick"/>
                                         <constraint firstAttribute="topMargin" secondItem="S34-H4-z5T" secondAttribute="top" constant="25" id="1kI-AD-pFI"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="erH-2l-lXu" secondAttribute="trailing" id="ENK-W1-zHM"/>
                                         <constraint firstItem="WaV-kZ-Jgk" firstAttribute="leading" secondItem="S34-H4-z5T" secondAttribute="trailing" constant="10" id="HLm-lv-oFf"/>
@@ -131,7 +131,8 @@
                                         <constraint firstAttribute="bottomMargin" secondItem="c3o-Ug-cTc" secondAttribute="bottom" constant="5" id="c7z-pR-z2I"/>
                                         <constraint firstItem="erH-2l-lXu" firstAttribute="top" secondItem="37f-cq-3Eg" secondAttribute="topMargin" constant="-5" id="lhz-pt-Tfb"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="S34-H4-z5T" secondAttribute="bottom" constant="10" id="o10-LB-EMX"/>
-                                        <constraint firstItem="S34-H4-z5T" firstAttribute="top" secondItem="37f-cq-3Eg" secondAttribute="topMargin" constant="15" id="p1K-1i-aqB"/>
+                                        <constraint firstItem="WaV-kZ-Jgk" firstAttribute="centerY" secondItem="S34-H4-z5T" secondAttribute="centerY" id="ohd-jV-jes"/>
+                                        <constraint firstItem="S34-H4-z5T" firstAttribute="top" secondItem="37f-cq-3Eg" secondAttribute="topMargin" constant="10" id="p1K-1i-aqB"/>
                                         <constraint firstItem="c3o-Ug-cTc" firstAttribute="trailing" secondItem="erH-2l-lXu" secondAttribute="trailing" id="puD-O4-gvh"/>
                                     </constraints>
                                     <variation key="default">
@@ -162,7 +163,7 @@
                             <outlet property="delegate" destination="7bK-jq-Zjz" id="RA6-mI-bju"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Master" id="Zdf-7t-Un8"/>
+                    <navigationItem key="navigationItem" title="Inventory" id="Zdf-7t-Un8"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rux-fX-hf1" sceneMemberID="firstResponder"/>
             </objects>

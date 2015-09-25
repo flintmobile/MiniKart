@@ -17,15 +17,20 @@ class MasterViewController: UITableViewController {
   var menuItems = [MenuItem]()
   var orderItems = [FlintOrderItem]()
   let backgroundImageView = UIImageView(image: UIImage(named: "ItemBackground"))
-  let darkBlur = UIBlurEffect(style: .Light)
+  let darkBlur = UIBlurEffect(style: .Dark)
   var blurView: UIVisualEffectView?
   
   override func loadView() {
     super.loadView()
+    for item in ItemProvider.preloadedItems() {
+      menuItems.append(item)
+    }
+    
 //    blurView = UIVisualEffectView(effect: darkBlur)
-//    backgroundImageView.addSubview(blurView!)
-//    view.addSubview(backgroundImageView)
-//    view.sendSubviewToBack(backgroundImageView)
+//        backgroundImageView.addSubview(blurView!)
+//        view.addSubview(backgroundImageView)
+//        view.sendSubviewToBack(backgroundImageView)
+
     tableView.backgroundColor = ASCFlatUIColor.turquoiseColor()
   }
   

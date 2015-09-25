@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Preload4.jpg",
+      "filename" : "Preload2.jpg",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "Preload4-1.jpg",
+      "filename" : "Preload2-1.jpg",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "Preload4-2.jpg",
+      "filename" : "Preload2-2.jpg",
       "scale" : "3x"
     }
   ],
