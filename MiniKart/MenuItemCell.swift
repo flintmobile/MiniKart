@@ -7,9 +7,9 @@
 //
 
 import UIKit
-import SESlideTableViewCell
+import SWTableViewCell
 
-class MenuItemCell: SESlideTableViewCell {
+class MenuItemCell: SWTableViewCell {
 
   @IBOutlet weak var productImageView: UIImageView!
   @IBOutlet weak var nameLabel: UILabel!

@@ -6,6 +6,8 @@ target 'MiniKart' do
 pod 'SESlideTableViewCell'
 pod 'STPopup'
 pod 'TOCropViewController'
+pod 'ASCFlatUIColor'
+pod 'SWTableViewCell'
 end
 
 target 'MiniKartTests' do

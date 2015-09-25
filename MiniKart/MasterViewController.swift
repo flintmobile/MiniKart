@@ -9,12 +9,31 @@
 import UIKit
 import FlintConnectSDK
 import SESlideTableViewCell
+import ASCFlatUIColor
 
 class MasterViewController: UITableViewController {
 
   var detailViewController: DetailViewController? = nil
   var menuItems = [MenuItem]()
   var orderItems = [FlintOrderItem]()
+  let backgroundImageView = UIImageView(image: UIImage(named: "ItemBackground"))
+  let darkBlur = UIBlurEffect(style: .Light)
+  var blurView: UIVisualEffectView?
+  
+  override func loadView() {
+    super.loadView()
+//    blurView = UIVisualEffectView(effect: darkBlur)
+//    backgroundImageView.addSubview(blurView!)
+//    view.addSubview(backgroundImageView)
+//    view.sendSubviewToBack(backgroundImageView)
+    tableView.backgroundColor = ASCFlatUIColor.turquoiseColor()
+  }
+  
+  override func viewWillLayoutSubviews() {
+    super.viewWillLayoutSubviews()
+    backgroundImageView.frame = view.bounds
+    blurView?.frame = backgroundImageView.bounds
+  }
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -76,14 +95,27 @@ class MasterViewController: UITableViewController {
     
     //format
     cell.productImageView.round()
+    let textColor = UIColor.whiteColor()
+    cell.nameLabel.textColor = textColor
+    cell.priceLabel.textColor = textColor
+    cell.quantityLabel.textColor = textColor
+    cell.backgroundColor = UIColor.clearColor()
+    
     
     // action
-    cell.addLeftButtonWithText("  +   ", textColor: UIColor.whiteColor(), backgroundColor: UIColor.greenColor())
-    cell.addLeftButtonWithText(" -    ", textColor: UIColor.whiteColor(), backgroundColor: UIColor.redColor())
-  
+    cell.rightUtilityButtons = rightActionCells()
+    
     return cell
   }
-
+  
+  func rightActionCells() -> [AnyObject] {
+    let actions: NSMutableArray = NSMutableArray()
+    actions.sw_addUtilityButtonWithColor(ASCFlatUIColor.peterRiverColor(), title: "Add")
+    actions.sw_addUtilityButtonWithColor(ASCFlatUIColor.alizarinColor(), title: "Remove")
+    
+    return actions as Array
+  }
+  
   override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
     return true
   }
