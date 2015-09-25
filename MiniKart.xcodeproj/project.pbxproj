@@ -20,6 +20,8 @@
 		4FDDF9E21BB4AA42004FF2F1 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDDF9E11BB4AA42004FF2F1 /* UIViewExtensions.swift */; settings = {ASSET_TAGS = (); }; };
 		4FDDF9E51BB4AD3D004FF2F1 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDDF9E41BB4AD3D004FF2F1 /* MenuItem.swift */; settings = {ASSET_TAGS = (); }; };
 		4FDDF9E71BB4B1AB004FF2F1 /* UITextFieldExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDDF9E61BB4B1AB004FF2F1 /* UITextFieldExtensions.swift */; settings = {ASSET_TAGS = (); }; };
+		4FDDF9E91BB4BCC8004FF2F1 /* MenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDDF9E81BB4BCC8004FF2F1 /* MenuItemCell.swift */; settings = {ASSET_TAGS = (); }; };
+		4FDDF9EC1BB4BE43004FF2F1 /* FormatStringProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDDF9EB1BB4BE43004FF2F1 /* FormatStringProtocol.swift */; settings = {ASSET_TAGS = (); }; };
 		4FDF6FE31BB08CE30029FEAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDF6FE21BB08CE30029FEAE /* AppDelegate.swift */; };
 		4FDF6FE51BB08CE30029FEAE /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDF6FE41BB08CE30029FEAE /* MasterViewController.swift */; };
 		4FDF6FE71BB08CE30029FEAE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDF6FE61BB08CE30029FEAE /* DetailViewController.swift */; };
@@ -76,6 +78,8 @@
 		4FDDF9E11BB4AA42004FF2F1 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		4FDDF9E41BB4AD3D004FF2F1 /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		4FDDF9E61BB4B1AB004FF2F1 /* UITextFieldExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldExtensions.swift; sourceTree = "<group>"; };
+		4FDDF9E81BB4BCC8004FF2F1 /* MenuItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemCell.swift; sourceTree = "<group>"; };
+		4FDDF9EB1BB4BE43004FF2F1 /* FormatStringProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormatStringProtocol.swift; sourceTree = "<group>"; };
 		4FDF6FDF1BB08CE30029FEAE /* MiniKart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniKart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FDF6FE21BB08CE30029FEAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FDF6FE41BB08CE30029FEAE /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -150,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				4FDDF9DD1BB4A4F0004FF2F1 /* LineTextField.swift */,
+				4FDDF9E81BB4BCC8004FF2F1 /* MenuItemCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -170,6 +175,14 @@
 				4FDDF9E41BB4AD3D004FF2F1 /* MenuItem.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		4FDDF9EA1BB4BE25004FF2F1 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				4FDDF9EB1BB4BE43004FF2F1 /* FormatStringProtocol.swift */,
+			);
+			name = Protocol;
 			sourceTree = "<group>";
 		};
 		4FDF6FD61BB08CE30029FEAE = {
@@ -203,6 +216,7 @@
 				4FDDF9DF1BB4A516004FF2F1 /* View */,
 				4FDDF9E01BB4A52E004FF2F1 /* View Controller */,
 				4FDDF9D21BB46408004FF2F1 /* Extensions */,
+				4FDDF9EA1BB4BE25004FF2F1 /* Protocol */,
 				4FDDF9CF1BB368D1004FF2F1 /* Objc Wrapper */,
 				4FDF6FE81BB08CE30029FEAE /* Main.storyboard */,
 				4FDF6FEB1BB08CE30029FEAE /* Assets.xcassets */,
@@ -433,6 +447,7 @@
 			files = (
 				4FDDF9E21BB4AA42004FF2F1 /* UIViewExtensions.swift in Sources */,
 				4FDF6FE71BB08CE30029FEAE /* DetailViewController.swift in Sources */,
+				4FDDF9EC1BB4BE43004FF2F1 /* FormatStringProtocol.swift in Sources */,
 				4FDDF9BE1BB1D161004FF2F1 /* UISplitViewControllerExtensions.swift in Sources */,
 				4FDF6FE51BB08CE30029FEAE /* MasterViewController.swift in Sources */,
 				4FDDF9CE1BB3687D004FF2F1 /* MKPopupController.m in Sources */,
@@ -442,6 +457,7 @@
 				4FDDF9DC1BB490D8004FF2F1 /* MKACropViewController.m in Sources */,
 				4FDDF9E51BB4AD3D004FF2F1 /* MenuItem.swift in Sources */,
 				4FDDF9D11BB4630E004FF2F1 /* AddItemViewController.swift in Sources */,
+				4FDDF9E91BB4BCC8004FF2F1 /* MenuItemCell.swift in Sources */,
 				4FDDF9E71BB4B1AB004FF2F1 /* UITextFieldExtensions.swift in Sources */,
 				4FDDF9DE1BB4A4F0004FF2F1 /* LineTextField.swift in Sources */,
 			);

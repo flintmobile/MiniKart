@@ -15,12 +15,6 @@ class MasterViewController: UITableViewController {
   var detailViewController: DetailViewController? = nil
   var menuItems = [MenuItem]()
   var orderItems = [FlintOrderItem]()
-
-  override func loadView() {
-    super.loadView()
-    
-    self.tableView.rowHeight = 60
-  }
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -66,12 +60,27 @@ class MasterViewController: UITableViewController {
   }
 
   override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! SESlideTableViewCell
+    let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! MenuItemCell
 
     let menuItem = menuItems[indexPath.row]
-    cell.textLabel!.text = menuItem.name
+    
+    // data
+    cell.productImageView.image = menuItem.logo
+    cell.nameLabel.text = menuItem.name
+    if let price = menuItem.price?.toString(0.2) {
+      cell.priceLabel.text = "$\(price)"
+    } else {
+      cell.priceLabel.text = "Free"
+    }
+    cell.quantityLabel.text = "x \(menuItem.orderCount)"
+    
+    //format
+    cell.productImageView.round()
+    
+    // action
     cell.addLeftButtonWithText("  +   ", textColor: UIColor.whiteColor(), backgroundColor: UIColor.greenColor())
     cell.addLeftButtonWithText(" -    ", textColor: UIColor.whiteColor(), backgroundColor: UIColor.redColor())
+  
     return cell
   }
 
