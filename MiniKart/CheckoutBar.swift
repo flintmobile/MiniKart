@@ -21,6 +21,7 @@ class CheckoutBar: UIView {
   }
   
   func initialize() {
+    addSubview(cartImageBackground)
     addSubview(cartImageView)
     addSubview(messageLabel)
     addSubview(detailLabel)
@@ -29,6 +30,8 @@ class CheckoutBar: UIView {
   override func layoutSubviews() {
     super.layoutSubviews()
     cartImageView.frame = cartImageViewFrame()
+    cartImageBackground.frame = CGRectInset(cartImageView.frame, -5, -5)
+    cartImageBackground.round()
     messageLabel.frame = messageLabelFrame(cartImageView.frame)
     detailLabel.frame = detailLabelFrame(messageLabel.frame)
   }
@@ -39,18 +42,23 @@ class CheckoutBar: UIView {
     let cartImage = UIImage(named: "CartIcon")
     let _cartImageView = UIImageView(image: cartImage)
     _cartImageView.contentMode = .ScaleAspectFit
-    _cartImageView.backgroundColor = ASCFlatUIColor.turquoiseColor()
     return _cartImageView
     }()
   
   func cartImageViewFrame() -> CGRect {
-    let x: CGFloat = 5
-    let y: CGFloat = 5
+    let x: CGFloat = 12
+    let y: CGFloat = 12
     let height = self.bounds.size.height - 2*y
     let width = height
     
     return CGRectMake(x, y, width, height)
   }
+  
+  lazy var cartImageBackground: UIView = {
+    let _cartImageBackground = UIView(frame: CGRectZero)
+    _cartImageBackground.backgroundColor = ASCFlatUIColor.turquoiseColor()
+    return _cartImageBackground
+    }()
   
   lazy var messageLabel: UILabel = {
     let _messageLabel = UILabel(frame: CGRectZero)

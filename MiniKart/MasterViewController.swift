@@ -16,6 +16,7 @@ class MasterViewController: UITableViewController {
   var detailViewController: DetailViewController? = nil
   var menuItems = [MenuItem]()
   var orderItems = [MenuItem]()
+  var checkoutHidden = false
   
   override func loadView() {
     super.loadView()
@@ -24,12 +25,11 @@ class MasterViewController: UITableViewController {
     }
   
     tableView.backgroundColor = ASCFlatUIColor.turquoiseColor()
+    toolbarItems = [negativeSpacer,checkoutBarItem]
   }
-  
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    view.addSubview(checkoutBar)
     
     let payButton = UIBarButtonItem(title: "Pay", style: .Plain, target: self, action: "takePayment:")
     let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "insertNewObject:")
@@ -46,10 +46,23 @@ class MasterViewController: UITableViewController {
     self.clearsSelectionOnViewWillAppear = self.splitViewController!.collapsed
     super.viewWillAppear(animated)
   }
-
+  
   override func viewWillLayoutSubviews() {
     super.viewWillLayoutSubviews()
-    checkoutBar.frame = checkoutBarFrame()
+    
+    if !checkoutHidden {
+      if let frame = navigationController?.toolbar.frame {
+        let toolbarHeight: CGFloat = 70
+        var adjustedFrame = frame
+        adjustedFrame.size.height = toolbarHeight
+        adjustedFrame.origin.y = view.bounds.size.height - toolbarHeight
+        navigationController?.toolbar.frame = adjustedFrame
+      }
+      
+      if let bounds = navigationController?.toolbar.bounds {
+        checkoutBar.frame = bounds
+      }
+    }
   }
   
   // MARK: - Segues
@@ -169,32 +182,20 @@ class MasterViewController: UITableViewController {
     return _checkoutBar
     }()
   
-  func checkoutBarFrame() -> CGRect {
-    let x = CGFloat(0)
-    let height = CGFloat(50)
-    let y = UIScreen.mainScreen().bounds.size.height - height
-    let width = self.view.bounds.size.width
-    
-    return CGRectMake(x, y, width, height)
-  }
+  lazy var checkoutBarItem: UIBarButtonItem = {
+    let _checkoutBarItem = UIBarButtonItem(customView: self.checkoutBar)
+    return _checkoutBarItem
+    }()
   
-  func checkoutBarHiddenFrame() -> CGRect {
-    let x = CGFloat(0)
-    let y = UIScreen.mainScreen().bounds.size.height
-    let width = self.view.bounds.size.width
-    let height = CGFloat(0)
-    
-    return CGRectMake(x, y, width, height)
-  }
+  lazy var negativeSpacer: UIBarButtonItem = {
+    let _negativeSpacer = UIBarButtonItem(barButtonSystemItem: .FixedSpace, target: nil, action: nil)
+    _negativeSpacer.width = -16
+    return _negativeSpacer
+  }()
   
   func toggleCheckoutBar(visible: Bool) {
-    UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.5, options: .BeginFromCurrentState, animations: {
-      if visible {
-        self.checkoutBar.frame = self.checkoutBarFrame()
-      } else {
-        self.checkoutBar.frame = self.checkoutBarHiddenFrame()
-      }
-    }, completion: nil)
+    checkoutHidden = !visible
+    navigationController?.setToolbarHidden(checkoutHidden, animated: true)
   }
   
   func validateCart() {
@@ -258,7 +259,7 @@ extension MasterViewController: SWTableViewCellDelegate {
     if state == .CellStateRight {
       toggleCheckoutBar(false)
     } else if state ==  .CellStateCenter {
-      validateCart()
+      toggleCheckoutBar(true)
     }
   }
 }
