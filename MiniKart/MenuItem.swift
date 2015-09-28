@@ -8,21 +8,10 @@
 
 import Foundation
 
-class MenuItem {
+struct MenuItem {
   var logo: UIImage?
   var name: String?
   var price: Float?
   var taxable: Bool = true
   var orderCount: Int = 0
-
-  func increaseCount() {
-    orderCount++
-  }
-  
-  func decreaseCount() {
-    orderCount--
-    if orderCount < 0 {
-      orderCount = 0
-    }
-  }
 }

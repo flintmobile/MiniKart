@@ -51,7 +51,7 @@ class AddItemViewController: UIViewController {
   }
   
   @IBAction func handleAddButtonTapped(sender: AnyObject) {
-    let menuItem = MenuItem()
+    var menuItem = MenuItem()
     menuItem.logo = logoImageView.image
     menuItem.name = nameTextField.text
     menuItem.price = priceTextField.floatValue()

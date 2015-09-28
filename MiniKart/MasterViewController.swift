@@ -8,28 +8,40 @@
 
 import UIKit
 import FlintConnectSDK
-import SWTableViewCell
+import SESlideTableViewCell
 import ASCFlatUIColor
 
 class MasterViewController: UITableViewController {
 
   var detailViewController: DetailViewController? = nil
   var menuItems = [MenuItem]()
-  var orderItems = [MenuItem]()
+  var orderItems = [FlintOrderItem]()
+  let backgroundImageView = UIImageView(image: UIImage(named: "ItemBackground"))
+  let darkBlur = UIBlurEffect(style: .Dark)
+  var blurView: UIVisualEffectView?
   
   override func loadView() {
     super.loadView()
     for item in ItemProvider.preloadedItems() {
       menuItems.append(item)
     }
-  
+    
+//    blurView = UIVisualEffectView(effect: darkBlur)
+//        backgroundImageView.addSubview(blurView!)
+//        view.addSubview(backgroundImageView)
+//        view.sendSubviewToBack(backgroundImageView)
+
     tableView.backgroundColor = ASCFlatUIColor.turquoiseColor()
   }
   
+  override func viewWillLayoutSubviews() {
+    super.viewWillLayoutSubviews()
+    backgroundImageView.frame = view.bounds
+    blurView?.frame = backgroundImageView.bounds
+  }
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    view.addSubview(checkoutBar)
     
     let payButton = UIBarButtonItem(title: "Pay", style: .Plain, target: self, action: "takePayment:")
     let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "insertNewObject:")
@@ -47,11 +59,6 @@ class MasterViewController: UITableViewController {
     super.viewWillAppear(animated)
   }
 
-  override func viewWillLayoutSubviews() {
-    super.viewWillLayoutSubviews()
-    checkoutBar.frame = checkoutBarFrame()
-  }
-  
   // MARK: - Segues
 
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -82,7 +89,6 @@ class MasterViewController: UITableViewController {
     let menuItem = menuItems[indexPath.row]
     
     // data
-    cell.index = indexPath.row
     cell.productImageView.image = menuItem.logo
     cell.nameLabel.text = menuItem.name
     if let price = menuItem.price?.toString(0.2) {
@@ -103,7 +109,6 @@ class MasterViewController: UITableViewController {
     
     // action
     cell.rightUtilityButtons = rightActionCells()
-    cell.delegate = self
     
     return cell
   }
@@ -143,71 +148,22 @@ class MasterViewController: UITableViewController {
   }
   
   func takePayment(sender: AnyObject) {
-//    orderItems.removeAll()
-//    splitViewController?.toggleMasterView()
-//
-//    // create mock order
-//    let orderItem = FlintOrderItem()
-//    orderItem.name = "Preset Item"
-//    orderItem.quantity = 1
-//    orderItem.price = 15
-//    orderItem.taxAmount = 3
-//    orderItems.append(orderItem)
-//
-//    if let paymentViewController = FlintUI.paymentViewControllerWithOrderItems(orderItems, delegate: self) {
-//      let navigationController = UINavigationController(rootViewController: paymentViewController)
-//      navigationController.modalPresentationStyle = .FormSheet
-//      splitViewController?.presentViewController(navigationController, animated: true, completion: nil)
-//    }
-  }
-  
-  // MARK: - Checkout Bar
-  
-  lazy var checkoutBar: CheckoutBar = {
-    let _checkoutBar = CheckoutBar(frame: CGRectMake(0, 0, 200, 200))
-    _checkoutBar.backgroundColor = ASCFlatUIColor.pumpkinColor()
-    return _checkoutBar
-    }()
-  
-  func checkoutBarFrame() -> CGRect {
-    let x = CGFloat(0)
-    let height = CGFloat(50)
-    let y = UIScreen.mainScreen().bounds.size.height - height
-    let width = self.view.bounds.size.width
-    
-    return CGRectMake(x, y, width, height)
-  }
-  
-  func checkoutBarHiddenFrame() -> CGRect {
-    let x = CGFloat(0)
-    let y = UIScreen.mainScreen().bounds.size.height
-    let width = self.view.bounds.size.width
-    let height = CGFloat(0)
-    
-    return CGRectMake(x, y, width, height)
-  }
-  
-  func toggleCheckoutBar(visible: Bool) {
-    UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.5, options: .BeginFromCurrentState, animations: {
-      if visible {
-        self.checkoutBar.frame = self.checkoutBarFrame()
-      } else {
-        self.checkoutBar.frame = self.checkoutBarHiddenFrame()
-      }
-    }, completion: nil)
-  }
-  
-  func validateCart() {
-    var shouldShowCart = false
-    
-    for item in menuItems {
-      if item.orderCount > 0 {
-        shouldShowCart = true
-        break
-      }
+    orderItems.removeAll()
+    splitViewController?.toggleMasterView()
+
+    // create mock order
+    let orderItem = FlintOrderItem()
+    orderItem.name = "Preset Item"
+    orderItem.quantity = 1
+    orderItem.price = 15
+    orderItem.taxAmount = 3
+    orderItems.append(orderItem)
+
+    if let paymentViewController = FlintUI.paymentViewControllerWithOrderItems(orderItems, delegate: self) {
+      let navigationController = UINavigationController(rootViewController: paymentViewController)
+      navigationController.modalPresentationStyle = .FormSheet
+      splitViewController?.presentViewController(navigationController, animated: true, completion: nil)
     }
-    
-    toggleCheckoutBar(shouldShowCart)
   }
 }
 
@@ -234,31 +190,5 @@ extension MasterViewController: AddItemViewControllerDelegate {
   
   func addItemViewController(itemViewController: AddItemViewController, didCancel cancel: Bool) {
     
-  }
-}
-
-extension MasterViewController: SWTableViewCellDelegate {
-  
-  func swipeableTableViewCell(cell: SWTableViewCell!, didTriggerRightUtilityButtonWithIndex index: Int) {
-    let menuCell = cell as? MenuItemCell
-    
-    if let menuIndex = menuCell?.index {
-      let menuItem = menuItems[menuIndex]
-      if index == 0 {
-        menuItem.increaseCount()
-      } else if index == 1 {
-        menuItem.decreaseCount()
-      }
-      
-      menuCell?.quantityLabel.text = "x \(menuItem.orderCount)"
-    }
-  }
-  
-  func swipeableTableViewCell(cell: SWTableViewCell!, scrollingToState state: SWCellState) {
-    if state == .CellStateRight {
-      toggleCheckoutBar(false)
-    } else if state ==  .CellStateCenter {
-      validateCart()
-    }
   }
 }

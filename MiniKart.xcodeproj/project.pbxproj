@@ -23,7 +23,6 @@
 		4FDDF9E91BB4BCC8004FF2F1 /* MenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDDF9E81BB4BCC8004FF2F1 /* MenuItemCell.swift */; settings = {ASSET_TAGS = (); }; };
 		4FDDF9EC1BB4BE43004FF2F1 /* FormatStringProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDDF9EB1BB4BE43004FF2F1 /* FormatStringProtocol.swift */; settings = {ASSET_TAGS = (); }; };
 		4FDDF9EE1BB5C286004FF2F1 /* ItemProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDDF9ED1BB5C286004FF2F1 /* ItemProvider.swift */; settings = {ASSET_TAGS = (); }; };
-		4FDDF9F11BB74F24004FF2F1 /* CheckoutBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDDF9F01BB74F24004FF2F1 /* CheckoutBar.swift */; settings = {ASSET_TAGS = (); }; };
 		4FDF6FE31BB08CE30029FEAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDF6FE21BB08CE30029FEAE /* AppDelegate.swift */; };
 		4FDF6FE51BB08CE30029FEAE /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDF6FE41BB08CE30029FEAE /* MasterViewController.swift */; };
 		4FDF6FE71BB08CE30029FEAE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDF6FE61BB08CE30029FEAE /* DetailViewController.swift */; };
@@ -83,7 +82,6 @@
 		4FDDF9E81BB4BCC8004FF2F1 /* MenuItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemCell.swift; sourceTree = "<group>"; };
 		4FDDF9EB1BB4BE43004FF2F1 /* FormatStringProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormatStringProtocol.swift; sourceTree = "<group>"; };
 		4FDDF9ED1BB5C286004FF2F1 /* ItemProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemProvider.swift; sourceTree = "<group>"; };
-		4FDDF9F01BB74F24004FF2F1 /* CheckoutBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutBar.swift; sourceTree = "<group>"; };
 		4FDF6FDF1BB08CE30029FEAE /* MiniKart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniKart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FDF6FE21BB08CE30029FEAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FDF6FE41BB08CE30029FEAE /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -159,7 +157,6 @@
 			children = (
 				4FDDF9DD1BB4A4F0004FF2F1 /* LineTextField.swift */,
 				4FDDF9E81BB4BCC8004FF2F1 /* MenuItemCell.swift */,
-				4FDDF9F01BB74F24004FF2F1 /* CheckoutBar.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -456,7 +453,6 @@
 				4FDDF9EC1BB4BE43004FF2F1 /* FormatStringProtocol.swift in Sources */,
 				4FDDF9BE1BB1D161004FF2F1 /* UISplitViewControllerExtensions.swift in Sources */,
 				4FDF6FE51BB08CE30029FEAE /* MasterViewController.swift in Sources */,
-				4FDDF9F11BB74F24004FF2F1 /* CheckoutBar.swift in Sources */,
 				4FDDF9CE1BB3687D004FF2F1 /* MKPopupController.m in Sources */,
 				4FDDF9D41BB4641D004FF2F1 /* UIStoryboardExtensions.swift in Sources */,
 				4FDDF9EE1BB5C286004FF2F1 /* ItemProvider.swift in Sources */,
