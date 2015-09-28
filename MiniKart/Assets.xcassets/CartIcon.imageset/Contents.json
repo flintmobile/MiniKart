@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "bg-2.jpg",
+      "filename" : "CartIcon.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "bg-1.jpg",
+      "filename" : "CartIcon-1.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "bg.jpg",
+      "filename" : "CartIcon-2.png",
       "scale" : "3x"
     }
   ],

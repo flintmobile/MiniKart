@@ -337,6 +337,46 @@
             </objects>
             <point key="canvasLocation" x="1468" y="-630"/>
         </scene>
+        <!--Master View Controller-->
+        <scene sceneID="PuM-zN-Spb">
+            <objects>
+                <viewController id="u3I-4y-lN8" customClass="MasterViewController" customModule="MiniKart" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RN6-zR-Frm"/>
+                        <viewControllerLayoutGuide type="bottom" id="sBf-Y4-2mg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jIC-i1-2up">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JRe-xx-o8h">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="120" id="jUs-ff-cA1" customClass="MenuItemCell" customModule="MiniKart" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jUs-ff-cA1" id="d4f-zn-UTE">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="119"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JRe-xx-o8h" firstAttribute="top" secondItem="RN6-zR-Frm" secondAttribute="bottom" id="08f-hb-fc8"/>
+                            <constraint firstItem="sBf-Y4-2mg" firstAttribute="top" secondItem="JRe-xx-o8h" secondAttribute="bottom" id="Wb7-rP-gsr"/>
+                            <constraint firstItem="JRe-xx-o8h" firstAttribute="centerX" secondItem="jIC-i1-2up" secondAttribute="centerX" id="hEA-Tu-pTR"/>
+                            <constraint firstItem="JRe-xx-o8h" firstAttribute="width" secondItem="jIC-i1-2up" secondAttribute="width" id="vv1-bj-VQM"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="faM-vZ-faJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1447" y="129"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="r7l-gg-dq7">
             <objects>
