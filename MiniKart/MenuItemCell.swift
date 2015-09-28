@@ -15,4 +15,6 @@ class MenuItemCell: SWTableViewCell {
   @IBOutlet weak var nameLabel: UILabel!
   @IBOutlet weak var priceLabel: UILabel!
   @IBOutlet weak var quantityLabel: UILabel!
+  
+  var index: Int?
 }

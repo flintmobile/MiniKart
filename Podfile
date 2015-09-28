@@ -3,7 +3,6 @@ platform :ios, '8.0'
 use_frameworks!
 
 target 'MiniKart' do
-pod 'SESlideTableViewCell'
 pod 'STPopup'
 pod 'TOCropViewController'
 pod 'ASCFlatUIColor'
