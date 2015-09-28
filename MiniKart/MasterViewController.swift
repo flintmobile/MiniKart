@@ -15,7 +15,7 @@ class MasterViewController: UITableViewController {
 
   var detailViewController: DetailViewController? = nil
   var menuItems = [MenuItem]()
-  var orderItems = [MenuItem]()
+  var orderItems = [FlintOrderItem]()
   var checkoutHidden = false
   
   override func loadView() {
@@ -156,22 +156,13 @@ class MasterViewController: UITableViewController {
   }
   
   func takePayment(sender: AnyObject) {
-//    orderItems.removeAll()
-//    splitViewController?.toggleMasterView()
-//
-//    // create mock order
-//    let orderItem = FlintOrderItem()
-//    orderItem.name = "Preset Item"
-//    orderItem.quantity = 1
-//    orderItem.price = 15
-//    orderItem.taxAmount = 3
-//    orderItems.append(orderItem)
-//
-//    if let paymentViewController = FlintUI.paymentViewControllerWithOrderItems(orderItems, delegate: self) {
-//      let navigationController = UINavigationController(rootViewController: paymentViewController)
-//      navigationController.modalPresentationStyle = .FormSheet
-//      splitViewController?.presentViewController(navigationController, animated: true, completion: nil)
-//    }
+    splitViewController?.toggleMasterView()
+
+    if let paymentViewController = FlintUI.paymentViewControllerWithOrderItems(orderItems, delegate: self) {
+      let navigationController = UINavigationController(rootViewController: paymentViewController)
+      navigationController.modalPresentationStyle = .FormSheet
+      splitViewController?.presentViewController(navigationController, animated: true, completion: nil)
+    }
   }
   
   // MARK: - Checkout Bar
@@ -199,16 +190,22 @@ class MasterViewController: UITableViewController {
   }
   
   func validateCart() {
-    var shouldShowCart = false
+    orderItems.removeAll()
     
     for item in menuItems {
       if item.orderCount > 0 {
-        shouldShowCart = true
+        // create mock order
+        let orderItem = FlintOrderItem()
+        orderItem.name = item.name
+        orderItem.quantity = item.orderCount
+        orderItem.price = item.price
+        orderItem.taxAmount = item.taxable ? item.price! * 0.095 : 0
+        orderItems.append(orderItem)
         break
       }
     }
     
-    toggleCheckoutBar(shouldShowCart)
+    toggleCheckoutBar(orderItems.count > 0)
   }
 }
 
@@ -252,14 +249,7 @@ extension MasterViewController: SWTableViewCellDelegate {
       }
       
       menuCell?.quantityLabel.text = "x \(menuItem.orderCount)"
-    }
-  }
-  
-  func swipeableTableViewCell(cell: SWTableViewCell!, scrollingToState state: SWCellState) {
-    if state == .CellStateRight {
-      toggleCheckoutBar(false)
-    } else if state ==  .CellStateCenter {
-      toggleCheckoutBar(true)
+      validateCart()
     }
   }
 }
