@@ -8,6 +8,8 @@
 
 import UIKit
 import FlintConnectSDK
+import MAThemeKit
+import ASCFlatUIColor
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDelegate {
@@ -21,6 +23,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count-1] as! UINavigationController
     navigationController.topViewController!.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem()
     splitViewController.delegate = self
+    
+    MAThemeKit.setupThemeWithPrimaryColor(ASCFlatUIColor.turquoiseColor(), secondaryColor: UIColor.whiteColor(), fontName: "Avenir", lightStatusBar: true)
+    MAThemeKit.customizeNavigationBarColor(ASCFlatUIColor.wetAsphaltColor(), textColor: UIColor.whiteColor(), buttonColor: UIColor.whiteColor())
     
     FlintAPIConfig.sharedInstance().APIKey = "4d72de8c70d3ba2e0fef18bd6231bdb7"
     FlintAPIConfig.sharedInstance().environment = .EnvironmentStaging

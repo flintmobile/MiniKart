@@ -8,6 +8,7 @@
 
 import UIKit
 import TOCropViewController
+import ASCFlatUIColor
 
 class AddItemViewController: UIViewController {
   
@@ -15,8 +16,10 @@ class AddItemViewController: UIViewController {
   @IBOutlet weak var nameTextField: LineTextField!
   @IBOutlet weak var priceTextField: LineTextField!
   @IBOutlet weak var taxSwitch: UISwitch!
+  @IBOutlet weak var taxLabel: UILabel!
   @IBOutlet weak var addLogoLabel: UILabel!
-  
+  @IBOutlet weak var cancelButton: UIButton!
+
   weak var cropViewHolder: MKACropViewController?
   var delegate: AddItemViewControllerDelegate?
   
@@ -42,6 +45,8 @@ class AddItemViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     logoImageView.round()
+    cancelButton.setTitleColor(UIColor.redColor(), forState: .Normal)
+    taxLabel.textColor = ASCFlatUIColor.turquoiseColor()
   }
   
   // MARK: - Interaction

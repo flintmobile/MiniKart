@@ -7,6 +7,7 @@ pod 'STPopup'
 pod 'TOCropViewController'
 pod 'ASCFlatUIColor'
 pod 'SWTableViewCell'
+pod 'MAThemeKit'
 end
 
 target 'MiniKartTests' do

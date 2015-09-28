@@ -170,6 +170,10 @@ class MasterViewController: UITableViewController {
       navigationController.modalPresentationStyle = .FormSheet
       splitViewController?.presentViewController(navigationController, animated: true) {
         self.toggleCheckoutBar(false)
+        
+        if let _lastVisibleCell = self.lastVisibleCell {
+          _lastVisibleCell.hideUtilityButtonsAnimated(true)
+        }
       }
     }
   }
@@ -178,7 +182,7 @@ class MasterViewController: UITableViewController {
   
   lazy var checkoutBar: CheckoutBar = {
     let _checkoutBar = CheckoutBar(frame: CGRectMake(0, 0, 200, 200))
-    _checkoutBar.backgroundColor = ASCFlatUIColor.pumpkinColor()
+    _checkoutBar.backgroundColor = ASCFlatUIColor.emeraldColor()
     _checkoutBar.userInteractionEnabled = true
     
     let tapGesture = UITapGestureRecognizer(target: self, action: "takePayment:")

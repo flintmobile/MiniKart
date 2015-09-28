@@ -63,7 +63,7 @@ class CheckoutBar: UIView {
   
   lazy var cartImageBackground: UIView = {
     let _cartImageBackground = UIView(frame: CGRectZero)
-    _cartImageBackground.backgroundColor = ASCFlatUIColor.turquoiseColor()
+    _cartImageBackground.backgroundColor = ASCFlatUIColor.peterRiverColor()
     return _cartImageBackground
     }()
   

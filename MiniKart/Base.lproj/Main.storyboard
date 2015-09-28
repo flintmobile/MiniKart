@@ -200,7 +200,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to add item logo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ysp-hp-eRI">
                                         <rect key="frame" x="356" y="114" width="94" height="29"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qyq-Ne-bSK" customClass="LineTextField" customModule="MiniKart" customModuleProvider="target">
@@ -327,9 +327,11 @@
                     </view>
                     <connections>
                         <outlet property="addLogoLabel" destination="Ysp-hp-eRI" id="dCh-UM-zRM"/>
+                        <outlet property="cancelButton" destination="7ae-Tl-iWH" id="2Np-T8-YNS"/>
                         <outlet property="logoImageView" destination="dB0-UR-2s9" id="qoK-xF-oqf"/>
                         <outlet property="nameTextField" destination="YA5-Vk-eJZ" id="9rq-Rv-PwU"/>
                         <outlet property="priceTextField" destination="Qyq-Ne-bSK" id="7aI-k0-Yf2"/>
+                        <outlet property="taxLabel" destination="whJ-gZ-8Nd" id="e6m-lr-KSO"/>
                         <outlet property="taxSwitch" destination="n0D-Sy-In6" id="J17-JK-TCY"/>
                     </connections>
                 </viewController>
