@@ -170,6 +170,10 @@ class MasterViewController: UITableViewController {
   lazy var checkoutBar: CheckoutBar = {
     let _checkoutBar = CheckoutBar(frame: CGRectMake(0, 0, 200, 200))
     _checkoutBar.backgroundColor = ASCFlatUIColor.pumpkinColor()
+    _checkoutBar.userInteractionEnabled = true
+    
+    let tapGesture = UITapGestureRecognizer(target: self, action: "takePayment:")
+    _checkoutBar.addGestureRecognizer(tapGesture)
     return _checkoutBar
     }()
   
@@ -191,20 +195,24 @@ class MasterViewController: UITableViewController {
   
   func validateCart() {
     orderItems.removeAll()
+    var totalItem = 0
+    var totalPrice: Float = 0
     
     for item in menuItems {
       if item.orderCount > 0 {
-        // create mock order
         let orderItem = FlintOrderItem()
         orderItem.name = item.name
         orderItem.quantity = item.orderCount
         orderItem.price = item.price
         orderItem.taxAmount = item.taxable ? item.price! * 0.095 : 0
         orderItems.append(orderItem)
-        break
+        
+        totalItem += item.orderCount
+        totalPrice += orderItem.total().floatValue
       }
     }
     
+    checkoutBar.setCartItem(totalItem, total:totalPrice)
     toggleCheckoutBar(orderItems.count > 0)
   }
 }

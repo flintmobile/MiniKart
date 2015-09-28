@@ -30,10 +30,17 @@ class CheckoutBar: UIView {
   override func layoutSubviews() {
     super.layoutSubviews()
     cartImageView.frame = cartImageViewFrame()
-    cartImageBackground.frame = CGRectInset(cartImageView.frame, -5, -5)
+    cartImageBackground.frame = CGRectInset(cartImageView.frame, -8, -8)
     cartImageBackground.round()
-    messageLabel.frame = messageLabelFrame(cartImageView.frame)
+    messageLabel.frame = messageLabelFrame(cartImageBackground.frame)
     detailLabel.frame = detailLabelFrame(messageLabel.frame)
+  }
+  
+  // MARK: - Public
+  
+  func setCartItem(cartItem: Int, total: Float) {
+    messageLabel.text = "Total: $\(total.toString(0.2))"
+    detailLabel.text = "Item in cart: \(cartItem). Tap to checkout"
   }
   
   // MARK: - UI Elelements
@@ -46,8 +53,8 @@ class CheckoutBar: UIView {
     }()
   
   func cartImageViewFrame() -> CGRect {
-    let x: CGFloat = 12
-    let y: CGFloat = 12
+    let x: CGFloat = 18
+    let y: CGFloat = 18
     let height = self.bounds.size.height - 2*y
     let width = height
     
@@ -65,11 +72,12 @@ class CheckoutBar: UIView {
     _messageLabel.font = UIFont(name: "Avenir", size: 18)
     _messageLabel.textColor = UIColor.whiteColor()
     _messageLabel.numberOfLines = 1
+    _messageLabel.text = "Total: $0.00"
     return _messageLabel
     }()
   
   func messageLabelFrame(imageViewFrame: CGRect) -> CGRect {
-    let x = CGRectGetMaxX(imageViewFrame) + 5
+    let x = CGRectGetMaxX(imageViewFrame) + 10
     let y = CGRectGetMinY(imageViewFrame)
     let width = self.bounds.size.width - x
     let height = messageLabel.sizeThatFits(CGSizeMake(width, CGFloat(MAXFLOAT))).height
@@ -82,6 +90,7 @@ class CheckoutBar: UIView {
     _detailLabel.font = UIFont(name: "Avenir", size: 12)
     _detailLabel.textColor = UIColor.whiteColor()
     _detailLabel.numberOfLines = 0
+    _detailLabel.text = "Item in cart: 0. Tap to checkout"
     return _detailLabel
     }()
   
