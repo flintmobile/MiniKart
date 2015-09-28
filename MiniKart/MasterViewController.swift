@@ -162,13 +162,14 @@ class MasterViewController: UITableViewController {
   }
   
   func takePayment(sender: AnyObject) {
-    toggleCheckoutBar(false)
     splitViewController?.toggleMasterView()
 
     if let paymentViewController = FlintUI.paymentViewControllerWithOrderItems(orderItems, delegate: self) {
       let navigationController = UINavigationController(rootViewController: paymentViewController)
       navigationController.modalPresentationStyle = .FormSheet
-      splitViewController?.presentViewController(navigationController, animated: true, completion: nil)
+      splitViewController?.presentViewController(navigationController, animated: true) {
+        self.toggleCheckoutBar(false)
+      }
     }
   }
   
@@ -251,13 +252,15 @@ class MasterViewController: UITableViewController {
 extension MasterViewController: FlintTransactionDelegate {
 
   func transactionDidCancel(canceledStep: FlintTransactionCancelableStep, autoTimeout autoTimeOut: Bool) {
-    validateCart()
-    splitViewController?.dismissViewControllerAnimated(true, completion: nil)
+    splitViewController?.dismissViewControllerAnimated(true) {
+      self.validateCart()
+    }
   }
   
   func transactionDidComplete(userInfo: [NSObject : AnyObject]!) {
-    clearCart()
-    splitViewController?.dismissViewControllerAnimated(true, completion: nil)
+    splitViewController?.dismissViewControllerAnimated(true) {
+      self.clearCart()
+    }
   }
 }
 
