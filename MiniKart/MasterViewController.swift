@@ -115,7 +115,9 @@ class MasterViewController: UITableViewController {
     cell.priceLabel.textColor = textColor
     cell.quantityLabel.textColor = textColor
     cell.backgroundColor = UIColor.clearColor()
-    
+    if menuItem.orderCount > 0 {
+      cell.quantityLabel.textColor = ASCFlatUIColor.wetAsphaltColor()
+    }
     
     // action
     cell.rightUtilityButtons = rightActionCells()
@@ -296,6 +298,12 @@ extension MasterViewController: SWTableViewCellDelegate {
       }
       
       menuCell?.quantityLabel.text = "x \(menuItem.orderCount)"
+      if menuItem.orderCount > 0 {
+        menuCell?.quantityLabel.textColor = ASCFlatUIColor.wetAsphaltColor()
+      } else {
+        menuCell?.quantityLabel.textColor = UIColor.whiteColor()
+      }
+      
       validateCart()
     }
   }
