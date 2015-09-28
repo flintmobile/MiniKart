@@ -17,6 +17,7 @@ class MasterViewController: UITableViewController {
   var menuItems = [MenuItem]()
   var orderItems = [FlintOrderItem]()
   var checkoutHidden = false
+  weak var lastVisibleCell: MenuItemCell?
   
   override func loadView() {
     super.loadView()
@@ -292,6 +293,18 @@ extension MasterViewController: SWTableViewCellDelegate {
       
       menuCell?.quantityLabel.text = "x \(menuItem.orderCount)"
       validateCart()
+    }
+  }
+  
+  func swipeableTableViewCell(cell: SWTableViewCell!, scrollingToState state: SWCellState) {
+    if state == .CellStateRight {
+      if let _lastVisibleCell = lastVisibleCell {
+        _lastVisibleCell.hideUtilityButtonsAnimated(true)
+      }
+      
+      lastVisibleCell = cell as? MenuItemCell
+    } else if state == .CellStateCenter {
+      lastVisibleCell = nil
     }
   }
 }
