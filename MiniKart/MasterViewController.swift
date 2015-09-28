@@ -31,7 +31,7 @@ class MasterViewController: UITableViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    let payButton = UIBarButtonItem(title: "Pay", style: .Plain, target: self, action: "takePayment:")
+    let payButton = UIBarButtonItem(title: "Clear", style: .Plain, target: self, action: "handleClearButtonTapped:")
     let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "insertNewObject:")
     self.navigationItem.rightBarButtonItem = addButton
     self.navigationItem.leftBarButtonItem = payButton
@@ -40,6 +40,8 @@ class MasterViewController: UITableViewController {
         let controllers = split.viewControllers
         self.detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
     }
+    
+    validateCart()
   }
 
   override func viewWillAppear(animated: Bool) {
@@ -155,7 +157,12 @@ class MasterViewController: UITableViewController {
     popupController.presentInViewController(splitViewController)
   }
   
+  func handleClearButtonTapped(sender: AnyObject) {
+    clearCart()
+  }
+  
   func takePayment(sender: AnyObject) {
+    toggleCheckoutBar(false)
     splitViewController?.toggleMasterView()
 
     if let paymentViewController = FlintUI.paymentViewControllerWithOrderItems(orderItems, delegate: self) {
@@ -190,7 +197,16 @@ class MasterViewController: UITableViewController {
   
   func toggleCheckoutBar(visible: Bool) {
     checkoutHidden = !visible
-    navigationController?.setToolbarHidden(checkoutHidden, animated: true)
+    if checkoutHidden {
+      UIView.animateWithDuration(0.3, animations: {
+          navigationController?.toolbar.alpha = 0.0
+        }, completion: {
+          _ in
+          navigationController?.setToolbarHidden(checkoutHidden, animated: false)
+      })
+    } else {
+      navigationController?.setToolbarHidden(checkoutHidden, animated: true)
+    }
   }
   
   func validateCart() {
@@ -212,8 +228,21 @@ class MasterViewController: UITableViewController {
       }
     }
     
-    checkoutBar.setCartItem(totalItem, total:totalPrice)
-    toggleCheckoutBar(orderItems.count > 0)
+    let cartNotEmpty = orderItems.count > 0
+    toggleCheckoutBar(cartNotEmpty)
+    navigationItem.leftBarButtonItem?.enabled = (cartNotEmpty)
+    if cartNotEmpty {
+      checkoutBar.setCartItem(totalItem, total:totalPrice)
+    }
+  }
+  
+  func clearCart() {
+    for item in menuItems {
+      item.orderCount = 0
+    }
+    
+    validateCart()
+    tableView.reloadData()
   }
 }
 
@@ -222,11 +251,13 @@ class MasterViewController: UITableViewController {
 extension MasterViewController: FlintTransactionDelegate {
 
   func transactionDidCancel(canceledStep: FlintTransactionCancelableStep, autoTimeout autoTimeOut: Bool) {
+    validateCart()
     splitViewController?.dismissViewControllerAnimated(true, completion: nil)
   }
   
   func transactionDidComplete(userInfo: [NSObject : AnyObject]!) {
-    FlintUI.restartPaymentFlowWithOrderItems(orderItems, delegate: self)
+    clearCart()
+    splitViewController?.dismissViewControllerAnimated(true, completion: nil)
   }
 }
 
