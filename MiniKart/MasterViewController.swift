@@ -261,12 +261,14 @@ extension MasterViewController: FlintTransactionDelegate {
   func transactionDidCancel(canceledStep: FlintTransactionCancelableStep, autoTimeout autoTimeOut: Bool) {
     splitViewController?.dismissViewControllerAnimated(true) {
       self.validateCart()
+      self.splitViewController?.toggleMasterView()
     }
   }
   
   func transactionDidComplete(userInfo: [NSObject : AnyObject]!) {
     splitViewController?.dismissViewControllerAnimated(true) {
       self.clearCart()
+      self.splitViewController?.toggleMasterView()
     }
   }
 }
