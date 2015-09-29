@@ -16,7 +16,7 @@ extension UIColor {
   }
   
   class func secondaryColor() -> UIColor {
-    return ASCFlatUIColor.peterRiverColor()
+    return UIColor(red: 0/255, green: 204/255, blue: 153/255, alpha: 1)
   }
   
   class func invertColor() -> UIColor {
