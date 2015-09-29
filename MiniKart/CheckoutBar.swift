@@ -30,7 +30,7 @@ class CheckoutBar: UIView {
   override func layoutSubviews() {
     super.layoutSubviews()
     cartImageView.frame = cartImageViewFrame()
-    cartImageBackground.frame = CGRectInset(cartImageView.frame, -8, -8)
+    cartImageBackground.frame = CGRectInset(cartImageView.frame, -2, -2)
     cartImageBackground.round()
     messageLabel.frame = messageLabelFrame(cartImageBackground.frame)
     detailLabel.frame = detailLabelFrame(messageLabel.frame)
@@ -53,8 +53,8 @@ class CheckoutBar: UIView {
     }()
   
   func cartImageViewFrame() -> CGRect {
-    let x: CGFloat = 18
-    let y: CGFloat = 18
+    let x: CGFloat = 12
+    let y: CGFloat = 12
     let height = self.bounds.size.height - 2*y
     let width = height
     
@@ -63,7 +63,6 @@ class CheckoutBar: UIView {
   
   lazy var cartImageBackground: UIView = {
     let _cartImageBackground = UIView(frame: CGRectZero)
-    _cartImageBackground.backgroundColor = ASCFlatUIColor.peterRiverColor()
     return _cartImageBackground
     }()
   

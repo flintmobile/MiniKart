@@ -25,7 +25,8 @@ class MasterViewController: UITableViewController {
       menuItems.append(item)
     }
   
-    tableView.backgroundColor = ASCFlatUIColor.turquoiseColor()
+    tableView.backgroundColor = UIColor.invertColor()
+    tableView.separatorColor = UIColor.primaryColor()
     toolbarItems = [negativeSpacer,checkoutBarItem]
   }
   
@@ -110,13 +111,14 @@ class MasterViewController: UITableViewController {
     
     //format
     cell.productImageView.round()
-    let textColor = UIColor.whiteColor()
+    let textColor = UIColor.primaryColor()
     cell.nameLabel.textColor = textColor
     cell.priceLabel.textColor = textColor
     cell.quantityLabel.textColor = textColor
     cell.backgroundColor = UIColor.clearColor()
+   
     if menuItem.orderCount > 0 {
-      cell.quantityLabel.textColor = ASCFlatUIColor.wetAsphaltColor()
+      cell.quantityLabel.textColor = UIColor.secondaryColor()
     }
     
     // action
@@ -128,7 +130,7 @@ class MasterViewController: UITableViewController {
   
   func rightActionCells() -> [AnyObject] {
     let actions: NSMutableArray = NSMutableArray()
-    actions.sw_addUtilityButtonWithColor(ASCFlatUIColor.peterRiverColor(), title: "Add")
+    actions.sw_addUtilityButtonWithColor(UIColor.secondaryColor(), title: "Add")
     actions.sw_addUtilityButtonWithColor(ASCFlatUIColor.alizarinColor(), title: "Remove")
     
     return actions as Array
@@ -184,7 +186,7 @@ class MasterViewController: UITableViewController {
   
   lazy var checkoutBar: CheckoutBar = {
     let _checkoutBar = CheckoutBar(frame: CGRectMake(0, 0, 200, 200))
-    _checkoutBar.backgroundColor = ASCFlatUIColor.emeraldColor()
+    _checkoutBar.backgroundColor = UIColor.secondaryColor()
     _checkoutBar.userInteractionEnabled = true
     
     let tapGesture = UITapGestureRecognizer(target: self, action: "takePayment:")
@@ -301,9 +303,9 @@ extension MasterViewController: SWTableViewCellDelegate {
       
       menuCell?.quantityLabel.text = "x \(menuItem.orderCount)"
       if menuItem.orderCount > 0 {
-        menuCell?.quantityLabel.textColor = ASCFlatUIColor.wetAsphaltColor()
+        menuCell?.quantityLabel.textColor = UIColor.secondaryColor()
       } else {
-        menuCell?.quantityLabel.textColor = UIColor.whiteColor()
+        menuCell?.quantityLabel.textColor = UIColor.primaryColor()
       }
       
       validateCart()

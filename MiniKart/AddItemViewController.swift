@@ -46,7 +46,9 @@ class AddItemViewController: UIViewController {
     super.viewDidLoad()
     logoImageView.round()
     cancelButton.setTitleColor(UIColor.redColor(), forState: .Normal)
-    taxLabel.textColor = ASCFlatUIColor.turquoiseColor()
+    taxLabel.textColor = UIColor.primaryColor()
+    nameTextField.textColor = UIColor.primaryColor()
+    priceTextField.textColor = UIColor.primaryColor()
   }
   
   // MARK: - Interaction

@@ -46,7 +46,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GalleryCell" id="WXt-hX-m8n" customClass="GalleryCell" customModule="MiniKart" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="64" width="100" height="100"/>
+                                        <rect key="frame" x="0.0" y="44" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
@@ -98,6 +98,7 @@
             <objects>
                 <splitViewController id="H1p-Uh-vWS" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <nil key="simulatedStatusBarMetrics"/>
                     <connections>
                         <segue destination="RMx-3f-FxP" kind="relationship" relationship="masterViewController" id="BlO-5A-QYV"/>
                         <segue destination="vC3-pB-5Vb" kind="relationship" relationship="detailViewController" id="Tll-UG-LXB"/>
@@ -118,7 +119,7 @@
                         <color key="separatorColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="110" id="WCw-Qf-5nD" customClass="MenuItemCell" customModule="MiniKart" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="86" width="600" height="110"/>
+                                <rect key="frame" x="0.0" y="66" width="600" height="110"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WCw-Qf-5nD" id="37f-cq-3Eg">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="109"/>
@@ -393,6 +394,6 @@
         <image name="ProductAddImage" width="167" height="167"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="6S0-TO-JiA"/>
+        <segue reference="Tll-UG-LXB"/>
     </inferredMetricsTieBreakers>
 </document>

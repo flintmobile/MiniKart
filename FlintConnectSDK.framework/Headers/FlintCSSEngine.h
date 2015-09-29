@@ -36,8 +36,16 @@ extern NSString *const FMCSSEngineStyleChangeNotification;
 /**
  *  Set the overall theme for ui component
  *
- *  @param the main theme color
+ *  @param themeColor The main theme color
  */
 + (void)setThemeColor:(UIColor *)themeColor;
+
+/**
+ *  Set the overall theme and font for ui component
+ *
+ *  @param themeColor The main theme color
+ *  @param fontName   The main theme font name
+ */
++ (void)setThemeColor:(UIColor *)themeColor fontName:(NSString *)fontName;
 
 @end

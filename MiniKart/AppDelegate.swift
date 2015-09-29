@@ -24,8 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     navigationController.topViewController!.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem()
     splitViewController.delegate = self
     
-    MAThemeKit.setupThemeWithPrimaryColor(ASCFlatUIColor.turquoiseColor(), secondaryColor: UIColor.whiteColor(), fontName: "Avenir", lightStatusBar: true)
-    MAThemeKit.customizeNavigationBarColor(ASCFlatUIColor.wetAsphaltColor(), textColor: UIColor.whiteColor(), buttonColor: UIColor.whiteColor())
+    MAThemeKit.setupThemeWithPrimaryColor(UIColor.primaryColor(), secondaryColor: UIColor.invertColor(), fontName: "Avenir", lightStatusBar: true)
     
     FlintAPIConfig.sharedInstance().APIKey = "4d72de8c70d3ba2e0fef18bd6231bdb7"
     FlintAPIConfig.sharedInstance().environment = .EnvironmentStaging
@@ -41,7 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
       }
     }
     
-//    FlintCSSEngine.setThemeColor(ASCFlatUIColor.turquoiseColor())
+    FlintCSSEngine.setThemeColor(UIColor.primaryColor())
     
     return true
   }
