@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import "FlintCSSConstant.h"
 
 /**
@@ -35,11 +36,8 @@ extern NSString *const FMCSSEngineStyleChangeNotification;
 /**
  *  Set the overall theme for ui component
  *
- *  @param red   red component (0-255)
- *  @param green green component (0-255)
- *  @param blue  blue component (0-255)
- *  @param alpha alpha component (0-1)
+ *  @param the main theme color
  */
-+ (void)setThemeColorWithRed:(float)red green:(float)green blue:(float)blue alpha:(float)alpha;
++ (void)setThemeColor:(UIColor *)themeColor;
 
 @end

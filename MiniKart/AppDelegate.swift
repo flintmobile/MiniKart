@@ -41,6 +41,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
       }
     }
     
+//    FlintCSSEngine.setThemeColor(ASCFlatUIColor.turquoiseColor())
+    
     return true
   }
 

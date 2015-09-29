@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		339B85DA2F0E461231849384 /* Pods_MiniKart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 695CDCAB0C6EB3D692452E4B /* Pods_MiniKart.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		4FDDF9BE1BB1D161004FF2F1 /* UISplitViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDDF9BD1BB1D161004FF2F1 /* UISplitViewControllerExtensions.swift */; };
-		4FDDF9C01BB20C72004FF2F1 /* FlintConnectSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FDDF9BF1BB20C72004FF2F1 /* FlintConnectSDK.framework */; };
-		4FDDF9C11BB20C72004FF2F1 /* FlintConnectSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4FDDF9BF1BB20C72004FF2F1 /* FlintConnectSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4FDDF9CE1BB3687D004FF2F1 /* MKPopupController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FDDF9CD1BB3687D004FF2F1 /* MKPopupController.m */; settings = {ASSET_TAGS = (); }; };
 		4FDDF9D11BB4630E004FF2F1 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDDF9D01BB4630E004FF2F1 /* AddItemViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		4FDDF9D41BB4641D004FF2F1 /* UIStoryboardExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDDF9D31BB4641D004FF2F1 /* UIStoryboardExtensions.swift */; settings = {ASSET_TAGS = (); }; };
@@ -32,6 +30,8 @@
 		4FDF6FEF1BB08CE30029FEAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FDF6FED1BB08CE30029FEAE /* LaunchScreen.storyboard */; };
 		4FDF6FFA1BB08CE30029FEAE /* MiniKartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDF6FF91BB08CE30029FEAE /* MiniKartTests.swift */; };
 		4FDF70051BB08CE30029FEAE /* MiniKartUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDF70041BB08CE30029FEAE /* MiniKartUITests.swift */; };
+		4FE8D7891BBB069C00EDF439 /* FlintConnectSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE8D7881BBB069C00EDF439 /* FlintConnectSDK.framework */; };
+		4FE8D78A1BBB069C00EDF439 /* FlintConnectSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE8D7881BBB069C00EDF439 /* FlintConnectSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +58,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4FDDF9C11BB20C72004FF2F1 /* FlintConnectSDK.framework in Embed Frameworks */,
+				4FE8D78A1BBB069C00EDF439 /* FlintConnectSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,7 +67,6 @@
 
 /* Begin PBXFileReference section */
 		4FDDF9BD1BB1D161004FF2F1 /* UISplitViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISplitViewControllerExtensions.swift; sourceTree = "<group>"; };
-		4FDDF9BF1BB20C72004FF2F1 /* FlintConnectSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FlintConnectSDK.framework; sourceTree = "<group>"; };
 		4FDDF9C81BB36744004FF2F1 /* MiniKart-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MiniKart-Bridging-Header.h"; sourceTree = "<group>"; };
 		4FDDF9CC1BB3687D004FF2F1 /* MKPopupController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKPopupController.h; sourceTree = "<group>"; };
 		4FDDF9CD1BB3687D004FF2F1 /* MKPopupController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKPopupController.m; sourceTree = "<group>"; };
@@ -98,6 +97,7 @@
 		4FDF70001BB08CE30029FEAE /* MiniKartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniKartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FDF70041BB08CE30029FEAE /* MiniKartUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniKartUITests.swift; sourceTree = "<group>"; };
 		4FDF70061BB08CE30029FEAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FE8D7881BBB069C00EDF439 /* FlintConnectSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FlintConnectSDK.framework; sourceTree = "<group>"; };
 		501E05000885B3725BDBABDF /* Pods-MiniKart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiniKart.release.xcconfig"; path = "Pods/Target Support Files/Pods-MiniKart/Pods-MiniKart.release.xcconfig"; sourceTree = "<group>"; };
 		695CDCAB0C6EB3D692452E4B /* Pods_MiniKart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiniKart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8545EB77AE6DF19912672107 /* Pods-MiniKart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiniKart.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MiniKart/Pods-MiniKart.debug.xcconfig"; sourceTree = "<group>"; };
@@ -108,7 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FDDF9C01BB20C72004FF2F1 /* FlintConnectSDK.framework in Frameworks */,
+				4FE8D7891BBB069C00EDF439 /* FlintConnectSDK.framework in Frameworks */,
 				339B85DA2F0E461231849384 /* Pods_MiniKart.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -193,7 +193,7 @@
 		4FDF6FD61BB08CE30029FEAE = {
 			isa = PBXGroup;
 			children = (
-				4FDDF9BF1BB20C72004FF2F1 /* FlintConnectSDK.framework */,
+				4FE8D7881BBB069C00EDF439 /* FlintConnectSDK.framework */,
 				4FDF6FE11BB08CE30029FEAE /* MiniKart */,
 				4FDF6FF81BB08CE30029FEAE /* MiniKartTests */,
 				4FDF70031BB08CE30029FEAE /* MiniKartUITests */,

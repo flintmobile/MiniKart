@@ -16,7 +16,7 @@ class ItemProvider {
       let menuItem = MenuItem()
       menuItem.logo = UIImage(named: "Preload\(index)")
       menuItem.name = nameForIndex(index)
-      menuItem.price = Float(index) * 2.99
+      menuItem.price = Float(index) * 21.99
       
       items.append(menuItem)
     }
