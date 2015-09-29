@@ -32,6 +32,7 @@
 		4FDF70051BB08CE30029FEAE /* MiniKartUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDF70041BB08CE30029FEAE /* MiniKartUITests.swift */; };
 		4FE8D78C1BBB0A8200EDF439 /* FlintConnectSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE8D78B1BBB0A8200EDF439 /* FlintConnectSDK.framework */; };
 		4FE8D78D1BBB0A8200EDF439 /* FlintConnectSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE8D78B1BBB0A8200EDF439 /* FlintConnectSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4FE8D78F1BBB15E300EDF439 /* GalleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE8D78E1BBB15E300EDF439 /* GalleryCell.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +99,7 @@
 		4FDF70041BB08CE30029FEAE /* MiniKartUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniKartUITests.swift; sourceTree = "<group>"; };
 		4FDF70061BB08CE30029FEAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4FE8D78B1BBB0A8200EDF439 /* FlintConnectSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FlintConnectSDK.framework; sourceTree = "<group>"; };
+		4FE8D78E1BBB15E300EDF439 /* GalleryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryCell.swift; sourceTree = "<group>"; };
 		501E05000885B3725BDBABDF /* Pods-MiniKart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiniKart.release.xcconfig"; path = "Pods/Target Support Files/Pods-MiniKart/Pods-MiniKart.release.xcconfig"; sourceTree = "<group>"; };
 		695CDCAB0C6EB3D692452E4B /* Pods_MiniKart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiniKart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8545EB77AE6DF19912672107 /* Pods-MiniKart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiniKart.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MiniKart/Pods-MiniKart.debug.xcconfig"; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				4FDDF9DD1BB4A4F0004FF2F1 /* LineTextField.swift */,
 				4FDDF9E81BB4BCC8004FF2F1 /* MenuItemCell.swift */,
 				4FDDF9F01BB74F24004FF2F1 /* CheckoutBar.swift */,
+				4FE8D78E1BBB15E300EDF439 /* GalleryCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -463,6 +466,7 @@
 				4FDDF9D61BB4773C004FF2F1 /* UIDeviceExtensions.swift in Sources */,
 				4FDF6FE31BB08CE30029FEAE /* AppDelegate.swift in Sources */,
 				4FDDF9DC1BB490D8004FF2F1 /* MKACropViewController.m in Sources */,
+				4FE8D78F1BBB15E300EDF439 /* GalleryCell.swift in Sources */,
 				4FDDF9E51BB4AD3D004FF2F1 /* MenuItem.swift in Sources */,
 				4FDDF9D11BB4630E004FF2F1 /* AddItemViewController.swift in Sources */,
 				4FDDF9E91BB4BCC8004FF2F1 /* MenuItemCell.swift in Sources */,

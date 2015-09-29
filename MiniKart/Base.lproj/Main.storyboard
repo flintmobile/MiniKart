@@ -39,22 +39,40 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="WIc-D4-eZ2">
-                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="itemSize" width="100" height="100"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="WXt-hX-m8n">
-                                        <rect key="frame" x="0.0" y="64" width="50" height="50"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GalleryCell" id="WXt-hX-m8n" customClass="GalleryCell" customModule="MiniKart" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="64" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QsT-WA-Mgc">
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                </imageView>
+                                            </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
+                                        <constraints>
+                                            <constraint firstItem="QsT-WA-Mgc" firstAttribute="centerX" secondItem="WXt-hX-m8n" secondAttribute="centerX" id="RdS-Z1-lBd"/>
+                                            <constraint firstItem="QsT-WA-Mgc" firstAttribute="width" secondItem="WXt-hX-m8n" secondAttribute="width" id="eMV-qh-ddc"/>
+                                            <constraint firstItem="QsT-WA-Mgc" firstAttribute="centerY" secondItem="WXt-hX-m8n" secondAttribute="centerY" id="iHB-Wx-C1f"/>
+                                            <constraint firstItem="QsT-WA-Mgc" firstAttribute="height" secondItem="WXt-hX-m8n" secondAttribute="height" id="zpZ-Lk-yJT"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="imageView" destination="QsT-WA-Mgc" id="v5Y-1f-ixj"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="JEX-9P-axG" id="9p4-ir-ByZ"/>
+                                    <outlet property="delegate" destination="JEX-9P-axG" id="yKW-ev-wgs"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -67,6 +85,9 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Gallery" id="mOI-FS-AaM"/>
+                    <connections>
+                        <outlet property="collectionView" destination="wee-4M-aOh" id="Hdb-LS-HLu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJe-Yq-33r" sceneMemberID="firstResponder"/>
             </objects>
