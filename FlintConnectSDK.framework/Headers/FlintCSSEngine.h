@@ -45,7 +45,8 @@ extern NSString *const FMCSSEngineStyleChangeNotification;
  *
  *  @param themeColor The main theme color
  *  @param fontName   The main theme font name
+ *  @param boldFontName The main theme bold font name
  */
-+ (void)setThemeColor:(UIColor *)themeColor fontName:(NSString *)fontName;
++ (void)setThemeColor:(UIColor *)themeColor fontName:(NSString *)fontName boldFontName:(NSString *)boldFontName;
 
 @end

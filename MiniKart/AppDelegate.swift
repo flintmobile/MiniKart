@@ -40,7 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
       }
     }
     
-    FlintCSSEngine.setThemeColor(UIColor.primaryColor())
+    FlintCSSEngine.setThemeColor(UIColor.primaryColor(), fontName: "Avenir", boldFontName: "Avenir-Heavy")
     
     return true
   }
