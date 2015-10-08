@@ -16,7 +16,7 @@
  */
 extern NSString *const FMCSSEngineStyleChangeNotification;
 
-@interface FlintCSSEngine : NSObject
+@interface FlintThemeEngine : NSObject
 
 /**
  *  Setting the resource button where Default.css
@@ -45,8 +45,7 @@ extern NSString *const FMCSSEngineStyleChangeNotification;
  *
  *  @param themeColor The main theme color
  *  @param fontName   The main theme font name
- *  @param boldFontName The main theme bold font name
  */
-+ (void)setThemeColor:(UIColor *)themeColor fontName:(NSString *)fontName boldFontName:(NSString *)boldFontName;
++ (void)setThemeColor:(UIColor *)themeColor fontName:(NSString *)fontName;
 
 @end

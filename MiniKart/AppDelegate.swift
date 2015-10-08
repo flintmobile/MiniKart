@@ -24,9 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     navigationController.topViewController!.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem()
     splitViewController.delegate = self
     
-    MAThemeKit.setupThemeWithPrimaryColor(UIColor.primaryColor(), secondaryColor: UIColor.invertColor(), fontName: "Avenir", lightStatusBar: true)
-    
-    FlintAPIConfig.sharedInstance().APIKey = "4d72de8c70d3ba2e0fef18bd6231bdb7"
+    FlintAPIConfig.sharedInstance().APIKey = "6ab9de448dde5ac59240e1e95a7198d9"
     FlintAPIConfig.sharedInstance().environment = .EnvironmentStaging
     FlintAPIConfig.sharedInstance().username = "test0001@mailinator.com"
     FlintAPIConfig.sharedInstance().password = "T3st1ng1"
@@ -40,7 +38,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
       }
     }
     
-//    FlintCSSEngine.setThemeColor(UIColor.primaryColor(), fontName: "Avenir", boldFontName: "Avenir-Heavy")
+//    FlintThemeEngine.setThemeColor(UIColor.primaryColor(), fontName: "Avenir")
     
     return true
   }
