@@ -140,6 +140,12 @@ class MasterViewController: UITableViewController {
     return true
   }
 
+  override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    if let selectedCell = tableView.cellForRowAtIndexPath(indexPath) as? MenuItemCell {
+      selectedCell.showRightUtilityButtonsAnimated(true)
+    }
+  }
+  
   override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
     if editingStyle == .Delete {
         menuItems.removeAtIndex(indexPath.row)
