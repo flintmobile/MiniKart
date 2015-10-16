@@ -38,8 +38,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
       }
     }
     
-//    FlintThemeEngine.setThemeColor(UIColor.primaryColor(), fontName: "Avenir")
-    
+    FlintThemeEngine.setThemeColor(UIColor.primaryColor(), fontName: "Avenir")
     return true
   }
 

@@ -16,8 +16,8 @@
  *  @discussion Typically for development and testing, this should be on staging. This ensure the transaction does not go through the financial processing. Only use Production when you release the app.
  */
 typedef NS_ENUM(NSInteger, FlintConfigurationEnvironment){
-  EnvironmentStaging,
-  EnvironmentProduction,
+  EnvironmentStaging,       /*!< Staging Environment, used for testing */
+  EnvironmentProduction,    /*!< Production Environment */
 };
 
 /*!

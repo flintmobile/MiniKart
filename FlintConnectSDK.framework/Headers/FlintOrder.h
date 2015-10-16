@@ -184,6 +184,8 @@ typedef NS_ENUM(NSInteger, FlintOrderFinancialStatus){
 
 - (void)sendInvoice:(FlintInvoiceCreateTemplate *)invoiceTemplate completion:(FlintRequestHandler)completion;
 
+
+
 @end
 
 /*!
