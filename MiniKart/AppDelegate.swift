@@ -38,6 +38,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
       }
     }
     
+    MAThemeKit.setupThemeWithPrimaryColor(UIColor.primaryColor(), secondaryColor: UIColor.whiteColor(), fontName: "Avenir", lightStatusBar: true)
     FlintThemeEngine.setThemeColor(UIColor.primaryColor(), fontName: "Avenir")
     return true
   }

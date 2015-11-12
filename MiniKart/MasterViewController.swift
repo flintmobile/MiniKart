@@ -215,10 +215,10 @@ class MasterViewController: UITableViewController {
     checkoutHidden = !visible
     if checkoutHidden {
       UIView.animateWithDuration(0.3, animations: {
-          navigationController?.toolbar.alpha = 0.0
+          self.navigationController?.toolbar.alpha = 0.0
         }, completion: {
           _ in
-          navigationController?.setToolbarHidden(checkoutHidden, animated: false)
+          self.navigationController?.setToolbarHidden(self.checkoutHidden, animated: false)
       })
     } else {
       navigationController?.setToolbarHidden(checkoutHidden, animated: true)
