@@ -11,6 +11,11 @@
 #import "FlintContact.h"
 #import "FlintPermissions.h"
 #import "FlintPayment.h"
+#import "FlintOrders.h"
+
+@class FlintOrderFilters;
+@class FlintOrderSearchTemplate;
+
 
 typedef NS_ENUM(NSInteger, FlintAccountType) {
   FlintAccountUnknown = 0,
@@ -89,8 +94,9 @@ typedef NS_ENUM(NSInteger, FlintAccountType) {
                   validationLevel:(NSInteger)level
                        completion:(FlintRequestHandler)completion;
 
-@end
++ (void)ordersWithSearchTemplate:(FlintOrderSearchTemplate *)searchTemplate onCompletion:(FlintRequestHandler)handler;
 
+@end
 
 
 /******************************************
@@ -99,7 +105,6 @@ typedef NS_ENUM(NSInteger, FlintAccountType) {
 @interface FlintOwnerAccount : FlintAccount
 
 @end
-
 
 
 /******************************************
@@ -111,5 +116,58 @@ typedef NS_ENUM(NSInteger, FlintAccountType) {
  *  The key that uniquely identify the owner account for this staff
  */
 @property (copy, nonatomic) NSString *ownerKey;
+
+@end
+
+
+@interface FlintOrderFilters: NSObject
+
+@property (assign, nonatomic) NSArray *hasOrderStatus;
+@property (assign, nonatomic) NSArray *hasOrderPaymentStatus;
+@property (assign, nonatomic) BOOL hasOrderFulfillmentStatus;
+@property (copy, nonatomic) NSDate *createdBefore;
+@property (copy, nonatomic) NSDate *createdBeforeOrOn;
+@property (copy, nonatomic) NSDate *createdAfter;
+@property (copy, nonatomic) NSDate *createdAfterOrOn;
+@end
+
+/******************************************
+ *  Orders Search Template
+ *****************************************/
+@interface FlintOrderSearchTemplate : NSObject
+
+/**
+ * limit - Count of orders to be returned in the response. Defaults to 25. Max allowed 50 
+ */
+@property (assign, nonatomic) NSInteger limit;
+
+/**
+ * startIndex - Index of the starting order Number
+ */
+@property (assign, nonatomic) NSInteger startIndex;
+
+/** 
+ * expandPayments - By default the result will include a trimmed down payments object with only the payment ID.
+ * To return a complete payment object set it to YES.
+ */
+@property (assign, nonatomic) BOOL expandPayments;
+
+/**
+ * expandItems - By default the result will include a trimmed down list of order items object with only the order item ID.
+ * To return order item details set it to YES.
+ */
+@property (assign, nonatomic) BOOL expandItems;
+
+/**
+ * sortInDescendingOrder - Sorts based on order createion timstamp in descending order be default.
+ * Set it to NO to sort in ascending order 
+ */
+@property (assign, nonatomic) BOOL sortInDescendingOrder;
+
+/**
+ * sortInDescendingOrder - Sorts based on order createion timstamp in descending order be default.
+ * Set it to NO to sort in ascending order
+ */
+@property (strong, nonatomic) FlintOrderFilters *orderFilters;
 
 @end

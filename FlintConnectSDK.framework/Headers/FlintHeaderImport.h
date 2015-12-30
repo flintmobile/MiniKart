@@ -42,6 +42,10 @@
 #import "FlintSignatureView.h"
 #import "FlintDigitEditorView.h"
 #import "FlintCardNumbersEditorView.h"
+#import "FlintAmountInputView.h"
+#import "FlintFixedToolBar.h"
+#import "FlintLimitTextEntryView.h"
+#import "FlintNumericKeyPadView.h"
 
 #import "FlintUI.h"
 

@@ -56,6 +56,9 @@ IB_DESIGNABLE
 @property (strong, nonatomic, readonly) UIImageView *smsIconView;
 @property (strong, nonatomic, readonly) FlintActionTextField *smsTextField;
 
+@property (strong, nonatomic) NSString *emailText;
+@property (strong, nonatomic) NSString *smsText;
+
 @end
 
 

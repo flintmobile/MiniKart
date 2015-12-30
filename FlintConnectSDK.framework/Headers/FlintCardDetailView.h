@@ -8,24 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol FlintCardDetailViewDelegate;
+
 @class FlintTextField;
 @class FlintNumberEntryView;
 @class FlintDateEntryView;
 @class FlintCardDetailView;
-
-@protocol FlintCardDetailViewDelegate <NSObject>
-
-@optional
-/**
- *  call this when a textfield entry is completed, validation not neccessary passed, 
- *  use the validation status on FlintTextField to check if needed
- *
- *  @param cardDetailView the card detail view
- *  @param textField      the text field that has completed entry
- */
-- (void)cardDetailView:(FlintCardDetailView *)cardDetailView completeEntryForTextField:(FlintTextField *)textField;
-
-@end
 
 IB_DESIGNABLE
 
@@ -75,5 +63,27 @@ IB_DESIGNABLE
 
 @property (strong, nonatomic, readonly) FlintDateEntryView *expirationDateView;
 @property (strong, nonatomic, readonly) FlintNumberEntryView *cvvView;
+
+@end
+
+
+@protocol FlintCardDetailViewDelegate <NSObject>
+
+@optional
+/**
+ *  call this when a textfield entry is completed, validation not neccessary passed,
+ *  use the validation status on FlintTextField to check if needed
+ *
+ *  @param cardDetailView the card detail view
+ *  @param textField      the text field that has completed entry
+ */
+- (void)cardDetailView:(FlintCardDetailView *)cardDetailView completeEntryForTextField:(FlintTextField *)textField;
+
+/*!
+ *  @brief Delegate call this method when the validation of any of the textfields changed
+ *
+ *  @param cardDetailView the card detail view
+ */
+- (void)cardDetailViewValidationChanged:(FlintCardDetailView *)cardDetailView;
 
 @end

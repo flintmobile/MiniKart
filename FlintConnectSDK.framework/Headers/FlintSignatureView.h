@@ -36,6 +36,8 @@ IB_DESIGNABLE
 
 @property (weak, nonatomic) IBOutlet id<FlintSignatureViewDelegate>delegate;
 
+@property (assign, nonatomic) BOOL signatureRequired;
+
 #pragma mark - IBInspectable
 
 /**

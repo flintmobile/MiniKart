@@ -28,6 +28,13 @@ IB_DESIGNABLE
 @property (weak, nonatomic) IBOutlet id<FlintCardScannerViewDelegate>delegate;
 
 /*!
+ *  @brief Whether or not we should have a manual scan option displayed
+ *
+ *  @default YES
+ */
+@property (assign, nonatomic) BOOL allowManualScan;
+
+/*!
  *  @brief Applying the settings for the scanner.
  *
  *  @discussion Convenient pipe-through method to set the scanner settings. For individual setting modification, access the imageStablizer or the cardScanner directly.
@@ -71,13 +78,6 @@ IB_DESIGNABLE
  */
 @property (copy, nonatomic) IBInspectable NSString *fontName;
 
-/*!
- *  @brief Bold font name for text elements on the view where applicable.
- *
- *  @default SDK bold theme font name
- */
-@property (copy, nonatomic) IBInspectable NSString *boldFontName;
-
 @end
 
 
@@ -86,17 +86,18 @@ IB_DESIGNABLE
 
 @property (strong, nonatomic, readonly) FlintCardScanner *cardScanner;
 
-@property (strong, nonatomic, readonly) UIButton *backButton;
-@property (strong, nonatomic, readonly) UILabel *scanTitle;
-@property (strong, nonatomic, readonly) UIButton *torchButton;
-
 @property (strong, nonatomic, readonly) UILabel *confirmationLabel;
-@property (strong, nonatomic, readonly) UILabel *securityLabel;
+@property (strong, nonatomic, readonly) UIImageView *securityImageView;
 
-@property (strong, nonatomic, readonly) UIButton *reScanButton;
+@property (strong, nonatomic, readonly) UIBarButtonItem *backButton;
+@property (strong, nonatomic, readonly) UIBarButtonItem *reScanButton;
+@property (strong, nonatomic, readonly) UIBarButtonItem *doneButtonItem;
 @property (strong, nonatomic, readonly) UIButton *doneButton;
 @property (strong, nonatomic, readonly) UIButton *scanButton;
-@property (strong, nonatomic, readonly) UIButton *manualButton;
+@property (strong, nonatomic, readonly) UIBarButtonItem *manualButton;
+@property (strong, nonatomic, readonly) UIBarButtonItem *torchButton;
+
+- (void)setDoneTitle:(NSString *)doneTitle;
 
 @end
 
@@ -112,13 +113,51 @@ IB_DESIGNABLE
 @optional
 /*!
  *  @brief Give the hook for when the back button is tapped.
+ *
+ *  @param cardScannerView the card scanner view
  */
 - (void)cardScannerViewBackButtonTapped:(FlintCardScannerView *)cardScannerView;
+
+/*!
+ *  @brief Give the hook for when the manual button is tapped.
+ *
+ *  @param cardScannerView the card scanner view
+ */
+- (void)cardScannerViewManualButtonTapped:(FlintCardScannerView *)cardScannerView;
+
+/*!
+ *  @brief Give the hook for when the rescan action will initiated
+ *
+ *  @param cardScannerView the card scanner view
+ */
+- (void)cardScannerViewWillStartRescan:(FlintCardScannerView *)cardScannerView;
+
+/*!
+ *  @brief Give the hook for when the rescan action did initiated
+ *
+ *  @discussion The rescan behavior is handle internally, this give the opportunity to do additional tasks after the rescan initiated.
+ *
+ *  @param cardScannerView the card scanner view
+ */
+- (void)cardScannerViewDidStartReScan:(FlintCardScannerView *)cardScannerView;
+
+/*!
+ *  @brief Give the hook when the image finished scanning
+ *
+ *  @discussion This give the opportunity to take action even before the user tapped on the "Use" button
+ *
+ *  @param cardScannerView the card scanner view
+ *  @param image           the scanned image
+ */
+- (void)cardScannerView:(FlintCardScannerView *)cardScannerView didScanImage:(UIImage *)image;
 
 /*!
  *  @brief Give the hook for when the done button is tapped with or without the image scanned.
  *  
  *  @discussion Image will be nil if the user tap the done button without scanning.
+ *
+ *  @param cardScannerView the card scanner view
+ *  @param image the image scanned
  */
 - (void)cardScannerView:(FlintCardScannerView *)cardScannerView useImage:(UIImage *)image;
 

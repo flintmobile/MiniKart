@@ -68,6 +68,11 @@ typedef void(^FlintTextFieldValidationHandler)(FlintTextFieldState validationSta
 @property (copy, nonatomic, readonly) NSString *rawText;
 
 /*!
+ *  @brief The secured text with mask if should secure mask text is set to YES
+ */
+@property (copy, nonatomic, readonly) NSString *securedText;
+
+/*!
  *  @brief Specify which value to hand to the validator for validating.
  *
  *  @default TextFieldValidationRaw
@@ -117,6 +122,15 @@ typedef void(^FlintTextFieldValidationHandler)(FlintTextFieldState validationSta
 @property (assign, nonatomic) BOOL validationLock;
 
 /*!
+ *  @brief disable long press gesture on the text field
+ *
+ *  @discussion If this is set to YES, long press gesture is disabled, and effectively lock editing to only last character.
+ *
+ *  @default NO
+ */
+@property (assign, nonatomic) BOOL shouldDisableLongPress;
+
+/*!
  *  @brief Set the text programatically with masking apply.
  *
  *  @param text the raw text
@@ -131,6 +145,11 @@ typedef void(^FlintTextFieldValidationHandler)(FlintTextFieldState validationSta
  *  @return NO otherwise
  */
 - (BOOL)passValidation;
+
+/*!
+ *  @brief apply the validation rule
+ */
+- (void)validate;
 
 #pragma mark - Delegate Pipe
 

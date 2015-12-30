@@ -23,6 +23,14 @@
  */
 - (void)textEntryView:(FlintTextEntryView *)textEntryView completeEntryForTextField:(FlintTextField *)textField;
 
+/**
+ *  When the text entry change
+ *
+ *  @param textEntryView the text-entry view
+ *  @param textField     the textfield on the text-entry view
+ */
+- (void)textEntryViewValidationChanged:(FlintTextEntryView *)textEntryView;
+
 @end
 
 IB_DESIGNABLE
@@ -124,6 +132,8 @@ IB_DESIGNABLE
  *  Default to be light gray color
  */
 @property (strong, nonatomic) IBInspectable UIColor *noteColor;
+
+- (BOOL)passValidation;
 
 @end
 

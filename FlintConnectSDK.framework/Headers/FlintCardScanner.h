@@ -9,11 +9,15 @@
 #import <UIKit/UIKit.h>
 #import "FlintImageStabilizer.h"
 
+@protocol FlintCardScannerDelegate;
+
 @class FlintScannerSettings;
 
 IB_DESIGNABLE
 
 @interface FlintCardScanner : UIView
+
+@property (weak, nonatomic) id<FlintCardScannerDelegate>delegate;
 
 /**
  *  Whether or not we want torch enabled on the camera.
@@ -54,13 +58,19 @@ IB_DESIGNABLE
 @property (assign, nonatomic, readonly) BOOL scanSessionActive;
 
 /**
+ *  Determine if this scan session is a demo animation
+ */
+@property (assign, nonatomic, readonly) BOOL isAnimatingScan;
+
+/**
  *  the scanned image capture automaticly using auto capture algorithm
  *  use KVO to detect when the image is captured
  */
 @property (strong, nonatomic, readonly) UIImage *scannedImage;
 
 /**
- *  The orientation of the scanner, currently support portrait and landscape right
+ *  The orientation of the scanner
+ *
  *  Default is landscape right
  */
 @property (assign, nonatomic) UIInterfaceOrientation scanOrientation;
@@ -77,13 +87,25 @@ IB_DESIGNABLE
 /**
  *  Generate the scan image manually. This is done asynchronously
  *  The scannedImage will receive the value once processing completed
+ *
+ *  @param animated whether we should display the progress stripe before capture
  */
-- (void)captureScannedImage;
+- (void)captureScannedImage:(BOOL)animated;
 
 /**
  *  Clean up session information. This should be called when you are done with capturing image
  */
 - (void)stopScanningSession;
+
+/**
+ *  Starting a demo animation with real camera session
+ */
+- (BOOL)startAnimateCardScanSession:(NSError **)error;
+
+/**
+ *  Stoping the demo animation
+ */
+- (void)stopAnimateCardScanSession;
 
 /**
  *  Whether or not the scanner support torch
@@ -144,6 +166,8 @@ IB_DESIGNABLE
 
 @property (strong, nonatomic, readonly) UIView *scanLineView;
 
+- (CGRect)scanningViewDefaultFrame;
+
 @end
 
 @interface FlintScannerSettings : NSObject
@@ -196,11 +220,11 @@ IB_DESIGNABLE
  */
 @property (assign, nonatomic) BOOL enableAutoScan;
 
-/**
- *  During the time of focus lock, if enableAutoFocus is set to YES, stability status will be reported
- *  As soon as focus is acquired on the hardward device even though the minStableInterval may not be reached yet
- *  Default to YES
- */
-@property (assign, nonatomic) BOOL enableAutoFocus;
+@end
+
+@protocol FlintCardScannerDelegate <NSObject>
+
+@optional
+- (void)cardScanner:(FlintCardScanner *)cardScanner willBeginStable:(BOOL)isStable;
 
 @end

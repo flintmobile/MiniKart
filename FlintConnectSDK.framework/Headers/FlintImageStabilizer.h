@@ -32,20 +32,6 @@ typedef NS_ENUM(NSInteger, FlintImageStabilizerMode){
 @interface FlintImageStabilizer : NSObject
 
 /*!
- *  @brief The capture device associate with this image stabilizer.
- */
-@property (strong, nonatomic, readonly) AVCaptureDevice *captureDevice;
-
-/*!
- *  @brief Create an image stabilizer for the specified capture device.
- *
- *  @param captureDevice The capture device.
- *
- *  @return The image stabilizer.
- */
-- (instancetype)initWithDevice:(AVCaptureDevice *)captureDevice;
-
-/*!
  *  @brief The threshold to determine temporary stability.
  *
  *  @discussion When vibration goes below the vibrationThreshold and stay within the vibrationTolerance for longer than the minStableInterval, stability status will be reported. Increase this value will make the stabilizer acquire temporary stable state easier and vice versa. 
@@ -71,15 +57,6 @@ typedef NS_ENUM(NSInteger, FlintImageStabilizerMode){
  *  @default 1 (second)
  */
 @property (assign, nonatomic) NSTimeInterval minStableInterval;
-
-/*!
- *  @brief Autofocus enhancement.
- *
- *  @discussion If enableAutoFocus is set to YES and the camera support autofocus, during the time of focus lock, stability status will be reported as soon as focus is acquired on the hardward device even though the minStableInterval may not be reached yet. 
- *  
- *  @default NO.
- */
-@property (assign, nonatomic) BOOL enableAutoFocus;
 
 /*!
  *  @brief Stability mode.
@@ -130,18 +107,14 @@ typedef NS_ENUM(NSInteger, FlintImageStabilizerMode){
 @optional
 
 /*!
- *  @brief Temporary stable state is when max displacement fall below vibration threshold and stay within threshold + tolerance.
- *
- *  @param imageStabilizer The image stabilizer.
- *  @param isStable        The stability status.
- */
-- (void)imageStabilizer:(FlintImageStabilizer *)imageStabilizer temporaryStable:(BOOL)isStable;
-
-/*!
  *  @brief Stability state is when temporary stable last more than min stable interval or auto focus acquired.
  *
  *  @param imageStabilizer The image stabilizer.
  */
 - (void)imageStabilizerAquiredStability:(FlintImageStabilizer *)imageStabilizer;
+
+- (void)imageStabilizerDidAquireThresholdLevel:(FlintImageStabilizer *)imageStabilizer;
+
+- (void)imageStabilizer:(FlintImageStabilizer *)imageStabilizer isWithinTolerance:(BOOL)isInRange;
 
 @end

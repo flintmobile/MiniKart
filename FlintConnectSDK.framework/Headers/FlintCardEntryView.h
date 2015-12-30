@@ -124,4 +124,11 @@ IB_DESIGNABLE
  */
 - (void)cardEntryView:(FlintCardEntryView *)cardEntryView completeEntryForTextField:(FlintTextField *)textField;
 
+/*!
+ *  @brief Delegate fire this method when the validation of any of the textfields changed
+ *
+ *  @param cardEntryView the card entry view
+ */
+- (void)cardEntryViewValidationChanged:(FlintCardEntryView *)cardEntryView;
+
 @end

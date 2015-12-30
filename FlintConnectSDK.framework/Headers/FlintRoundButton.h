@@ -24,6 +24,8 @@ IB_DESIGNABLE
  */
 @property (assign, nonatomic) FlintRoundButtonMode buttonMode;
 
+@property (strong, nonatomic) UIColor *disabledColor;
+
 #pragma mark - IBInspectable
 
 /**
@@ -79,7 +81,7 @@ IB_DESIGNABLE
 /**
  *  Setting the font for title label
  *  Has no effect if titleEnabled is set to NO
- *  Default to be HelveticaNeue
+ *  Default to be System Font
  *  If you are using custom font, please make sure to follow the steps in one of these blogs
  *  http://www.neevtech.com/blog/2013/11/22/how-to-add-custom-font-to-your-ios-based-app/
  */

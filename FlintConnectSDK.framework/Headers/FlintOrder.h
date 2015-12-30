@@ -20,7 +20,7 @@
 typedef NS_ENUM(NSInteger, FlintOrderStatus){
   FlintOrderStatusOpen,         /*!< An open order */
   FlintOrderStatusClosed,       /*!< A closed order */
-  FlintOrderStatusVoided,       /*!< A canceled order, whether it has been paid or not */
+  FlintOrderStatusVoided,    /*!< A canceled order, whether it has been paid or not */
 };
 
 /**
@@ -111,8 +111,8 @@ typedef NS_ENUM(NSInteger, FlintOrderFinancialStatus){
 /*!
  *  This is the composite status of the order
  *  Check FlintOrderStatus enum for possible values. An order is in FlintOrderStatusOpen when it's
- *  created. An order which is both paid and fulfilled will have status FlintOrderStatusClosed. And order
- *  can be voided before it's closed. If a paid order is voided, the payment will be refunded.
+ *  created. An order which is both paid and fulfilled will have status FlintOrderStatusClosed. An order
+ *  can be cancelled before it's closed. A paid and closed order can be refunded.
  */
 @property (assign, nonatomic) FlintOrderStatus orderStatus;
 
@@ -151,6 +151,17 @@ typedef NS_ENUM(NSInteger, FlintOrderFinancialStatus){
  *  Order Id
  */
 @property (copy, nonatomic) NSString *uid;
+
+/**
+ *  URL to retrieve line items. This value is present if the line items are not expanded
+ */
+@property (copy, nonatomic) NSURL *urlToRetrieveLineItems;
+
+/**
+ *  URL to retrieve payments. This value is present if the payments are not expanded
+ */
+@property (copy, nonatomic) NSURL *urlToRetrievePayments;
+
 
 /*!
  *  Use this template to create a new order
