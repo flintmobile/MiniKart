@@ -1,6 +1,0 @@
-framework module FlintConnectSDK {
-  umbrella header "FlintConnectSDK.h"
-
-  export *
-  module * { export * }
-}

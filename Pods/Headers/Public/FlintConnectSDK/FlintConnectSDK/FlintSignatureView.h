@@ -1,0 +1,1 @@
+../../../../FlintConnectSDK/FlintConnectSDK.framework/Headers/FlintSignatureView.h
