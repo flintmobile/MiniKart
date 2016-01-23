@@ -7,85 +7,85 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05BF17B9BD1CF54ED769A86D945E7EF8 /* zh-Hans.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 1B2121E5343AEAFBEE4C684E70CC31DE /* zh-Hans.lproj */; };
-		060EB93447610D24ACC5F9484948DC1C /* STPopup-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB109F4E495CBE988A5C522119611AF /* STPopup-dummy.m */; };
-		0AEA5C4D9CA78680F0D3A6AE0A05FF2C /* zh-Hant.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 7F2FE832CB8B3E12B969598C4D9FB88A /* zh-Hant.lproj */; };
-		0F260B880D0BC927566A2EA9592AEC37 /* STPopupLeftBarItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 02058273EBD36F4BE7EB803B65728ECA /* STPopupLeftBarItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		17A759307437246376E0F08B27A8BDB2 /* SWUtilityButtonTapGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B12CE2B08AAE7B0F14EC6F3196DE98 /* SWUtilityButtonTapGestureRecognizer.m */; };
+		05BF17B9BD1CF54ED769A86D945E7EF8 /* zh-Hans.lproj in Resources */ = {isa = PBXBuildFile; fileRef = E4870D3766C335326DDA1E837F2C397B /* zh-Hans.lproj */; };
+		060EB93447610D24ACC5F9484948DC1C /* STPopup-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D619BEFDA85F35A73774D8467A56391 /* STPopup-dummy.m */; };
+		0AEA5C4D9CA78680F0D3A6AE0A05FF2C /* zh-Hant.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 3FE13ED81B0B9DD4FC7DD5E60E955ADB /* zh-Hant.lproj */; };
+		0F260B880D0BC927566A2EA9592AEC37 /* STPopupLeftBarItem.h in Headers */ = {isa = PBXBuildFile; fileRef = B49F2475636F8836E9840888821B0406 /* STPopupLeftBarItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17A759307437246376E0F08B27A8BDB2 /* SWUtilityButtonTapGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6204F700096EFBCB70D275258F89A8 /* SWUtilityButtonTapGestureRecognizer.m */; };
 		1E5502D9B74A68CF5E36D3BFCCA6C71C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		21759DF997DD9C6E922A3B00D260DC60 /* UIImage+CropRotate.h in Headers */ = {isa = PBXBuildFile; fileRef = 63A4FA43ABB6ED2C8B5AB2D395728E50 /* UIImage+CropRotate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		23985E51AA9ACBC6A4348EE70840D846 /* pl.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 57478F833B099083C2002830C95AE429 /* pl.lproj */; };
+		21759DF997DD9C6E922A3B00D260DC60 /* UIImage+CropRotate.h in Headers */ = {isa = PBXBuildFile; fileRef = FC0E81D5AEBFC4025E203DB309AC06E0 /* UIImage+CropRotate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23985E51AA9ACBC6A4348EE70840D846 /* pl.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 7B0A259723371FEB991C480FE91B03F2 /* pl.lproj */; };
 		2D00670125403B2A15B32C81C9B089FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		2D84652ADF7DDD2A9B38DE4B52407FF3 /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = A195298D00E7F8D071555E3AC95F1E87 /* Base.lproj */; };
-		3434C758B2BC1EA93A1B11955B29F23D /* TOCropViewControllerTransitioning.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B078B73FCDD54E52BB30C5EA5348E29 /* TOCropViewControllerTransitioning.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		370291B13981D9AF61605476D7A9C3E9 /* TOCroppedImageAttributes.h in Headers */ = {isa = PBXBuildFile; fileRef = 75C8320344439DFF79A5EE8A9B65D906 /* TOCroppedImageAttributes.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		38CF3DAD00B524FBD378AD77493874BC /* MAThemeKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BC40B9631AEE40DF8C5E5158CFD0DE /* MAThemeKit.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		3AA5E9C4E401C8068BF1A6E99C9D5A4A /* TOCropOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B05CFBB1B5B39EB7DAEE213377222A /* TOCropOverlayView.m */; };
-		3BD52C5976AAAD474635DD1692AF712B /* SWTableViewCell-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FB643B2BE0DAC7DAED42138271DBD5F9 /* SWTableViewCell-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3CA8E5FF305997BB009339878F5370B3 /* es.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 7629D49C205E95B8A25DED03AB9EC35F /* es.lproj */; };
-		3E4E0BC22A13D644078020293DBFD509 /* STPopupLeftBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 108F3E36F2CF50FA505E7231A404221D /* STPopupLeftBarItem.m */; };
-		3FD5DE8B59905E16A219FE8444970E63 /* TOCropOverlayView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F6D8177A24051262AF5331C8CA7F3C7 /* TOCropOverlayView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3FE9C0AA7441C25B66794483CBC53D5F /* TOCropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 510C31CCFF9FC7D529AA2C3B0A330AC1 /* TOCropViewController.m */; };
-		3FF59EB9EAD399F4331DEBCC5F9FCEAA /* SWLongPressGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A5735E95DD3E0579076404DA0BE4450 /* SWLongPressGestureRecognizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4425A7EE3C69317EDD3A2770C9A74F38 /* ko.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 3BA06401EB9F76ED7DC493C4CB30FA54 /* ko.lproj */; };
-		45C89A6513AD41FD1C7A6258BD4875C8 /* TOCropViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F2DA0AD5874535B10B18FD8F071DF4F /* TOCropViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		476ADDE79D14753936C9683F5A92FA09 /* NSMutableArray+SWUtilityButtons.h in Headers */ = {isa = PBXBuildFile; fileRef = 347240314F9E6E34F2BF0387493185B1 /* NSMutableArray+SWUtilityButtons.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4A4920B33BF39692CB7DBC7265838935 /* STPopup-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 30EE77F338935A0AF9D8B9B769ED8F2F /* STPopup-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4D127178BB943C36506B023ACBA48442 /* ASCFlatUIColor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A54F265B2B0CB726BF84AA78824EF4 /* ASCFlatUIColor-dummy.m */; };
-		4F75AA409BA879E9004EC8DDF88C0E55 /* STPopup.h in Headers */ = {isa = PBXBuildFile; fileRef = 64D743F87308510593A2103BF7CF1304 /* STPopup.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5209C13D1BC72A4A0DA4D2D6854034DA /* ASCFlatUIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AECD9CC81AC518FA8BC735E5E5305A4 /* ASCFlatUIColor.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		5EDEB82BC3F640ACE43D4B01E60ADF49 /* ASCFlatUIColor-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D252BC397B45FF76BAFC82473AAAA9F /* ASCFlatUIColor-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		660F0D0603CC8DFB429C6140CDBBEBB0 /* ASCFlatUIColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 259D51FD5D9C7C7F22AF931D9709D71B /* ASCFlatUIColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6C3605B9DFF0110F68E12D67D0B0FB68 /* SWUtilityButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 99FE1CF8F8E07F82DABCF87F290D0382 /* SWUtilityButtonView.m */; };
-		6EFEE74205F9D11509516D5C1459FB73 /* SWLongPressGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDFA45912216A5D0B6A02EC91DA6F31 /* SWLongPressGestureRecognizer.m */; };
-		73829518399B97FEECE24AB5F5B48887 /* SWCellScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A1EAB7B5BE35A1F3A8084CE3B86BD3D /* SWCellScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		73EB886BBDD53257E633EF8E8AD97F61 /* TOCropViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F4D55AB0F5EB80AE74AB9B9187EEE4D /* TOCropViewController-dummy.m */; };
-		77B860638D44D515770E15E03CB100AF /* nl.lproj in Resources */ = {isa = PBXBuildFile; fileRef = C9314B0342BE932320F868ED805B4C49 /* nl.lproj */; };
-		7B8B0A00362440148CC0BE85F7DE094E /* UIResponder+STPopup.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C87AD4632F2B16C0C6C88900D181688 /* UIResponder+STPopup.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7C18DFEE28FC0291992A8846C2807E7C /* TOCropView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB953412F6C04EE6423B19B8B7DAE653 /* TOCropView.m */; };
-		7F4E330E6E5675E86F075420403A2E7F /* STPopupController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F8188A6FEB0DB7D58F76E2D9B19ABAC /* STPopupController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8C60E724CD431C70E536BEE23D374745 /* TOCroppedImageAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BCB3F0342E548799235E47E0DE48D59 /* TOCroppedImageAttributes.m */; };
-		8CC85919A4ADF45B303FABE350CEEB91 /* de.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 971D7848DB1A34CC5E9B38E9BA9A0A81 /* de.lproj */; };
-		8FCE887E03672EC887EFFB910D69978C /* TOCropScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = B1E1A1E7107B4751F69DDE5816F735C5 /* TOCropScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		90282046398EFA3B5606ABFC8A04A0BA /* it.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 9D2E72EEB2F7807AC48FDB6F39AF98B6 /* it.lproj */; };
-		90347D2EFA7359677BE04A3B9A4D6332 /* ja.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 1FA9052889319B3C56F0056E0A547B6B /* ja.lproj */; };
-		90A9491146034C16650E39DBB6BD61CA /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = F5A74DB28F510466CD36EFCD97FA9089 /* en.lproj */; };
-		91CDEFA1C234283F70310C7C52BDE3B4 /* STPopupNavigationBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 3265D83217BB3626F6F8071B4944A163 /* STPopupNavigationBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		957CB4FDAECA5C78B0DD647291CF0B56 /* SWCellScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D9FD6D79AA66EBBFBED0B4D0C91E51 /* SWCellScrollView.m */; };
-		966C1087875C115F4090E4408BF85DE7 /* MAThemeKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 06880097142D81B18C3A3F58492753B8 /* MAThemeKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		96E05470C4D766618EEB9FFEFE456907 /* STPopupNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B04784996C855D345FBEAE7210A91B /* STPopupNavigationBar.m */; };
+		2D84652ADF7DDD2A9B38DE4B52407FF3 /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 1069DEEA8C2963F0C9AD6AC58DE18A27 /* Base.lproj */; };
+		3434C758B2BC1EA93A1B11955B29F23D /* TOCropViewControllerTransitioning.h in Headers */ = {isa = PBXBuildFile; fileRef = AB8FEE0232DBC9A8240ED422C3DC2F69 /* TOCropViewControllerTransitioning.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		370291B13981D9AF61605476D7A9C3E9 /* TOCroppedImageAttributes.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B73B9005B63AAD239EC9B62FAF548F0 /* TOCroppedImageAttributes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38CF3DAD00B524FBD378AD77493874BC /* MAThemeKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B535885A58531DE7E1A2A4D0A3F7CEC2 /* MAThemeKit.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3AA5E9C4E401C8068BF1A6E99C9D5A4A /* TOCropOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAA6F713B6F19AE93BD8FF1CDDED608 /* TOCropOverlayView.m */; };
+		3BD52C5976AAAD474635DD1692AF712B /* SWTableViewCell-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B8A751D04427E32F0996AC9F4A60165 /* SWTableViewCell-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CA8E5FF305997BB009339878F5370B3 /* es.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 3C02FC7B913805258102106DCDD39D74 /* es.lproj */; };
+		3E4E0BC22A13D644078020293DBFD509 /* STPopupLeftBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B650C8102720B57D660562DA406687DA /* STPopupLeftBarItem.m */; };
+		3FD5DE8B59905E16A219FE8444970E63 /* TOCropOverlayView.h in Headers */ = {isa = PBXBuildFile; fileRef = DBF25F1B576D2D6B50F360BCF343E2B3 /* TOCropOverlayView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3FE9C0AA7441C25B66794483CBC53D5F /* TOCropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B61A0601560B02212BD6A3F9B111843 /* TOCropViewController.m */; };
+		3FF59EB9EAD399F4331DEBCC5F9FCEAA /* SWLongPressGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = A8B8CE8CD121A52BC5966CE25EF6F578 /* SWLongPressGestureRecognizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4425A7EE3C69317EDD3A2770C9A74F38 /* ko.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 155A93A9A4998FF8DBA01978A87A0596 /* ko.lproj */; };
+		45C89A6513AD41FD1C7A6258BD4875C8 /* TOCropViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B260B3837143955B68DDA3063DA12DB /* TOCropViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		476ADDE79D14753936C9683F5A92FA09 /* NSMutableArray+SWUtilityButtons.h in Headers */ = {isa = PBXBuildFile; fileRef = 254D3396918DB1EC097590FB4559A76B /* NSMutableArray+SWUtilityButtons.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A4920B33BF39692CB7DBC7265838935 /* STPopup-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 82E97A1121DA5186D6931B184442EC77 /* STPopup-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D127178BB943C36506B023ACBA48442 /* ASCFlatUIColor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E2AE66198311C9C953D41532E264E3 /* ASCFlatUIColor-dummy.m */; };
+		4F75AA409BA879E9004EC8DDF88C0E55 /* STPopup.h in Headers */ = {isa = PBXBuildFile; fileRef = 970CBE76783D123A07D46577A4420CFD /* STPopup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5209C13D1BC72A4A0DA4D2D6854034DA /* ASCFlatUIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 799966C7055ED09F525069085AFB5777 /* ASCFlatUIColor.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5EDEB82BC3F640ACE43D4B01E60ADF49 /* ASCFlatUIColor-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BE87EF88884F45A4180D6F53085270EB /* ASCFlatUIColor-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		660F0D0603CC8DFB429C6140CDBBEBB0 /* ASCFlatUIColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 61ACD6A81951899A89C17B91B7C976DA /* ASCFlatUIColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6C3605B9DFF0110F68E12D67D0B0FB68 /* SWUtilityButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00BC281484D0AC22CC974E4C547460C5 /* SWUtilityButtonView.m */; };
+		6EFEE74205F9D11509516D5C1459FB73 /* SWLongPressGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = D57DCD4AA9B90E28406F2BB24FAD0D34 /* SWLongPressGestureRecognizer.m */; };
+		73829518399B97FEECE24AB5F5B48887 /* SWCellScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = D2C6303A1DA9683287CC6C923A3B3D14 /* SWCellScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73EB886BBDD53257E633EF8E8AD97F61 /* TOCropViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A81915A6A636150D0F96619AABC6EBBD /* TOCropViewController-dummy.m */; };
+		77B860638D44D515770E15E03CB100AF /* nl.lproj in Resources */ = {isa = PBXBuildFile; fileRef = EC8ADF2AE428267B82FCD1C20C8FF792 /* nl.lproj */; };
+		7B8B0A00362440148CC0BE85F7DE094E /* UIResponder+STPopup.h in Headers */ = {isa = PBXBuildFile; fileRef = 157FBAB85D85FA0C1D798D28A747F20F /* UIResponder+STPopup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C18DFEE28FC0291992A8846C2807E7C /* TOCropView.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A294DF60B4F1096115198AF906567E /* TOCropView.m */; };
+		7F4E330E6E5675E86F075420403A2E7F /* STPopupController.h in Headers */ = {isa = PBXBuildFile; fileRef = C6C66B2286F895916119339C092D1071 /* STPopupController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C60E724CD431C70E536BEE23D374745 /* TOCroppedImageAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = AE03C67DA46A5C73094047FE552749CE /* TOCroppedImageAttributes.m */; };
+		8CC85919A4ADF45B303FABE350CEEB91 /* de.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 56F1BE6B21096F071B55A48FA278D5CA /* de.lproj */; };
+		8FCE887E03672EC887EFFB910D69978C /* TOCropScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 765385720BD2B06379A74A98CB8614C5 /* TOCropScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		90282046398EFA3B5606ABFC8A04A0BA /* it.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 3B97ADDDAEB3F967AA2795C30D2FEC5C /* it.lproj */; };
+		90347D2EFA7359677BE04A3B9A4D6332 /* ja.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 5AAD170F95804F077DE943777BF3F086 /* ja.lproj */; };
+		90A9491146034C16650E39DBB6BD61CA /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 8A8CDE981649621AFDF97C25DCA9FF48 /* en.lproj */; };
+		91CDEFA1C234283F70310C7C52BDE3B4 /* STPopupNavigationBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E2AA916DAD2220AA2CAB491D9AC35C3 /* STPopupNavigationBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		957CB4FDAECA5C78B0DD647291CF0B56 /* SWCellScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E49ACCEF90A3D1D95723BCCCADA7AE /* SWCellScrollView.m */; };
+		966C1087875C115F4090E4408BF85DE7 /* MAThemeKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CEE695724E64292FC5E09D74DCBBDC47 /* MAThemeKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		96E05470C4D766618EEB9FFEFE456907 /* STPopupNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCDD597497B198B88AAE85D27AD23AC /* STPopupNavigationBar.m */; };
 		97B14A14154066FCBA0B776CEFDF66CC /* Pods-MiniKart-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E881E8AB60E078C1815AADEB56261E /* Pods-MiniKart-dummy.m */; };
-		98E17D776BDBBF1F1D46E3B4E6EF4502 /* TOCropToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = FF23B3B2DF6BCC8AFDEF87017F319027 /* TOCropToolbar.m */; };
+		98E17D776BDBBF1F1D46E3B4E6EF4502 /* TOCropToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = EF4A2930B0041EC85191434E8FBD7FC7 /* TOCropToolbar.m */; };
 		9B7818AFFA8DF8E4E541C00AD30EC838 /* Pods-MiniKart-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 02E89E6C1635743C4D92C50E28E941F7 /* Pods-MiniKart-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9FAF19ACE83646A00F803BD79F59ABDE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		A266F77CCC11E1CAD091357B1664ECE1 /* STPopupController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FBBDF0A66501E26862C970EA9989889 /* STPopupController.m */; };
-		A2CB4FFDFBB37ECFF853069F7B799BA5 /* UIResponder+STPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = CF760CE73B7774328F5FCCFF8690D513 /* UIResponder+STPopup.m */; };
-		A38C8B06DD06A00101FA4BEC8DAA4EA2 /* UIViewController+STPopup.h in Headers */ = {isa = PBXBuildFile; fileRef = B372A537E99230604CB5186EC3C5BEFE /* UIViewController+STPopup.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A5E9B63D9DDCA74C93A254C6F13E23E7 /* TOCropView.h in Headers */ = {isa = PBXBuildFile; fileRef = B58943F327744CE6AF526B99321F9815 /* TOCropView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A62C325CF79A00BB0352A13BE8536E99 /* pt.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 9618C561EE70C5C9A1334CADF2153DAE /* pt.lproj */; };
-		A9EDC518EABC66D2C0E51E379A52530B /* TOCropViewControllerTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE8EEC7A18D94CA45587CEBED580AE6 /* TOCropViewControllerTransitioning.m */; };
+		A266F77CCC11E1CAD091357B1664ECE1 /* STPopupController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4618B21B4C0F86DCF6097D56C0A7A610 /* STPopupController.m */; };
+		A2CB4FFDFBB37ECFF853069F7B799BA5 /* UIResponder+STPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C6D627E1F80B3EFDEEE10E424274C5E /* UIResponder+STPopup.m */; };
+		A38C8B06DD06A00101FA4BEC8DAA4EA2 /* UIViewController+STPopup.h in Headers */ = {isa = PBXBuildFile; fileRef = 06971CEA11199122C6408DFF30F26422 /* UIViewController+STPopup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A5E9B63D9DDCA74C93A254C6F13E23E7 /* TOCropView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AB84FED6D8C149C402CA74BC3929EBC /* TOCropView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A62C325CF79A00BB0352A13BE8536E99 /* pt.lproj in Resources */ = {isa = PBXBuildFile; fileRef = BF5B8BFB55A4C412E47547DE1D24A38F /* pt.lproj */; };
+		A9EDC518EABC66D2C0E51E379A52530B /* TOCropViewControllerTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C1FAFB8D5DD86B71C69AC0D13C9BB6 /* TOCropViewControllerTransitioning.m */; };
 		ACDC8086548247F472BE17778EBC1A1E /* TOCropViewControllerBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 85911999857A6323FF1A654453F487EF /* TOCropViewControllerBundle.bundle */; };
 		AE352A2F0629701F927A6624BCDF4387 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		AF5228462D9A564B017A09BF6616C7E7 /* NSMutableArray+SWUtilityButtons.m in Sources */ = {isa = PBXBuildFile; fileRef = 5260D9E65F9A8F59A0B910A65270D051 /* NSMutableArray+SWUtilityButtons.m */; };
-		B71BE5E0B2A6178A4AD5D3F81F2E1D2A /* TOCropViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 85378D1C74FB37CA21CE860C32D69268 /* TOCropViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BFE729D2E2B1AAA779337B18386E7227 /* id.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 668CF7766722FE8042ED2C2F5FB79150 /* id.lproj */; };
-		C27D5F348CD32A2062C78EEC11819A0A /* SWTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = DEDB38BADB8B3F9A75FC19C95D1D15D6 /* SWTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C7AD7BD0259E90CDF140F5D92F42F139 /* fr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 1CC0F170EA17409085C13F3D7EF2AF8E /* fr.lproj */; };
-		CACBE373AEF9311D5BBF659AE96D38E0 /* TOActivityCroppedImageProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 69406736B469208965ACA782CE82ADD9 /* TOActivityCroppedImageProvider.m */; };
-		CD435A19CC3482C3735E678494C6B4DE /* SWUtilityButtonView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EB462633864CBCCBD72721C420ACFC4 /* SWUtilityButtonView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CE61822EBB7C18EF38923CB458AFE4F5 /* TOActivityCroppedImageProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 41DF606D1F214B614B1D21E328D0207B /* TOActivityCroppedImageProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3895E9226ED2C09AEF1AA31AFE71B14 /* SWUtilityButtonTapGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 46FB3BA0085F55DC95FE700C0FC9159F /* SWUtilityButtonTapGestureRecognizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D7DFED0A7C530896FA3BF8E9A062F46C /* MAThemeKit.h in Headers */ = {isa = PBXBuildFile; fileRef = FCC7D601CE1C6680089271912EC298E9 /* MAThemeKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D96FF9F77BE840C5BA613A45396D0D84 /* SWTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F584DEE0B9C3DFAC0669B0C14F0F8123 /* SWTableViewCell.m */; };
-		E2747EE9DC15E4CEEF7A957966CF0DE9 /* SWTableViewCell-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 943668C6A04D8E8DA59B71D0C9336F11 /* SWTableViewCell-dummy.m */; };
-		E3679FD33763DBCD19CB95C79620C217 /* TOCropScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3229E6CE8AC0DE446B6969C07AFADC /* TOCropScrollView.m */; };
+		AF5228462D9A564B017A09BF6616C7E7 /* NSMutableArray+SWUtilityButtons.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B9509CA72491C2E3590C4A56ECCDB8 /* NSMutableArray+SWUtilityButtons.m */; };
+		B71BE5E0B2A6178A4AD5D3F81F2E1D2A /* TOCropViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AC3A931CA10982AAFD3F74D4D30AEB3 /* TOCropViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE729D2E2B1AAA779337B18386E7227 /* id.lproj in Resources */ = {isa = PBXBuildFile; fileRef = C1099687580FFCE3D8DA80AB0753DC0C /* id.lproj */; };
+		C27D5F348CD32A2062C78EEC11819A0A /* SWTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 73495EA57D3AC416AAB4F5AAFBCB5AC8 /* SWTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7AD7BD0259E90CDF140F5D92F42F139 /* fr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = F1D4E187C36195FB19A4BF7C912870FE /* fr.lproj */; };
+		CACBE373AEF9311D5BBF659AE96D38E0 /* TOActivityCroppedImageProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D999B5A86D40D3E1FBECBF1D59A1FDB /* TOActivityCroppedImageProvider.m */; };
+		CD435A19CC3482C3735E678494C6B4DE /* SWUtilityButtonView.h in Headers */ = {isa = PBXBuildFile; fileRef = A4B63780C049752060FE09321BACD480 /* SWUtilityButtonView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE61822EBB7C18EF38923CB458AFE4F5 /* TOActivityCroppedImageProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 43966D6C9B4555469DF7BE2F5EEF2007 /* TOActivityCroppedImageProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3895E9226ED2C09AEF1AA31AFE71B14 /* SWUtilityButtonTapGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = EF525E5A71D2F1CD26AE77FBF669B24B /* SWUtilityButtonTapGestureRecognizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DFED0A7C530896FA3BF8E9A062F46C /* MAThemeKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 652BC2E3439783E6BD218D3052B1C5A1 /* MAThemeKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D96FF9F77BE840C5BA613A45396D0D84 /* SWTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CD3D29F1CA32C62D70C85E5A032526 /* SWTableViewCell.m */; };
+		E2747EE9DC15E4CEEF7A957966CF0DE9 /* SWTableViewCell-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 489197E0F4A94E6513C74218EE70559F /* SWTableViewCell-dummy.m */; };
+		E3679FD33763DBCD19CB95C79620C217 /* TOCropScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10EE8BEE33383A4C825DB016BB57F49C /* TOCropScrollView.m */; };
 		E550E78661BA9B96CFA52339DADC55CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		E74776BB56D7B555317F81C7C8FF9669 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		E8E00C663B0C5296860B5E4246E2C40A /* MAThemeKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 39FCF21ADE284CF492A8CE88E22D0327 /* MAThemeKit-dummy.m */; };
-		EDA2B8BDCADAC5A66727E65D53072F8A /* UIImage+CropRotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 949CB7B75847C3F7E4C6C0B490F769A5 /* UIImage+CropRotate.m */; };
-		F2F924C873AEF7784F87E3346729EE2B /* UIViewController+STPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = E3BB9E57274A7B1DE527C6BA81C9059D /* UIViewController+STPopup.m */; };
-		F766579C1B872AB5C243F6A566523765 /* ru.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 572586A8224032E6F39A07F393780FDF /* ru.lproj */; };
-		F94B0775E639B4A11ACEC45AAC0D6E52 /* TOCropToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = CEF87575A3EBF7D93C9B46E4F677FF67 /* TOCropToolbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8E00C663B0C5296860B5E4246E2C40A /* MAThemeKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9385F761814FE2CA47937ED6DD52C17C /* MAThemeKit-dummy.m */; };
+		EDA2B8BDCADAC5A66727E65D53072F8A /* UIImage+CropRotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7E48113348595D1394C5C6E185ABBB /* UIImage+CropRotate.m */; };
+		F2F924C873AEF7784F87E3346729EE2B /* UIViewController+STPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 3384E26BEA2278286FB4F5402FEE4A53 /* UIViewController+STPopup.m */; };
+		F766579C1B872AB5C243F6A566523765 /* ru.lproj in Resources */ = {isa = PBXBuildFile; fileRef = EE608219A73C6B4F77CAACAB79747129 /* ru.lproj */; };
+		F94B0775E639B4A11ACEC45AAC0D6E52 /* TOCropToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = E4BB477A59B5124B7BD080C01F0BE90A /* TOCropToolbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -141,173 +141,175 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		007DDEA248C3833EE9C1465AA99AD5A5 /* FlintSignatureView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintSignatureView.h; path = FlintConnectSDK.framework/Headers/FlintSignatureView.h; sourceTree = "<group>"; };
-		017E5BE020DFDD747C7F5D7AE4FA7FAB /* FlintCSSConstant.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintCSSConstant.h; path = FlintConnectSDK.framework/Headers/FlintCSSConstant.h; sourceTree = "<group>"; };
-		02058273EBD36F4BE7EB803B65728ECA /* STPopupLeftBarItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPopupLeftBarItem.h; path = STPopup/STPopupLeftBarItem.h; sourceTree = "<group>"; };
+		005C0728E2E47D9B2A86370477454431 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00BC281484D0AC22CC974E4C547460C5 /* SWUtilityButtonView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SWUtilityButtonView.m; path = SWTableViewCell/PodFiles/SWUtilityButtonView.m; sourceTree = "<group>"; };
 		02E89E6C1635743C4D92C50E28E941F7 /* Pods-MiniKart-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MiniKart-umbrella.h"; sourceTree = "<group>"; };
-		03A505E5FB0C0630404A562F44BAE9A3 /* STPopup.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = STPopup.modulemap; sourceTree = "<group>"; };
-		06880097142D81B18C3A3F58492753B8 /* MAThemeKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MAThemeKit-umbrella.h"; sourceTree = "<group>"; };
-		0715CEA26526128E6DC8846E986ECD85 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0A39A734E8060CCC6C45EF87429D1296 /* FlintEmailAddress.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintEmailAddress.h; path = FlintConnectSDK.framework/Headers/FlintEmailAddress.h; sourceTree = "<group>"; };
-		0B078B73FCDD54E52BB30C5EA5348E29 /* TOCropViewControllerTransitioning.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropViewControllerTransitioning.h; path = TOCropViewController/Models/TOCropViewControllerTransitioning.h; sourceTree = "<group>"; };
-		0C06B5F2CB4B087726C3A2915AA17019 /* FlintActionTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintActionTextField.h; path = FlintConnectSDK.framework/Headers/FlintActionTextField.h; sourceTree = "<group>"; };
-		0CB109F4E495CBE988A5C522119611AF /* STPopup-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "STPopup-dummy.m"; sourceTree = "<group>"; };
-		0E8715500435C8B7BA434F2AA492A160 /* FlintUI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintUI.h; path = FlintConnectSDK.framework/Headers/FlintUI.h; sourceTree = "<group>"; };
-		0FA7389713743656FE761AEDFB6F2193 /* FlintTipSelectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintTipSelectionView.h; path = FlintConnectSDK.framework/Headers/FlintTipSelectionView.h; sourceTree = "<group>"; };
-		0FF35328EE9F26BC249F2CAE3102C2AE /* TOCropViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TOCropViewController.modulemap; sourceTree = "<group>"; };
-		108F3E36F2CF50FA505E7231A404221D /* STPopupLeftBarItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPopupLeftBarItem.m; path = STPopup/STPopupLeftBarItem.m; sourceTree = "<group>"; };
-		11A54F265B2B0CB726BF84AA78824EF4 /* ASCFlatUIColor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ASCFlatUIColor-dummy.m"; sourceTree = "<group>"; };
-		124D7944E7D850C7A29E6A976D58CB3F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05C57320CF56E00C9BE8C6D343F047F1 /* FlintRoundButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintRoundButton.h; path = FlintConnectSDK.framework/Headers/FlintRoundButton.h; sourceTree = "<group>"; };
+		0609AB50AD152C067AA939539582409D /* TOCropViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TOCropViewController.modulemap; sourceTree = "<group>"; };
+		06971CEA11199122C6408DFF30F26422 /* UIViewController+STPopup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+STPopup.h"; path = "STPopup/UIViewController+STPopup.h"; sourceTree = "<group>"; };
+		06ACC34E132A6A0650D7EE98DD9546EC /* FlintHeaderImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintHeaderImport.h; path = FlintConnectSDK.framework/Headers/FlintHeaderImport.h; sourceTree = "<group>"; };
+		0A8CFB732447B06F04DF92ECC67D5252 /* FlintReceiptOptionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintReceiptOptionView.h; path = FlintConnectSDK.framework/Headers/FlintReceiptOptionView.h; sourceTree = "<group>"; };
+		0B73B9005B63AAD239EC9B62FAF548F0 /* TOCroppedImageAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCroppedImageAttributes.h; path = TOCropViewController/Models/TOCroppedImageAttributes.h; sourceTree = "<group>"; };
+		0BA55A804D007C4F4A96A3F04A94370D /* FlintInvoice.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintInvoice.h; path = FlintConnectSDK.framework/Headers/FlintInvoice.h; sourceTree = "<group>"; };
+		0EC8BF5DC9B81B84B9BA8E0C411C30B4 /* FlintCardScannerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintCardScannerView.h; path = FlintConnectSDK.framework/Headers/FlintCardScannerView.h; sourceTree = "<group>"; };
+		1069DEEA8C2963F0C9AD6AC58DE18A27 /* Base.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = Base.lproj; path = TOCropViewController/Base.lproj; sourceTree = "<group>"; };
+		10EE8BEE33383A4C825DB016BB57F49C /* TOCropScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropScrollView.m; path = TOCropViewController/Views/TOCropScrollView.m; sourceTree = "<group>"; };
 		127E2F41A68923E4A2DBB1C581F39F2B /* Pods-MiniKart-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MiniKart-resources.sh"; sourceTree = "<group>"; };
-		1B2121E5343AEAFBEE4C684E70CC31DE /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = "zh-Hans.lproj"; path = "TOCropViewController/zh-Hans.lproj"; sourceTree = "<group>"; };
-		1C87AD4632F2B16C0C6C88900D181688 /* UIResponder+STPopup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIResponder+STPopup.h"; path = "STPopup/UIResponder+STPopup.h"; sourceTree = "<group>"; };
-		1CC0F170EA17409085C13F3D7EF2AF8E /* fr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = fr.lproj; path = TOCropViewController/fr.lproj; sourceTree = "<group>"; };
-		1D4A834F690B1727ED692FCD310B3F78 /* SWTableViewCell.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SWTableViewCell.modulemap; sourceTree = "<group>"; };
-		1F2DA0AD5874535B10B18FD8F071DF4F /* TOCropViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropViewController.h; path = TOCropViewController/TOCropViewController.h; sourceTree = "<group>"; };
-		1FA9052889319B3C56F0056E0A547B6B /* ja.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = ja.lproj; path = TOCropViewController/ja.lproj; sourceTree = "<group>"; };
-		207F1F193DA0E35E28DCD0990655D325 /* FlintConnectSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FlintConnectSDK.framework; sourceTree = "<group>"; };
-		221004C431E8A57CF051306BD7700249 /* FlintCardDetailView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintCardDetailView.h; path = FlintConnectSDK.framework/Headers/FlintCardDetailView.h; sourceTree = "<group>"; };
-		259D51FD5D9C7C7F22AF931D9709D71B /* ASCFlatUIColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASCFlatUIColor.h; path = Classes/ASCFlatUIColor.h; sourceTree = "<group>"; };
-		25C17E0D4F3103BB54BD22DE61DE72AD /* FlintRoundButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintRoundButton.h; path = FlintConnectSDK.framework/Headers/FlintRoundButton.h; sourceTree = "<group>"; };
-		261895788342A8AC76DEF31AB56FAF96 /* ASCFlatUIColor.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ASCFlatUIColor.xcconfig; sourceTree = "<group>"; };
-		29C215BF7B28C91A8B678C041848ED89 /* FlintCreditCard.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintCreditCard.h; path = FlintConnectSDK.framework/Headers/FlintCreditCard.h; sourceTree = "<group>"; };
-		2C0EAB67F05F309E3CFF934CBB9B9534 /* FlintTextEntryView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintTextEntryView.h; path = FlintConnectSDK.framework/Headers/FlintTextEntryView.h; sourceTree = "<group>"; };
-		2F4D55AB0F5EB80AE74AB9B9187EEE4D /* TOCropViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TOCropViewController-dummy.m"; sourceTree = "<group>"; };
-		30EE77F338935A0AF9D8B9B769ED8F2F /* STPopup-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "STPopup-umbrella.h"; sourceTree = "<group>"; };
-		3265D83217BB3626F6F8071B4944A163 /* STPopupNavigationBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPopupNavigationBar.h; path = STPopup/STPopupNavigationBar.h; sourceTree = "<group>"; };
-		3267D9D934A1098FF83F87FF9C74803D /* FlintPermissions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintPermissions.h; path = FlintConnectSDK.framework/Headers/FlintPermissions.h; sourceTree = "<group>"; };
-		3283337EA6C7B49DDAFCE8D92305F3CB /* FlintDigitEditorView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintDigitEditorView.h; path = FlintConnectSDK.framework/Headers/FlintDigitEditorView.h; sourceTree = "<group>"; };
-		347240314F9E6E34F2BF0387493185B1 /* NSMutableArray+SWUtilityButtons.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+SWUtilityButtons.h"; path = "SWTableViewCell/PodFiles/NSMutableArray+SWUtilityButtons.h"; sourceTree = "<group>"; };
-		35019EEB6BE1E2DA8B4EC7F9CFA6E76A /* FlintTipItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintTipItem.h; path = FlintConnectSDK.framework/Headers/FlintTipItem.h; sourceTree = "<group>"; };
-		37D3AE2698AF3C59E6E1D6916608A8D0 /* FlintMerchant.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintMerchant.h; path = FlintConnectSDK.framework/Headers/FlintMerchant.h; sourceTree = "<group>"; };
-		3948B906A2A7455E0F8B7555021F6B5A /* FlintCardEntryView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintCardEntryView.h; path = FlintConnectSDK.framework/Headers/FlintCardEntryView.h; sourceTree = "<group>"; };
-		39E2C1874957939B09799C82452FC44B /* FlintEmailEntryView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintEmailEntryView.h; path = FlintConnectSDK.framework/Headers/FlintEmailEntryView.h; sourceTree = "<group>"; };
-		39FCF21ADE284CF492A8CE88E22D0327 /* MAThemeKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MAThemeKit-dummy.m"; sourceTree = "<group>"; };
-		3A2B6D3282D175F1E31911EC69A7C9CD /* FlintTransactionLimits.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintTransactionLimits.h; path = FlintConnectSDK.framework/Headers/FlintTransactionLimits.h; sourceTree = "<group>"; };
-		3A5735E95DD3E0579076404DA0BE4450 /* SWLongPressGestureRecognizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SWLongPressGestureRecognizer.h; path = SWTableViewCell/PodFiles/SWLongPressGestureRecognizer.h; sourceTree = "<group>"; };
+		14AE9BE6273A64FC28435429C65FD5FA /* FlintLimitTextEntryView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintLimitTextEntryView.h; path = FlintConnectSDK.framework/Headers/FlintLimitTextEntryView.h; sourceTree = "<group>"; };
+		155A93A9A4998FF8DBA01978A87A0596 /* ko.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = ko.lproj; path = TOCropViewController/ko.lproj; sourceTree = "<group>"; };
+		1572AEC0FFCA103E23E71A643B9E5D24 /* FlintCardNumbersEditorView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintCardNumbersEditorView.h; path = FlintConnectSDK.framework/Headers/FlintCardNumbersEditorView.h; sourceTree = "<group>"; };
+		157FBAB85D85FA0C1D798D28A747F20F /* UIResponder+STPopup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIResponder+STPopup.h"; path = "STPopup/UIResponder+STPopup.h"; sourceTree = "<group>"; };
+		194F0829E76E997AA92E5B7ABE232ED0 /* FlintAmountInputView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintAmountInputView.h; path = FlintConnectSDK.framework/Headers/FlintAmountInputView.h; sourceTree = "<group>"; };
+		1B5534D9AE53D936FC56DE1B60944E6C /* FlintEmailEntryView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintEmailEntryView.h; path = FlintConnectSDK.framework/Headers/FlintEmailEntryView.h; sourceTree = "<group>"; };
+		1B8A751D04427E32F0996AC9F4A60165 /* SWTableViewCell-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SWTableViewCell-umbrella.h"; sourceTree = "<group>"; };
+		1B8F13688EDCE7C1BDCE92A6135A3A32 /* FlintOrder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintOrder.h; path = FlintConnectSDK.framework/Headers/FlintOrder.h; sourceTree = "<group>"; };
+		1C3CC88E227975DF1295082E55B455B4 /* FlintTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintTextField.h; path = FlintConnectSDK.framework/Headers/FlintTextField.h; sourceTree = "<group>"; };
+		1C7E48113348595D1394C5C6E185ABBB /* UIImage+CropRotate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+CropRotate.m"; path = "TOCropViewController/Models/UIImage+CropRotate.m"; sourceTree = "<group>"; };
+		1EC2949A0202F75811EC813B0E07200F /* FlintDigitEditorView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintDigitEditorView.h; path = FlintConnectSDK.framework/Headers/FlintDigitEditorView.h; sourceTree = "<group>"; };
+		20942CFE03553392DD2FA7FE2495E8E8 /* FlintCardScanner.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintCardScanner.h; path = FlintConnectSDK.framework/Headers/FlintCardScanner.h; sourceTree = "<group>"; };
+		24A10A95E8A1A3B151E19FFD2B508E37 /* FlintLineTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintLineTextField.h; path = FlintConnectSDK.framework/Headers/FlintLineTextField.h; sourceTree = "<group>"; };
+		24A57D29E08FF9B74F070F5A71190D68 /* FlintSignatureView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintSignatureView.h; path = FlintConnectSDK.framework/Headers/FlintSignatureView.h; sourceTree = "<group>"; };
+		25221B2578349DB9013484B6E5C9E322 /* FlintThemeEngine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintThemeEngine.h; path = FlintConnectSDK.framework/Headers/FlintThemeEngine.h; sourceTree = "<group>"; };
+		254D3396918DB1EC097590FB4559A76B /* NSMutableArray+SWUtilityButtons.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+SWUtilityButtons.h"; path = "SWTableViewCell/PodFiles/NSMutableArray+SWUtilityButtons.h"; sourceTree = "<group>"; };
+		25C90B69C4F20EE823280686B6F5C777 /* FlintEmailAddress.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintEmailAddress.h; path = FlintConnectSDK.framework/Headers/FlintEmailAddress.h; sourceTree = "<group>"; };
+		32E49ACCEF90A3D1D95723BCCCADA7AE /* SWCellScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SWCellScrollView.m; path = SWTableViewCell/PodFiles/SWCellScrollView.m; sourceTree = "<group>"; };
+		3384E26BEA2278286FB4F5402FEE4A53 /* UIViewController+STPopup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+STPopup.m"; path = "STPopup/UIViewController+STPopup.m"; sourceTree = "<group>"; };
+		3873EEFE8D27EB89CEF74D6A6A4EBD2A /* MAThemeKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MAThemeKit.xcconfig; sourceTree = "<group>"; };
 		3A792D32BB35A0B628CCAED99752A884 /* MAThemeKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MAThemeKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3BA06401EB9F76ED7DC493C4CB30FA54 /* ko.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = ko.lproj; path = TOCropViewController/ko.lproj; sourceTree = "<group>"; };
-		3C7A52C8734F3D5BD3C04EBC18B176E7 /* FlintCardScannerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintCardScannerView.h; path = FlintConnectSDK.framework/Headers/FlintCardScannerView.h; sourceTree = "<group>"; };
+		3A822C2D0E4F952CB2400B2413B2D8FD /* MAThemeKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MAThemeKit-prefix.pch"; sourceTree = "<group>"; };
+		3B97ADDDAEB3F967AA2795C30D2FEC5C /* it.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = it.lproj; path = TOCropViewController/it.lproj; sourceTree = "<group>"; };
+		3C02FC7B913805258102106DCDD39D74 /* es.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = es.lproj; path = TOCropViewController/es.lproj; sourceTree = "<group>"; };
+		3C6D627E1F80B3EFDEEE10E424274C5E /* UIResponder+STPopup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIResponder+STPopup.m"; path = "STPopup/UIResponder+STPopup.m"; sourceTree = "<group>"; };
+		3CFD4686E5D0CC87402B5FD95D6BF471 /* FlintPhoneNumber.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintPhoneNumber.h; path = FlintConnectSDK.framework/Headers/FlintPhoneNumber.h; sourceTree = "<group>"; };
+		3DFA4E8A24EE50BAF5B6AB10FB2C9BDF /* FlintDateEntryView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintDateEntryView.h; path = FlintConnectSDK.framework/Headers/FlintDateEntryView.h; sourceTree = "<group>"; };
+		3E2AA916DAD2220AA2CAB491D9AC35C3 /* STPopupNavigationBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPopupNavigationBar.h; path = STPopup/STPopupNavigationBar.h; sourceTree = "<group>"; };
 		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		3F5741593934D6FE96194D498BD971E6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3F8188A6FEB0DB7D58F76E2D9B19ABAC /* STPopupController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPopupController.h; path = STPopup/STPopupController.h; sourceTree = "<group>"; };
-		3FE8EEC7A18D94CA45587CEBED580AE6 /* TOCropViewControllerTransitioning.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropViewControllerTransitioning.m; path = TOCropViewController/Models/TOCropViewControllerTransitioning.m; sourceTree = "<group>"; };
-		41DF606D1F214B614B1D21E328D0207B /* TOActivityCroppedImageProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOActivityCroppedImageProvider.h; path = TOCropViewController/Models/TOActivityCroppedImageProvider.h; sourceTree = "<group>"; };
+		3FE13ED81B0B9DD4FC7DD5E60E955ADB /* zh-Hant.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = "zh-Hant.lproj"; path = "TOCropViewController/zh-Hant.lproj"; sourceTree = "<group>"; };
+		425E8F282043CEA1B6A3496E33ED5985 /* FlintFixedToolBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintFixedToolBar.h; path = FlintConnectSDK.framework/Headers/FlintFixedToolBar.h; sourceTree = "<group>"; };
+		43966D6C9B4555469DF7BE2F5EEF2007 /* TOActivityCroppedImageProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOActivityCroppedImageProvider.h; path = TOCropViewController/Models/TOActivityCroppedImageProvider.h; sourceTree = "<group>"; };
 		43E881E8AB60E078C1815AADEB56261E /* Pods-MiniKart-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MiniKart-dummy.m"; sourceTree = "<group>"; };
-		46FB3BA0085F55DC95FE700C0FC9159F /* SWUtilityButtonTapGestureRecognizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SWUtilityButtonTapGestureRecognizer.h; path = SWTableViewCell/PodFiles/SWUtilityButtonTapGestureRecognizer.h; sourceTree = "<group>"; };
-		5028DFC620C59A3C865D43E58AA6926E /* STPopup.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = STPopup.xcconfig; sourceTree = "<group>"; };
-		50390433D679DF6E7F23C478275F474C /* FlintFixedToolBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintFixedToolBar.h; path = FlintConnectSDK.framework/Headers/FlintFixedToolBar.h; sourceTree = "<group>"; };
-		510C31CCFF9FC7D529AA2C3B0A330AC1 /* TOCropViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropViewController.m; path = TOCropViewController/TOCropViewController.m; sourceTree = "<group>"; };
-		5260D9E65F9A8F59A0B910A65270D051 /* NSMutableArray+SWUtilityButtons.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableArray+SWUtilityButtons.m"; path = "SWTableViewCell/PodFiles/NSMutableArray+SWUtilityButtons.m"; sourceTree = "<group>"; };
-		52B12CE2B08AAE7B0F14EC6F3196DE98 /* SWUtilityButtonTapGestureRecognizer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SWUtilityButtonTapGestureRecognizer.m; path = SWTableViewCell/PodFiles/SWUtilityButtonTapGestureRecognizer.m; sourceTree = "<group>"; };
-		55611D227555D50DDBB61D3550C24961 /* FlintDateEntryView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintDateEntryView.h; path = FlintConnectSDK.framework/Headers/FlintDateEntryView.h; sourceTree = "<group>"; };
-		562EC08E0312E794AC0AFB7717C58DEB /* ASCFlatUIColor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ASCFlatUIColor-prefix.pch"; sourceTree = "<group>"; };
-		569B49B973F2BA2A89126DDF24C9E7F7 /* FlintNumericKeyPadView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintNumericKeyPadView.h; path = FlintConnectSDK.framework/Headers/FlintNumericKeyPadView.h; sourceTree = "<group>"; };
-		572586A8224032E6F39A07F393780FDF /* ru.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = ru.lproj; path = TOCropViewController/ru.lproj; sourceTree = "<group>"; };
-		57478F833B099083C2002830C95AE429 /* pl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = pl.lproj; path = TOCropViewController/pl.lproj; sourceTree = "<group>"; };
-		577D70A05D2D102739E7A169F238B4E8 /* FlintDomainObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintDomainObject.h; path = FlintConnectSDK.framework/Headers/FlintDomainObject.h; sourceTree = "<group>"; };
-		579D3588FE2EF9E74EBF8801464CB4A5 /* FlintCardNumbersEditorView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintCardNumbersEditorView.h; path = FlintConnectSDK.framework/Headers/FlintCardNumbersEditorView.h; sourceTree = "<group>"; };
+		44E2AE66198311C9C953D41532E264E3 /* ASCFlatUIColor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ASCFlatUIColor-dummy.m"; sourceTree = "<group>"; };
+		4618B21B4C0F86DCF6097D56C0A7A610 /* STPopupController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPopupController.m; path = STPopup/STPopupController.m; sourceTree = "<group>"; };
+		485D505E510D67B965D7357C0336D0FC /* FlintTipItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintTipItem.h; path = FlintConnectSDK.framework/Headers/FlintTipItem.h; sourceTree = "<group>"; };
+		489197E0F4A94E6513C74218EE70559F /* SWTableViewCell-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SWTableViewCell-dummy.m"; sourceTree = "<group>"; };
+		49AD8C66BFD084F4FEC6BC3C9CDF665B /* MAThemeKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MAThemeKit.modulemap; sourceTree = "<group>"; };
+		4AB84FED6D8C149C402CA74BC3929EBC /* TOCropView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropView.h; path = TOCropViewController/Views/TOCropView.h; sourceTree = "<group>"; };
+		4AC3A931CA10982AAFD3F74D4D30AEB3 /* TOCropViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TOCropViewController-umbrella.h"; sourceTree = "<group>"; };
+		4CCDD597497B198B88AAE85D27AD23AC /* STPopupNavigationBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPopupNavigationBar.m; path = STPopup/STPopupNavigationBar.m; sourceTree = "<group>"; };
+		4D999B5A86D40D3E1FBECBF1D59A1FDB /* TOActivityCroppedImageProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOActivityCroppedImageProvider.m; path = TOCropViewController/Models/TOActivityCroppedImageProvider.m; sourceTree = "<group>"; };
+		516AF65FB2689B60E1505719A259ACA0 /* FlintAPIConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintAPIConfig.h; path = FlintConnectSDK.framework/Headers/FlintAPIConfig.h; sourceTree = "<group>"; };
+		54A294DF60B4F1096115198AF906567E /* TOCropView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropView.m; path = TOCropViewController/Views/TOCropView.m; sourceTree = "<group>"; };
+		5614F361EF6C53AE7F33FBEE852D1F9B /* FlintPayment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintPayment.h; path = FlintConnectSDK.framework/Headers/FlintPayment.h; sourceTree = "<group>"; };
+		56F1BE6B21096F071B55A48FA278D5CA /* de.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = de.lproj; path = TOCropViewController/de.lproj; sourceTree = "<group>"; };
+		5741E3BF46562B2F931464CA49D11ADF /* FlintCardValidationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintCardValidationView.h; path = FlintConnectSDK.framework/Headers/FlintCardValidationView.h; sourceTree = "<group>"; };
+		59CCEBDCC02EAB630ADC2982263D6E64 /* FlintDomainObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintDomainObject.h; path = FlintConnectSDK.framework/Headers/FlintDomainObject.h; sourceTree = "<group>"; };
 		59FE3293C2EFA1EC4392E327B8DAB27D /* TOCropViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TOCropViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5A1EAB7B5BE35A1F3A8084CE3B86BD3D /* SWCellScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SWCellScrollView.h; path = SWTableViewCell/PodFiles/SWCellScrollView.h; sourceTree = "<group>"; };
-		5B6CDE7569D3FC6A4D6FA601C8CA976B /* FlintTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintTextField.h; path = FlintConnectSDK.framework/Headers/FlintTextField.h; sourceTree = "<group>"; };
-		5BCB3F0342E548799235E47E0DE48D59 /* TOCroppedImageAttributes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCroppedImageAttributes.m; path = TOCropViewController/Models/TOCroppedImageAttributes.m; sourceTree = "<group>"; };
-		5D3C8287F4765D7E5B0F351F2F185508 /* FlintCardScanner.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintCardScanner.h; path = FlintConnectSDK.framework/Headers/FlintCardScanner.h; sourceTree = "<group>"; };
-		5F506D182FF743F43CC05DD1FE23D9BA /* SWTableViewCell-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SWTableViewCell-prefix.pch"; sourceTree = "<group>"; };
-		61C409F838978020E1CBED289AE319A4 /* FlintScannedDigit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintScannedDigit.h; path = FlintConnectSDK.framework/Headers/FlintScannedDigit.h; sourceTree = "<group>"; };
-		63A4FA43ABB6ED2C8B5AB2D395728E50 /* UIImage+CropRotate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+CropRotate.h"; path = "TOCropViewController/Models/UIImage+CropRotate.h"; sourceTree = "<group>"; };
-		64D743F87308510593A2103BF7CF1304 /* STPopup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPopup.h; path = STPopup/STPopup.h; sourceTree = "<group>"; };
-		668CF7766722FE8042ED2C2F5FB79150 /* id.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = id.lproj; path = TOCropViewController/id.lproj; sourceTree = "<group>"; };
-		693CCA1383A12339244159DC6A4E9F4C /* FlintTipInputView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintTipInputView.h; path = FlintConnectSDK.framework/Headers/FlintTipInputView.h; sourceTree = "<group>"; };
-		69406736B469208965ACA782CE82ADD9 /* TOActivityCroppedImageProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOActivityCroppedImageProvider.m; path = TOCropViewController/Models/TOActivityCroppedImageProvider.m; sourceTree = "<group>"; };
-		6CE697E8D87A3F9E4046964B26FC0A75 /* FlintCardValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintCardValidator.h; path = FlintConnectSDK.framework/Headers/FlintCardValidator.h; sourceTree = "<group>"; };
-		6D252BC397B45FF76BAFC82473AAAA9F /* ASCFlatUIColor-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ASCFlatUIColor-umbrella.h"; sourceTree = "<group>"; };
-		70685257FDBD97E930D16F6AA6BF6572 /* FlintLineTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintLineTextField.h; path = FlintConnectSDK.framework/Headers/FlintLineTextField.h; sourceTree = "<group>"; };
-		71097107A469608AE86CADED096E58B1 /* FlintHeaderImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintHeaderImport.h; path = FlintConnectSDK.framework/Headers/FlintHeaderImport.h; sourceTree = "<group>"; };
+		5AAD170F95804F077DE943777BF3F086 /* ja.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = ja.lproj; path = TOCropViewController/ja.lproj; sourceTree = "<group>"; };
+		5B91708F2956A0F1B4C16C283013EB69 /* FlintMerchant.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintMerchant.h; path = FlintConnectSDK.framework/Headers/FlintMerchant.h; sourceTree = "<group>"; };
+		5C493710E3E816ABF1783F8EB26E8333 /* FlintRiskDetector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintRiskDetector.h; path = FlintConnectSDK.framework/Headers/FlintRiskDetector.h; sourceTree = "<group>"; };
+		60998A252EE4905BDD0D7C09F8DBF829 /* FlintContact.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintContact.h; path = FlintConnectSDK.framework/Headers/FlintContact.h; sourceTree = "<group>"; };
+		61ACD6A81951899A89C17B91B7C976DA /* ASCFlatUIColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASCFlatUIColor.h; path = Classes/ASCFlatUIColor.h; sourceTree = "<group>"; };
+		652BC2E3439783E6BD218D3052B1C5A1 /* MAThemeKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAThemeKit.h; path = MAThemeKit/MAThemeKit.h; sourceTree = "<group>"; };
+		6B260B3837143955B68DDA3063DA12DB /* TOCropViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropViewController.h; path = TOCropViewController/TOCropViewController.h; sourceTree = "<group>"; };
+		6FE0A9F05528AAFCCE4BA3D95B125232 /* FlintResources.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintResources.h; path = FlintConnectSDK.framework/Headers/FlintResources.h; sourceTree = "<group>"; };
 		7128E731099D3912C661170EA381F4DD /* Pods-MiniKart-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MiniKart-frameworks.sh"; sourceTree = "<group>"; };
-		75C8320344439DFF79A5EE8A9B65D906 /* TOCroppedImageAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCroppedImageAttributes.h; path = TOCropViewController/Models/TOCroppedImageAttributes.h; sourceTree = "<group>"; };
-		7629D49C205E95B8A25DED03AB9EC35F /* es.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = es.lproj; path = TOCropViewController/es.lproj; sourceTree = "<group>"; };
-		791E3840AC11EA21478F428F05551737 /* FlintInvoice.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintInvoice.h; path = FlintConnectSDK.framework/Headers/FlintInvoice.h; sourceTree = "<group>"; };
-		7A2227185C54608D6366F52301C7BD8C /* FlintPhoneNumber.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintPhoneNumber.h; path = FlintConnectSDK.framework/Headers/FlintPhoneNumber.h; sourceTree = "<group>"; };
-		7B12DCE0D25ADB0BD070C0C67A8284CE /* MAThemeKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MAThemeKit.xcconfig; sourceTree = "<group>"; };
-		7C8BFB4D0D4EF526FAAFCE7CAFC54B75 /* FlintLimitTextEntryView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintLimitTextEntryView.h; path = FlintConnectSDK.framework/Headers/FlintLimitTextEntryView.h; sourceTree = "<group>"; };
-		7D87E2FDC485294B20E84F644B015291 /* FlintService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintService.h; path = FlintConnectSDK.framework/Headers/FlintService.h; sourceTree = "<group>"; };
-		7F2FE832CB8B3E12B969598C4D9FB88A /* zh-Hant.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = "zh-Hant.lproj"; path = "TOCropViewController/zh-Hant.lproj"; sourceTree = "<group>"; };
-		7F6D8177A24051262AF5331C8CA7F3C7 /* TOCropOverlayView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropOverlayView.h; path = TOCropViewController/Views/TOCropOverlayView.h; sourceTree = "<group>"; };
+		72F0582CC67A1CD5FEC6059F60251C22 /* FlintCardEntryView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintCardEntryView.h; path = FlintConnectSDK.framework/Headers/FlintCardEntryView.h; sourceTree = "<group>"; };
+		73495EA57D3AC416AAB4F5AAFBCB5AC8 /* SWTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SWTableViewCell.h; path = SWTableViewCell/PodFiles/SWTableViewCell.h; sourceTree = "<group>"; };
+		75CD3D29F1CA32C62D70C85E5A032526 /* SWTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SWTableViewCell.m; path = SWTableViewCell/PodFiles/SWTableViewCell.m; sourceTree = "<group>"; };
+		765385720BD2B06379A74A98CB8614C5 /* TOCropScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropScrollView.h; path = TOCropViewController/Views/TOCropScrollView.h; sourceTree = "<group>"; };
+		76C8E65AD70A9DF5EDA7C1295DC7F1B5 /* SWTableViewCell.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SWTableViewCell.modulemap; sourceTree = "<group>"; };
+		799966C7055ED09F525069085AFB5777 /* ASCFlatUIColor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASCFlatUIColor.m; path = Classes/ASCFlatUIColor.m; sourceTree = "<group>"; };
+		7B0A259723371FEB991C480FE91B03F2 /* pl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = pl.lproj; path = TOCropViewController/pl.lproj; sourceTree = "<group>"; };
+		7D619BEFDA85F35A73774D8467A56391 /* STPopup-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "STPopup-dummy.m"; sourceTree = "<group>"; };
+		7EB31463F65D80A89B0E1B9D16005B8B /* SWTableViewCell.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SWTableViewCell.xcconfig; sourceTree = "<group>"; };
+		7F6C3CE7ABFF81D6569F6A6A2A44D5BC /* FlintCardSigningView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintCardSigningView.h; path = FlintConnectSDK.framework/Headers/FlintCardSigningView.h; sourceTree = "<group>"; };
 		81C26350EDBBDCC3693C1666E71E5914 /* Pods-MiniKart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MiniKart.release.xcconfig"; sourceTree = "<group>"; };
-		85378D1C74FB37CA21CE860C32D69268 /* TOCropViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TOCropViewController-umbrella.h"; sourceTree = "<group>"; };
+		82E97A1121DA5186D6931B184442EC77 /* STPopup-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "STPopup-umbrella.h"; sourceTree = "<group>"; };
+		84207C472A06810E0B9121912BC124B4 /* TOCropViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TOCropViewController-prefix.pch"; sourceTree = "<group>"; };
+		842A574303992A018CDCB7C594B231EC /* ASCFlatUIColor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ASCFlatUIColor-prefix.pch"; sourceTree = "<group>"; };
+		84327478607A3DB6FCAE7BE21F6C5E16 /* FlintScannedDigit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintScannedDigit.h; path = FlintConnectSDK.framework/Headers/FlintScannedDigit.h; sourceTree = "<group>"; };
 		85911999857A6323FF1A654453F487EF /* TOCropViewControllerBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TOCropViewControllerBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		876584CE00C1DADE646F7DA4ED8895C3 /* FlintScanResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintScanResult.h; path = FlintConnectSDK.framework/Headers/FlintScanResult.h; sourceTree = "<group>"; };
-		8AECD9CC81AC518FA8BC735E5E5305A4 /* ASCFlatUIColor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASCFlatUIColor.m; path = Classes/ASCFlatUIColor.m; sourceTree = "<group>"; };
-		8CEF8A98294EC737F0FE057F536999B3 /* FlintCardSigningView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintCardSigningView.h; path = FlintConnectSDK.framework/Headers/FlintCardSigningView.h; sourceTree = "<group>"; };
-		8EB462633864CBCCBD72721C420ACFC4 /* SWUtilityButtonView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SWUtilityButtonView.h; path = SWTableViewCell/PodFiles/SWUtilityButtonView.h; sourceTree = "<group>"; };
-		943668C6A04D8E8DA59B71D0C9336F11 /* SWTableViewCell-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SWTableViewCell-dummy.m"; sourceTree = "<group>"; };
-		949CB7B75847C3F7E4C6C0B490F769A5 /* UIImage+CropRotate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+CropRotate.m"; path = "TOCropViewController/Models/UIImage+CropRotate.m"; sourceTree = "<group>"; };
-		9618C561EE70C5C9A1334CADF2153DAE /* pt.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = pt.lproj; path = TOCropViewController/pt.lproj; sourceTree = "<group>"; };
-		971D7848DB1A34CC5E9B38E9BA9A0A81 /* de.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = de.lproj; path = TOCropViewController/de.lproj; sourceTree = "<group>"; };
+		8A8CDE981649621AFDF97C25DCA9FF48 /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = en.lproj; path = TOCropViewController/en.lproj; sourceTree = "<group>"; };
+		8B61A0601560B02212BD6A3F9B111843 /* TOCropViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropViewController.m; path = TOCropViewController/TOCropViewController.m; sourceTree = "<group>"; };
+		91F564BBB235E9F4B606B65C35A29B2F /* FlintNumberEntryView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintNumberEntryView.h; path = FlintConnectSDK.framework/Headers/FlintNumberEntryView.h; sourceTree = "<group>"; };
+		9385718BA9A9623E7D43BCA2F5B0A699 /* FlintPhoneEntryView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintPhoneEntryView.h; path = FlintConnectSDK.framework/Headers/FlintPhoneEntryView.h; sourceTree = "<group>"; };
+		9385F761814FE2CA47937ED6DD52C17C /* MAThemeKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MAThemeKit-dummy.m"; sourceTree = "<group>"; };
+		93BE3F057538CE1D266D9DBD565BA253 /* FlintCardNumberEntryView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintCardNumberEntryView.h; path = FlintConnectSDK.framework/Headers/FlintCardNumberEntryView.h; sourceTree = "<group>"; };
+		93F828B4BAE9B558CB74009477327700 /* FlintPermissions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintPermissions.h; path = FlintConnectSDK.framework/Headers/FlintPermissions.h; sourceTree = "<group>"; };
+		970CBE76783D123A07D46577A4420CFD /* STPopup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPopup.h; path = STPopup/STPopup.h; sourceTree = "<group>"; };
 		97BEAEC6235BFFAD249F42E13FBB960A /* Pods-MiniKart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MiniKart.debug.xcconfig"; sourceTree = "<group>"; };
+		985BFAB4DE1BC7C6434688FE7DB74753 /* FlintTipSelectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintTipSelectionView.h; path = FlintConnectSDK.framework/Headers/FlintTipSelectionView.h; sourceTree = "<group>"; };
 		98D37117AA281B0C370FB60CEBD70648 /* STPopup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = STPopup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		99FE1CF8F8E07F82DABCF87F290D0382 /* SWUtilityButtonView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SWUtilityButtonView.m; path = SWTableViewCell/PodFiles/SWUtilityButtonView.m; sourceTree = "<group>"; };
-		9B068D18E308D473B506E095639D9D4A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9D2E72EEB2F7807AC48FDB6F39AF98B6 /* it.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = it.lproj; path = TOCropViewController/it.lproj; sourceTree = "<group>"; };
-		9DF9E4092AD5EEE3D7A9FF4D9CE22477 /* FlintOrderItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintOrderItem.h; path = FlintConnectSDK.framework/Headers/FlintOrderItem.h; sourceTree = "<group>"; };
-		9FBBDF0A66501E26862C970EA9989889 /* STPopupController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPopupController.m; path = STPopup/STPopupController.m; sourceTree = "<group>"; };
-		A195298D00E7F8D071555E3AC95F1E87 /* Base.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = Base.lproj; path = TOCropViewController/Base.lproj; sourceTree = "<group>"; };
-		A3D9FD6D79AA66EBBFBED0B4D0C91E51 /* SWCellScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SWCellScrollView.m; path = SWTableViewCell/PodFiles/SWCellScrollView.m; sourceTree = "<group>"; };
+		9B1E2AC9BE30A74C914C31C3B0C53781 /* FlintTextEntryView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintTextEntryView.h; path = FlintConnectSDK.framework/Headers/FlintTextEntryView.h; sourceTree = "<group>"; };
+		9F6204F700096EFBCB70D275258F89A8 /* SWUtilityButtonTapGestureRecognizer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SWUtilityButtonTapGestureRecognizer.m; path = SWTableViewCell/PodFiles/SWUtilityButtonTapGestureRecognizer.m; sourceTree = "<group>"; };
+		A0755AA65713D181CFE9C6E857EB1BB0 /* FlintConnectSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FlintConnectSDK.framework; sourceTree = "<group>"; };
+		A18CB7D395D7ADAC3E5EC75E55C2CCEE /* STPopup.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = STPopup.modulemap; sourceTree = "<group>"; };
+		A25AE78786CBB0D5260E724E4808058A /* FlintUI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintUI.h; path = FlintConnectSDK.framework/Headers/FlintUI.h; sourceTree = "<group>"; };
+		A4B63780C049752060FE09321BACD480 /* SWUtilityButtonView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SWUtilityButtonView.h; path = SWTableViewCell/PodFiles/SWUtilityButtonView.h; sourceTree = "<group>"; };
 		A4FE648F0ACE5C58C22CFEE4BDF04A21 /* Pods-MiniKart.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MiniKart.modulemap"; sourceTree = "<group>"; };
-		A8E62A1DDFDF21AC601A08FC9DA73444 /* FlintTransaction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintTransaction.h; path = FlintConnectSDK.framework/Headers/FlintTransaction.h; sourceTree = "<group>"; };
+		A528DE3D658BD3D85205232AC98EB5E8 /* FlintCardDetailView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintCardDetailView.h; path = FlintConnectSDK.framework/Headers/FlintCardDetailView.h; sourceTree = "<group>"; };
+		A540C977AC4D131F86804442DB7D3273 /* FlintTipInputView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintTipInputView.h; path = FlintConnectSDK.framework/Headers/FlintTipInputView.h; sourceTree = "<group>"; };
+		A81915A6A636150D0F96619AABC6EBBD /* TOCropViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TOCropViewController-dummy.m"; sourceTree = "<group>"; };
+		A8B8CE8CD121A52BC5966CE25EF6F578 /* SWLongPressGestureRecognizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SWLongPressGestureRecognizer.h; path = SWTableViewCell/PodFiles/SWLongPressGestureRecognizer.h; sourceTree = "<group>"; };
 		AA37DF8EE9CF9CAC31FC3C729F5AA19E /* Pods-MiniKart-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MiniKart-acknowledgements.markdown"; sourceTree = "<group>"; };
-		ABB8481224CB8FD7CFDE89C4BF149C41 /* FlintRoundSelectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintRoundSelectionView.h; path = FlintConnectSDK.framework/Headers/FlintRoundSelectionView.h; sourceTree = "<group>"; };
+		AA8BA54AD4F9531ED365F2CC9026385A /* STPopup.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = STPopup.xcconfig; sourceTree = "<group>"; };
+		AAAA6F713B6F19AE93BD8FF1CDDED608 /* TOCropOverlayView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropOverlayView.m; path = TOCropViewController/Views/TOCropOverlayView.m; sourceTree = "<group>"; };
+		AB8FEE0232DBC9A8240ED422C3DC2F69 /* TOCropViewControllerTransitioning.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropViewControllerTransitioning.h; path = TOCropViewController/Models/TOCropViewControllerTransitioning.h; sourceTree = "<group>"; };
 		AC8730A480FAEB667A75A370EB02C8C4 /* Pods-MiniKart-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MiniKart-acknowledgements.plist"; sourceTree = "<group>"; };
-		ACDFA45912216A5D0B6A02EC91DA6F31 /* SWLongPressGestureRecognizer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SWLongPressGestureRecognizer.m; path = SWTableViewCell/PodFiles/SWLongPressGestureRecognizer.m; sourceTree = "<group>"; };
-		AD1DFB77986BDFB6484BE62403C52926 /* TOCropViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TOCropViewController.xcconfig; sourceTree = "<group>"; };
-		ADD5C074C3A12BBDCD1A5C93859DB4A0 /* FlintAddress.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintAddress.h; path = FlintConnectSDK.framework/Headers/FlintAddress.h; sourceTree = "<group>"; };
+		AD627D53D5DCB2F1F54F8E8CDFAE362A /* ASCFlatUIColor.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ASCFlatUIColor.modulemap; sourceTree = "<group>"; };
+		AE03C67DA46A5C73094047FE552749CE /* TOCroppedImageAttributes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCroppedImageAttributes.m; path = TOCropViewController/Models/TOCroppedImageAttributes.m; sourceTree = "<group>"; };
 		AEBCDEF87131F9ECF070720C5E6D1014 /* SWTableViewCell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SWTableViewCell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B1E1A1E7107B4751F69DDE5816F735C5 /* TOCropScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropScrollView.h; path = TOCropViewController/Views/TOCropScrollView.h; sourceTree = "<group>"; };
-		B2BC40B9631AEE40DF8C5E5158CFD0DE /* MAThemeKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MAThemeKit.m; path = MAThemeKit/MAThemeKit.m; sourceTree = "<group>"; };
-		B34231E9C576A725BD231D72553ACD9A /* FlintImageStabilizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintImageStabilizer.h; path = FlintConnectSDK.framework/Headers/FlintImageStabilizer.h; sourceTree = "<group>"; };
-		B372A537E99230604CB5186EC3C5BEFE /* UIViewController+STPopup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+STPopup.h"; path = "STPopup/UIViewController+STPopup.h"; sourceTree = "<group>"; };
-		B58943F327744CE6AF526B99321F9815 /* TOCropView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropView.h; path = TOCropViewController/Views/TOCropView.h; sourceTree = "<group>"; };
-		B7E8278071695D24F5ABA9EC04D930F8 /* FlintOrders.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintOrders.h; path = FlintConnectSDK.framework/Headers/FlintOrders.h; sourceTree = "<group>"; };
+		B040C463AB15D21C39C5F1706D33C526 /* ASCFlatUIColor.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ASCFlatUIColor.xcconfig; sourceTree = "<group>"; };
+		B11923E07C655F78FC937C4D4037BA1E /* STPopup-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "STPopup-prefix.pch"; sourceTree = "<group>"; };
+		B36512ED79B07E9370D4093DA678546A /* FlintOrders.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintOrders.h; path = FlintConnectSDK.framework/Headers/FlintOrders.h; sourceTree = "<group>"; };
+		B4838D7CBB594E385EB3E7910AE9147E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B49F2475636F8836E9840888821B0406 /* STPopupLeftBarItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPopupLeftBarItem.h; path = STPopup/STPopupLeftBarItem.h; sourceTree = "<group>"; };
+		B535885A58531DE7E1A2A4D0A3F7CEC2 /* MAThemeKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MAThemeKit.m; path = MAThemeKit/MAThemeKit.m; sourceTree = "<group>"; };
+		B64B4085E10FFF86B6B22B1367BF8351 /* FlintCSSConstant.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintCSSConstant.h; path = FlintConnectSDK.framework/Headers/FlintCSSConstant.h; sourceTree = "<group>"; };
+		B650C8102720B57D660562DA406687DA /* STPopupLeftBarItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPopupLeftBarItem.m; path = STPopup/STPopupLeftBarItem.m; sourceTree = "<group>"; };
 		B8A8496BF41182F9796D8DED5F180D80 /* FlintConnect.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlintConnect.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9E7CBC08BA1C31AE9FC271D07B34168 /* FlintActionTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintActionTextField.h; path = FlintConnectSDK.framework/Headers/FlintActionTextField.h; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BBF3A45273EFFDCFC7EC19C5F208AFEB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C337DE7D9A43C874F8CEB8DF73C6238F /* FlintCardValidationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintCardValidationView.h; path = FlintConnectSDK.framework/Headers/FlintCardValidationView.h; sourceTree = "<group>"; };
-		C51B8FFC62BB099DBC051456F7FDBD36 /* FlintCardNumberEntryView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintCardNumberEntryView.h; path = FlintConnectSDK.framework/Headers/FlintCardNumberEntryView.h; sourceTree = "<group>"; };
-		C7A5032EA11999146EB6C9E72CCB61D3 /* FlintPhoneEntryView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintPhoneEntryView.h; path = FlintConnectSDK.framework/Headers/FlintPhoneEntryView.h; sourceTree = "<group>"; };
-		C9314B0342BE932320F868ED805B4C49 /* nl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = nl.lproj; path = TOCropViewController/nl.lproj; sourceTree = "<group>"; };
-		C965B4714A814F97500D1315F5E1AF34 /* FlintReceiptOptionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintReceiptOptionView.h; path = FlintConnectSDK.framework/Headers/FlintReceiptOptionView.h; sourceTree = "<group>"; };
-		CB953412F6C04EE6423B19B8B7DAE653 /* TOCropView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropView.m; path = TOCropViewController/Views/TOCropView.m; sourceTree = "<group>"; };
-		CE3229E6CE8AC0DE446B6969C07AFADC /* TOCropScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropScrollView.m; path = TOCropViewController/Views/TOCropScrollView.m; sourceTree = "<group>"; };
-		CEF87575A3EBF7D93C9B46E4F677FF67 /* TOCropToolbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropToolbar.h; path = TOCropViewController/Views/TOCropToolbar.h; sourceTree = "<group>"; };
-		CF760CE73B7774328F5FCCFF8690D513 /* UIResponder+STPopup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIResponder+STPopup.m"; path = "STPopup/UIResponder+STPopup.m"; sourceTree = "<group>"; };
-		D0B04784996C855D345FBEAE7210A91B /* STPopupNavigationBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPopupNavigationBar.m; path = STPopup/STPopupNavigationBar.m; sourceTree = "<group>"; };
-		D2B05CFBB1B5B39EB7DAEE213377222A /* TOCropOverlayView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropOverlayView.m; path = TOCropViewController/Views/TOCropOverlayView.m; sourceTree = "<group>"; };
-		D432E2E2A6FE417DC529957685F711FA /* ASCFlatUIColor.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ASCFlatUIColor.modulemap; sourceTree = "<group>"; };
-		D46C77BF16564F22282E8A10C90EF1A6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D980FDB624321491BB96421A96D4A3C6 /* FlintModelEnum.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintModelEnum.h; path = FlintConnectSDK.framework/Headers/FlintModelEnum.h; sourceTree = "<group>"; };
-		DAB9536FB76AD34295C7DCAB5E1498C4 /* MAThemeKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MAThemeKit.modulemap; sourceTree = "<group>"; };
-		DE85FB99AA9E678AB3DB28D4EB53E5ED /* FlintContact.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintContact.h; path = FlintConnectSDK.framework/Headers/FlintContact.h; sourceTree = "<group>"; };
-		DEDB38BADB8B3F9A75FC19C95D1D15D6 /* SWTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SWTableViewCell.h; path = SWTableViewCell/PodFiles/SWTableViewCell.h; sourceTree = "<group>"; };
-		DF069F4F89D35A75421ADAC334B32987 /* FlintNumberEntryView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintNumberEntryView.h; path = FlintConnectSDK.framework/Headers/FlintNumberEntryView.h; sourceTree = "<group>"; };
-		DFEE838A4E2FFA194015F98423CB15C4 /* MAThemeKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MAThemeKit-prefix.pch"; sourceTree = "<group>"; };
-		E3BB9E57274A7B1DE527C6BA81C9059D /* UIViewController+STPopup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+STPopup.m"; path = "STPopup/UIViewController+STPopup.m"; sourceTree = "<group>"; };
+		BB13633A6BBB8285D85E534C01EACBD1 /* FlintTransaction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintTransaction.h; path = FlintConnectSDK.framework/Headers/FlintTransaction.h; sourceTree = "<group>"; };
+		BB8BD079492220D20572C35B5B521301 /* FlintCreditCard.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintCreditCard.h; path = FlintConnectSDK.framework/Headers/FlintCreditCard.h; sourceTree = "<group>"; };
+		BE87EF88884F45A4180D6F53085270EB /* ASCFlatUIColor-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ASCFlatUIColor-umbrella.h"; sourceTree = "<group>"; };
+		BF5B8BFB55A4C412E47547DE1D24A38F /* pt.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = pt.lproj; path = TOCropViewController/pt.lproj; sourceTree = "<group>"; };
+		C1099687580FFCE3D8DA80AB0753DC0C /* id.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = id.lproj; path = TOCropViewController/id.lproj; sourceTree = "<group>"; };
+		C114379FA4507DA004F0143CD60FB017 /* FlintAddress.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintAddress.h; path = FlintConnectSDK.framework/Headers/FlintAddress.h; sourceTree = "<group>"; };
+		C32ADD005F7498F62BF440910C80CE0E /* FlintTransactionLimits.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintTransactionLimits.h; path = FlintConnectSDK.framework/Headers/FlintTransactionLimits.h; sourceTree = "<group>"; };
+		C33D60A8521EF644B7F1640353A94332 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C44EC6C4C2510E51627C36B8F3E65887 /* FlintNumericKeyPadView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintNumericKeyPadView.h; path = FlintConnectSDK.framework/Headers/FlintNumericKeyPadView.h; sourceTree = "<group>"; };
+		C462050854900A18401EB46FA650D22E /* FlintScanResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintScanResult.h; path = FlintConnectSDK.framework/Headers/FlintScanResult.h; sourceTree = "<group>"; };
+		C6C66B2286F895916119339C092D1071 /* STPopupController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPopupController.h; path = STPopup/STPopupController.h; sourceTree = "<group>"; };
+		C6EA6FE9D95EBF4EA7D7300DC2EA68A5 /* FlintImageStabilizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintImageStabilizer.h; path = FlintConnectSDK.framework/Headers/FlintImageStabilizer.h; sourceTree = "<group>"; };
+		CEE695724E64292FC5E09D74DCBBDC47 /* MAThemeKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MAThemeKit-umbrella.h"; sourceTree = "<group>"; };
+		D23A3E0C060325376AE0D975B1B3C505 /* FlintModelEnum.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintModelEnum.h; path = FlintConnectSDK.framework/Headers/FlintModelEnum.h; sourceTree = "<group>"; };
+		D2C6303A1DA9683287CC6C923A3B3D14 /* SWCellScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SWCellScrollView.h; path = SWTableViewCell/PodFiles/SWCellScrollView.h; sourceTree = "<group>"; };
+		D3BDE7C687AB7CE8A9C3F4FF733FD636 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4FE6B35E9793663514DAFD6F4C2842F /* FlintService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintService.h; path = FlintConnectSDK.framework/Headers/FlintService.h; sourceTree = "<group>"; };
+		D57DCD4AA9B90E28406F2BB24FAD0D34 /* SWLongPressGestureRecognizer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SWLongPressGestureRecognizer.m; path = SWTableViewCell/PodFiles/SWLongPressGestureRecognizer.m; sourceTree = "<group>"; };
+		D87C78A7D208B31ECCF481ACDC175E27 /* FlintConnectSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintConnectSDK.h; path = FlintConnectSDK.framework/Headers/FlintConnectSDK.h; sourceTree = "<group>"; };
+		D9B9509CA72491C2E3590C4A56ECCDB8 /* NSMutableArray+SWUtilityButtons.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableArray+SWUtilityButtons.m"; path = "SWTableViewCell/PodFiles/NSMutableArray+SWUtilityButtons.m"; sourceTree = "<group>"; };
+		DBF25F1B576D2D6B50F360BCF343E2B3 /* TOCropOverlayView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropOverlayView.h; path = TOCropViewController/Views/TOCropOverlayView.h; sourceTree = "<group>"; };
+		E2C1FAFB8D5DD86B71C69AC0D13C9BB6 /* TOCropViewControllerTransitioning.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropViewControllerTransitioning.m; path = TOCropViewController/Models/TOCropViewControllerTransitioning.m; sourceTree = "<group>"; };
+		E31751CB5C8B37446C247D2149AE18F3 /* FlintRoundSelectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintRoundSelectionView.h; path = FlintConnectSDK.framework/Headers/FlintRoundSelectionView.h; sourceTree = "<group>"; };
+		E39E6555EA5DF2DB67B69E4A9AAFF695 /* FlintAccount.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintAccount.h; path = FlintConnectSDK.framework/Headers/FlintAccount.h; sourceTree = "<group>"; };
+		E4870D3766C335326DDA1E837F2C397B /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = "zh-Hans.lproj"; path = "TOCropViewController/zh-Hans.lproj"; sourceTree = "<group>"; };
+		E4B82D7586C86BCB46F9EB6BC187EF54 /* FlintOrderItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintOrderItem.h; path = FlintConnectSDK.framework/Headers/FlintOrderItem.h; sourceTree = "<group>"; };
+		E4BB477A59B5124B7BD080C01F0BE90A /* TOCropToolbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropToolbar.h; path = TOCropViewController/Views/TOCropToolbar.h; sourceTree = "<group>"; };
 		E4ED8288D27E405273B113FFF584CD00 /* Pods_MiniKart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiniKart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E5CE86B45F32B584CA10A4D791D19CD4 /* FlintThemeEngine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintThemeEngine.h; path = FlintConnectSDK.framework/Headers/FlintThemeEngine.h; sourceTree = "<group>"; };
-		EAD49E4B4ABDF1B6F59610DC8112544A /* FlintOrder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintOrder.h; path = FlintConnectSDK.framework/Headers/FlintOrder.h; sourceTree = "<group>"; };
-		ED1F6D99167A9A67504148965C01F699 /* FlintConnectSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintConnectSDK.h; path = FlintConnectSDK.framework/Headers/FlintConnectSDK.h; sourceTree = "<group>"; };
+		E6E322618D010D0327083A3A263032A9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7EC652510270919F0B4981F008DC311 /* FlintCardValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintCardValidator.h; path = FlintConnectSDK.framework/Headers/FlintCardValidator.h; sourceTree = "<group>"; };
+		EC8ADF2AE428267B82FCD1C20C8FF792 /* nl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = nl.lproj; path = TOCropViewController/nl.lproj; sourceTree = "<group>"; };
 		ED6FA4E8492CD773AE4BE0F2641735D6 /* ASCFlatUIColor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ASCFlatUIColor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE82E4AB2BA9E02AC38EEBD51E6C94DB /* FlintAccount.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintAccount.h; path = FlintConnectSDK.framework/Headers/FlintAccount.h; sourceTree = "<group>"; };
-		F4234BD59DD8829E03F1C07E06492230 /* FlintAPIConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintAPIConfig.h; path = FlintConnectSDK.framework/Headers/FlintAPIConfig.h; sourceTree = "<group>"; };
-		F584DEE0B9C3DFAC0669B0C14F0F8123 /* SWTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SWTableViewCell.m; path = SWTableViewCell/PodFiles/SWTableViewCell.m; sourceTree = "<group>"; };
-		F5A74DB28F510466CD36EFCD97FA9089 /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = en.lproj; path = TOCropViewController/en.lproj; sourceTree = "<group>"; };
-		F9BB38E9292203C1911E5041F1CD0AF1 /* SWTableViewCell.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SWTableViewCell.xcconfig; sourceTree = "<group>"; };
-		FAEE8A5D50AB13A97111BEF949DF9EC0 /* FlintPayment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintPayment.h; path = FlintConnectSDK.framework/Headers/FlintPayment.h; sourceTree = "<group>"; };
-		FB643B2BE0DAC7DAED42138271DBD5F9 /* SWTableViewCell-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SWTableViewCell-umbrella.h"; sourceTree = "<group>"; };
-		FB7D35CCEEC03474AF1093CA6D78B7FF /* STPopup-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "STPopup-prefix.pch"; sourceTree = "<group>"; };
-		FCC7D601CE1C6680089271912EC298E9 /* MAThemeKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAThemeKit.h; path = MAThemeKit/MAThemeKit.h; sourceTree = "<group>"; };
-		FE64C75CE4C661F838BB5CA432357783 /* FlintAmountInputView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlintAmountInputView.h; path = FlintConnectSDK.framework/Headers/FlintAmountInputView.h; sourceTree = "<group>"; };
-		FF23B3B2DF6BCC8AFDEF87017F319027 /* TOCropToolbar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropToolbar.m; path = TOCropViewController/Views/TOCropToolbar.m; sourceTree = "<group>"; };
-		FFF5095A5A7EED4E18F5115500845A2E /* TOCropViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TOCropViewController-prefix.pch"; sourceTree = "<group>"; };
+		EE608219A73C6B4F77CAACAB79747129 /* ru.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = ru.lproj; path = TOCropViewController/ru.lproj; sourceTree = "<group>"; };
+		EF4A2930B0041EC85191434E8FBD7FC7 /* TOCropToolbar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropToolbar.m; path = TOCropViewController/Views/TOCropToolbar.m; sourceTree = "<group>"; };
+		EF525E5A71D2F1CD26AE77FBF669B24B /* SWUtilityButtonTapGestureRecognizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SWUtilityButtonTapGestureRecognizer.h; path = SWTableViewCell/PodFiles/SWUtilityButtonTapGestureRecognizer.h; sourceTree = "<group>"; };
+		F1D4E187C36195FB19A4BF7C912870FE /* fr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = fr.lproj; path = TOCropViewController/fr.lproj; sourceTree = "<group>"; };
+		F372AD5F389099D22F1E581B9ED40C99 /* SWTableViewCell-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SWTableViewCell-prefix.pch"; sourceTree = "<group>"; };
+		FC0E81D5AEBFC4025E203DB309AC06E0 /* UIImage+CropRotate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+CropRotate.h"; path = "TOCropViewController/Models/UIImage+CropRotate.h"; sourceTree = "<group>"; };
+		FD3B42E49C63241CA6085914BD90CCAD /* TOCropViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TOCropViewController.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -376,23 +378,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0D330BF94E4CED3140FB65DB5DF76130 /* STPopup */ = {
+		0001CD8A8C64082C718F46CB3A57EE06 /* TOCropViewController */ = {
 			isa = PBXGroup;
 			children = (
-				64D743F87308510593A2103BF7CF1304 /* STPopup.h */,
-				3F8188A6FEB0DB7D58F76E2D9B19ABAC /* STPopupController.h */,
-				9FBBDF0A66501E26862C970EA9989889 /* STPopupController.m */,
-				02058273EBD36F4BE7EB803B65728ECA /* STPopupLeftBarItem.h */,
-				108F3E36F2CF50FA505E7231A404221D /* STPopupLeftBarItem.m */,
-				3265D83217BB3626F6F8071B4944A163 /* STPopupNavigationBar.h */,
-				D0B04784996C855D345FBEAE7210A91B /* STPopupNavigationBar.m */,
-				1C87AD4632F2B16C0C6C88900D181688 /* UIResponder+STPopup.h */,
-				CF760CE73B7774328F5FCCFF8690D513 /* UIResponder+STPopup.m */,
-				B372A537E99230604CB5186EC3C5BEFE /* UIViewController+STPopup.h */,
-				E3BB9E57274A7B1DE527C6BA81C9059D /* UIViewController+STPopup.m */,
-				5A87DA4714B938B49FA43B3957F9BF4E /* Support Files */,
+				43966D6C9B4555469DF7BE2F5EEF2007 /* TOActivityCroppedImageProvider.h */,
+				4D999B5A86D40D3E1FBECBF1D59A1FDB /* TOActivityCroppedImageProvider.m */,
+				DBF25F1B576D2D6B50F360BCF343E2B3 /* TOCropOverlayView.h */,
+				AAAA6F713B6F19AE93BD8FF1CDDED608 /* TOCropOverlayView.m */,
+				0B73B9005B63AAD239EC9B62FAF548F0 /* TOCroppedImageAttributes.h */,
+				AE03C67DA46A5C73094047FE552749CE /* TOCroppedImageAttributes.m */,
+				765385720BD2B06379A74A98CB8614C5 /* TOCropScrollView.h */,
+				10EE8BEE33383A4C825DB016BB57F49C /* TOCropScrollView.m */,
+				E4BB477A59B5124B7BD080C01F0BE90A /* TOCropToolbar.h */,
+				EF4A2930B0041EC85191434E8FBD7FC7 /* TOCropToolbar.m */,
+				4AB84FED6D8C149C402CA74BC3929EBC /* TOCropView.h */,
+				54A294DF60B4F1096115198AF906567E /* TOCropView.m */,
+				6B260B3837143955B68DDA3063DA12DB /* TOCropViewController.h */,
+				8B61A0601560B02212BD6A3F9B111843 /* TOCropViewController.m */,
+				AB8FEE0232DBC9A8240ED422C3DC2F69 /* TOCropViewControllerTransitioning.h */,
+				E2C1FAFB8D5DD86B71C69AC0D13C9BB6 /* TOCropViewControllerTransitioning.m */,
+				FC0E81D5AEBFC4025E203DB309AC06E0 /* UIImage+CropRotate.h */,
+				1C7E48113348595D1394C5C6E185ABBB /* UIImage+CropRotate.m */,
+				F00DC40451BAE7B2215EFDEF0A03CCCB /* Resources */,
+				638079C8EC4EFF005D97CB9A06111D35 /* Support Files */,
 			);
-			path = STPopup;
+			path = TOCropViewController;
 			sourceTree = "<group>";
 		};
 		188C20F62E66C90DC477F57559C13BFF /* Pods-MiniKart */ = {
@@ -413,48 +423,18 @@
 			path = "Target Support Files/Pods-MiniKart";
 			sourceTree = "<group>";
 		};
-		277CB2ADD0579B899427A42410450A4D /* MAThemeKit */ = {
+		2E19FC115C31F65F0959370B57FFB36F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				FCC7D601CE1C6680089271912EC298E9 /* MAThemeKit.h */,
-				B2BC40B9631AEE40DF8C5E5158CFD0DE /* MAThemeKit.m */,
-				3725932F620F45F378FA4FCB3EC42604 /* Support Files */,
-			);
-			path = MAThemeKit;
-			sourceTree = "<group>";
-		};
-		306BEBCBA8131827C4DC83021604522F /* SWTableViewCell */ = {
-			isa = PBXGroup;
-			children = (
-				347240314F9E6E34F2BF0387493185B1 /* NSMutableArray+SWUtilityButtons.h */,
-				5260D9E65F9A8F59A0B910A65270D051 /* NSMutableArray+SWUtilityButtons.m */,
-				5A1EAB7B5BE35A1F3A8084CE3B86BD3D /* SWCellScrollView.h */,
-				A3D9FD6D79AA66EBBFBED0B4D0C91E51 /* SWCellScrollView.m */,
-				3A5735E95DD3E0579076404DA0BE4450 /* SWLongPressGestureRecognizer.h */,
-				ACDFA45912216A5D0B6A02EC91DA6F31 /* SWLongPressGestureRecognizer.m */,
-				DEDB38BADB8B3F9A75FC19C95D1D15D6 /* SWTableViewCell.h */,
-				F584DEE0B9C3DFAC0669B0C14F0F8123 /* SWTableViewCell.m */,
-				46FB3BA0085F55DC95FE700C0FC9159F /* SWUtilityButtonTapGestureRecognizer.h */,
-				52B12CE2B08AAE7B0F14EC6F3196DE98 /* SWUtilityButtonTapGestureRecognizer.m */,
-				8EB462633864CBCCBD72721C420ACFC4 /* SWUtilityButtonView.h */,
-				99FE1CF8F8E07F82DABCF87F290D0382 /* SWUtilityButtonView.m */,
-				57BB204502C7189B81E570EEF2151EF7 /* Support Files */,
-			);
-			path = SWTableViewCell;
-			sourceTree = "<group>";
-		};
-		3725932F620F45F378FA4FCB3EC42604 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				124D7944E7D850C7A29E6A976D58CB3F /* Info.plist */,
-				DAB9536FB76AD34295C7DCAB5E1498C4 /* MAThemeKit.modulemap */,
-				7B12DCE0D25ADB0BD070C0C67A8284CE /* MAThemeKit.xcconfig */,
-				39FCF21ADE284CF492A8CE88E22D0327 /* MAThemeKit-dummy.m */,
-				DFEE838A4E2FFA194015F98423CB15C4 /* MAThemeKit-prefix.pch */,
-				06880097142D81B18C3A3F58492753B8 /* MAThemeKit-umbrella.h */,
+				AD627D53D5DCB2F1F54F8E8CDFAE362A /* ASCFlatUIColor.modulemap */,
+				B040C463AB15D21C39C5F1706D33C526 /* ASCFlatUIColor.xcconfig */,
+				44E2AE66198311C9C953D41532E264E3 /* ASCFlatUIColor-dummy.m */,
+				842A574303992A018CDCB7C594B231EC /* ASCFlatUIColor-prefix.pch */,
+				BE87EF88884F45A4180D6F53085270EB /* ASCFlatUIColor-umbrella.h */,
+				D3BDE7C687AB7CE8A9C3F4FF733FD636 /* Info.plist */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/MAThemeKit";
+			path = "../Target Support Files/ASCFlatUIColor";
 			sourceTree = "<group>";
 		};
 		39386BC8EF1F3FA1CD2ADB099B845813 /* Targets Support Files */ = {
@@ -465,59 +445,128 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		407E7B5AAE6E14129A4E0F7B6F6AAF06 /* TOCropViewController */ = {
+		3D48C5E42DCCE34F82C67AEB6838011A /* FlintConnectSDK */ = {
 			isa = PBXGroup;
 			children = (
-				41DF606D1F214B614B1D21E328D0207B /* TOActivityCroppedImageProvider.h */,
-				69406736B469208965ACA782CE82ADD9 /* TOActivityCroppedImageProvider.m */,
-				7F6D8177A24051262AF5331C8CA7F3C7 /* TOCropOverlayView.h */,
-				D2B05CFBB1B5B39EB7DAEE213377222A /* TOCropOverlayView.m */,
-				75C8320344439DFF79A5EE8A9B65D906 /* TOCroppedImageAttributes.h */,
-				5BCB3F0342E548799235E47E0DE48D59 /* TOCroppedImageAttributes.m */,
-				B1E1A1E7107B4751F69DDE5816F735C5 /* TOCropScrollView.h */,
-				CE3229E6CE8AC0DE446B6969C07AFADC /* TOCropScrollView.m */,
-				CEF87575A3EBF7D93C9B46E4F677FF67 /* TOCropToolbar.h */,
-				FF23B3B2DF6BCC8AFDEF87017F319027 /* TOCropToolbar.m */,
-				B58943F327744CE6AF526B99321F9815 /* TOCropView.h */,
-				CB953412F6C04EE6423B19B8B7DAE653 /* TOCropView.m */,
-				1F2DA0AD5874535B10B18FD8F071DF4F /* TOCropViewController.h */,
-				510C31CCFF9FC7D529AA2C3B0A330AC1 /* TOCropViewController.m */,
-				0B078B73FCDD54E52BB30C5EA5348E29 /* TOCropViewControllerTransitioning.h */,
-				3FE8EEC7A18D94CA45587CEBED580AE6 /* TOCropViewControllerTransitioning.m */,
-				63A4FA43ABB6ED2C8B5AB2D395728E50 /* UIImage+CropRotate.h */,
-				949CB7B75847C3F7E4C6C0B490F769A5 /* UIImage+CropRotate.m */,
-				F68264BCACB0401ABEEB463820ACA685 /* Resources */,
-				D193BC66DAC320BE43468514A0E9E4E2 /* Support Files */,
+				E39E6555EA5DF2DB67B69E4A9AAFF695 /* FlintAccount.h */,
+				B9E7CBC08BA1C31AE9FC271D07B34168 /* FlintActionTextField.h */,
+				C114379FA4507DA004F0143CD60FB017 /* FlintAddress.h */,
+				194F0829E76E997AA92E5B7ABE232ED0 /* FlintAmountInputView.h */,
+				516AF65FB2689B60E1505719A259ACA0 /* FlintAPIConfig.h */,
+				A528DE3D658BD3D85205232AC98EB5E8 /* FlintCardDetailView.h */,
+				72F0582CC67A1CD5FEC6059F60251C22 /* FlintCardEntryView.h */,
+				93BE3F057538CE1D266D9DBD565BA253 /* FlintCardNumberEntryView.h */,
+				1572AEC0FFCA103E23E71A643B9E5D24 /* FlintCardNumbersEditorView.h */,
+				20942CFE03553392DD2FA7FE2495E8E8 /* FlintCardScanner.h */,
+				0EC8BF5DC9B81B84B9BA8E0C411C30B4 /* FlintCardScannerView.h */,
+				7F6C3CE7ABFF81D6569F6A6A2A44D5BC /* FlintCardSigningView.h */,
+				5741E3BF46562B2F931464CA49D11ADF /* FlintCardValidationView.h */,
+				E7EC652510270919F0B4981F008DC311 /* FlintCardValidator.h */,
+				D87C78A7D208B31ECCF481ACDC175E27 /* FlintConnectSDK.h */,
+				60998A252EE4905BDD0D7C09F8DBF829 /* FlintContact.h */,
+				BB8BD079492220D20572C35B5B521301 /* FlintCreditCard.h */,
+				B64B4085E10FFF86B6B22B1367BF8351 /* FlintCSSConstant.h */,
+				3DFA4E8A24EE50BAF5B6AB10FB2C9BDF /* FlintDateEntryView.h */,
+				1EC2949A0202F75811EC813B0E07200F /* FlintDigitEditorView.h */,
+				59CCEBDCC02EAB630ADC2982263D6E64 /* FlintDomainObject.h */,
+				25C90B69C4F20EE823280686B6F5C777 /* FlintEmailAddress.h */,
+				1B5534D9AE53D936FC56DE1B60944E6C /* FlintEmailEntryView.h */,
+				425E8F282043CEA1B6A3496E33ED5985 /* FlintFixedToolBar.h */,
+				06ACC34E132A6A0650D7EE98DD9546EC /* FlintHeaderImport.h */,
+				C6EA6FE9D95EBF4EA7D7300DC2EA68A5 /* FlintImageStabilizer.h */,
+				0BA55A804D007C4F4A96A3F04A94370D /* FlintInvoice.h */,
+				14AE9BE6273A64FC28435429C65FD5FA /* FlintLimitTextEntryView.h */,
+				24A10A95E8A1A3B151E19FFD2B508E37 /* FlintLineTextField.h */,
+				5B91708F2956A0F1B4C16C283013EB69 /* FlintMerchant.h */,
+				D23A3E0C060325376AE0D975B1B3C505 /* FlintModelEnum.h */,
+				91F564BBB235E9F4B606B65C35A29B2F /* FlintNumberEntryView.h */,
+				C44EC6C4C2510E51627C36B8F3E65887 /* FlintNumericKeyPadView.h */,
+				1B8F13688EDCE7C1BDCE92A6135A3A32 /* FlintOrder.h */,
+				E4B82D7586C86BCB46F9EB6BC187EF54 /* FlintOrderItem.h */,
+				B36512ED79B07E9370D4093DA678546A /* FlintOrders.h */,
+				5614F361EF6C53AE7F33FBEE852D1F9B /* FlintPayment.h */,
+				93F828B4BAE9B558CB74009477327700 /* FlintPermissions.h */,
+				9385718BA9A9623E7D43BCA2F5B0A699 /* FlintPhoneEntryView.h */,
+				3CFD4686E5D0CC87402B5FD95D6BF471 /* FlintPhoneNumber.h */,
+				0A8CFB732447B06F04DF92ECC67D5252 /* FlintReceiptOptionView.h */,
+				6FE0A9F05528AAFCCE4BA3D95B125232 /* FlintResources.h */,
+				5C493710E3E816ABF1783F8EB26E8333 /* FlintRiskDetector.h */,
+				05C57320CF56E00C9BE8C6D343F047F1 /* FlintRoundButton.h */,
+				E31751CB5C8B37446C247D2149AE18F3 /* FlintRoundSelectionView.h */,
+				84327478607A3DB6FCAE7BE21F6C5E16 /* FlintScannedDigit.h */,
+				C462050854900A18401EB46FA650D22E /* FlintScanResult.h */,
+				D4FE6B35E9793663514DAFD6F4C2842F /* FlintService.h */,
+				24A57D29E08FF9B74F070F5A71190D68 /* FlintSignatureView.h */,
+				9B1E2AC9BE30A74C914C31C3B0C53781 /* FlintTextEntryView.h */,
+				1C3CC88E227975DF1295082E55B455B4 /* FlintTextField.h */,
+				25221B2578349DB9013484B6E5C9E322 /* FlintThemeEngine.h */,
+				A540C977AC4D131F86804442DB7D3273 /* FlintTipInputView.h */,
+				485D505E510D67B965D7357C0336D0FC /* FlintTipItem.h */,
+				985BFAB4DE1BC7C6434688FE7DB74753 /* FlintTipSelectionView.h */,
+				BB13633A6BBB8285D85E534C01EACBD1 /* FlintTransaction.h */,
+				C32ADD005F7498F62BF440910C80CE0E /* FlintTransactionLimits.h */,
+				A25AE78786CBB0D5260E724E4808058A /* FlintUI.h */,
+				D6AAD88FB1A4EA96AF6A9146C5862A47 /* Frameworks */,
 			);
-			path = TOCropViewController;
+			path = FlintConnectSDK;
 			sourceTree = "<group>";
 		};
-		57BB204502C7189B81E570EEF2151EF7 /* Support Files */ = {
+		602E2DA71F419BC52D7B4E8C06253F97 /* MAThemeKit */ = {
 			isa = PBXGroup;
 			children = (
-				0715CEA26526128E6DC8846E986ECD85 /* Info.plist */,
-				1D4A834F690B1727ED692FCD310B3F78 /* SWTableViewCell.modulemap */,
-				F9BB38E9292203C1911E5041F1CD0AF1 /* SWTableViewCell.xcconfig */,
-				943668C6A04D8E8DA59B71D0C9336F11 /* SWTableViewCell-dummy.m */,
-				5F506D182FF743F43CC05DD1FE23D9BA /* SWTableViewCell-prefix.pch */,
-				FB643B2BE0DAC7DAED42138271DBD5F9 /* SWTableViewCell-umbrella.h */,
+				652BC2E3439783E6BD218D3052B1C5A1 /* MAThemeKit.h */,
+				B535885A58531DE7E1A2A4D0A3F7CEC2 /* MAThemeKit.m */,
+				C43C7B93032354368C11C3BEAC6ED9DF /* Support Files */,
+			);
+			path = MAThemeKit;
+			sourceTree = "<group>";
+		};
+		610D77A7F29E51F021D324CD1F31A1D6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				005C0728E2E47D9B2A86370477454431 /* Info.plist */,
+				76C8E65AD70A9DF5EDA7C1295DC7F1B5 /* SWTableViewCell.modulemap */,
+				7EB31463F65D80A89B0E1B9D16005B8B /* SWTableViewCell.xcconfig */,
+				489197E0F4A94E6513C74218EE70559F /* SWTableViewCell-dummy.m */,
+				F372AD5F389099D22F1E581B9ED40C99 /* SWTableViewCell-prefix.pch */,
+				1B8A751D04427E32F0996AC9F4A60165 /* SWTableViewCell-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SWTableViewCell";
 			sourceTree = "<group>";
 		};
-		5A87DA4714B938B49FA43B3957F9BF4E /* Support Files */ = {
+		638079C8EC4EFF005D97CB9A06111D35 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				BBF3A45273EFFDCFC7EC19C5F208AFEB /* Info.plist */,
-				03A505E5FB0C0630404A562F44BAE9A3 /* STPopup.modulemap */,
-				5028DFC620C59A3C865D43E58AA6926E /* STPopup.xcconfig */,
-				0CB109F4E495CBE988A5C522119611AF /* STPopup-dummy.m */,
-				FB7D35CCEEC03474AF1093CA6D78B7FF /* STPopup-prefix.pch */,
-				30EE77F338935A0AF9D8B9B769ED8F2F /* STPopup-umbrella.h */,
+				E6E322618D010D0327083A3A263032A9 /* Info.plist */,
+				0609AB50AD152C067AA939539582409D /* TOCropViewController.modulemap */,
+				FD3B42E49C63241CA6085914BD90CCAD /* TOCropViewController.xcconfig */,
+				A81915A6A636150D0F96619AABC6EBBD /* TOCropViewController-dummy.m */,
+				84207C472A06810E0B9121912BC124B4 /* TOCropViewController-prefix.pch */,
+				4AC3A931CA10982AAFD3F74D4D30AEB3 /* TOCropViewController-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/STPopup";
+			path = "../Target Support Files/TOCropViewController";
+			sourceTree = "<group>";
+		};
+		72C99308307C9B8A38CCEBAFDD00715E /* SWTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				254D3396918DB1EC097590FB4559A76B /* NSMutableArray+SWUtilityButtons.h */,
+				D9B9509CA72491C2E3590C4A56ECCDB8 /* NSMutableArray+SWUtilityButtons.m */,
+				D2C6303A1DA9683287CC6C923A3B3D14 /* SWCellScrollView.h */,
+				32E49ACCEF90A3D1D95723BCCCADA7AE /* SWCellScrollView.m */,
+				A8B8CE8CD121A52BC5966CE25EF6F578 /* SWLongPressGestureRecognizer.h */,
+				D57DCD4AA9B90E28406F2BB24FAD0D34 /* SWLongPressGestureRecognizer.m */,
+				73495EA57D3AC416AAB4F5AAFBCB5AC8 /* SWTableViewCell.h */,
+				75CD3D29F1CA32C62D70C85E5A032526 /* SWTableViewCell.m */,
+				EF525E5A71D2F1CD26AE77FBF669B24B /* SWUtilityButtonTapGestureRecognizer.h */,
+				9F6204F700096EFBCB70D275258F89A8 /* SWUtilityButtonTapGestureRecognizer.m */,
+				A4B63780C049752060FE09321BACD480 /* SWUtilityButtonView.h */,
+				00BC281484D0AC22CC974E4C547460C5 /* SWUtilityButtonView.m */,
+				610D77A7F29E51F021D324CD1F31A1D6 /* Support Files */,
+			);
+			path = SWTableViewCell;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -525,18 +574,10 @@
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				AFC71F4CD6EBABDEFD4B44E9EF51B67C /* Pods */,
+				FB229FB3242D354B1AFDBA57B13C1418 /* Pods */,
 				9DF39EFA842322E5B03BAD57ADB434A7 /* Products */,
 				39386BC8EF1F3FA1CD2ADB099B845813 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		7DEC949777CE19367E1A7F6A8EF50286 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				207F1F193DA0E35E28DCD0990655D325 /* FlintConnectSDK.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		9DF39EFA842322E5B03BAD57ADB434A7 /* Products */ = {
@@ -554,113 +595,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A322AA972EF09AB94A04BD977AA2C0E2 /* FlintConnectSDK */ = {
-			isa = PBXGroup;
-			children = (
-				EE82E4AB2BA9E02AC38EEBD51E6C94DB /* FlintAccount.h */,
-				0C06B5F2CB4B087726C3A2915AA17019 /* FlintActionTextField.h */,
-				ADD5C074C3A12BBDCD1A5C93859DB4A0 /* FlintAddress.h */,
-				FE64C75CE4C661F838BB5CA432357783 /* FlintAmountInputView.h */,
-				F4234BD59DD8829E03F1C07E06492230 /* FlintAPIConfig.h */,
-				221004C431E8A57CF051306BD7700249 /* FlintCardDetailView.h */,
-				3948B906A2A7455E0F8B7555021F6B5A /* FlintCardEntryView.h */,
-				C51B8FFC62BB099DBC051456F7FDBD36 /* FlintCardNumberEntryView.h */,
-				579D3588FE2EF9E74EBF8801464CB4A5 /* FlintCardNumbersEditorView.h */,
-				5D3C8287F4765D7E5B0F351F2F185508 /* FlintCardScanner.h */,
-				3C7A52C8734F3D5BD3C04EBC18B176E7 /* FlintCardScannerView.h */,
-				8CEF8A98294EC737F0FE057F536999B3 /* FlintCardSigningView.h */,
-				C337DE7D9A43C874F8CEB8DF73C6238F /* FlintCardValidationView.h */,
-				6CE697E8D87A3F9E4046964B26FC0A75 /* FlintCardValidator.h */,
-				ED1F6D99167A9A67504148965C01F699 /* FlintConnectSDK.h */,
-				DE85FB99AA9E678AB3DB28D4EB53E5ED /* FlintContact.h */,
-				29C215BF7B28C91A8B678C041848ED89 /* FlintCreditCard.h */,
-				017E5BE020DFDD747C7F5D7AE4FA7FAB /* FlintCSSConstant.h */,
-				55611D227555D50DDBB61D3550C24961 /* FlintDateEntryView.h */,
-				3283337EA6C7B49DDAFCE8D92305F3CB /* FlintDigitEditorView.h */,
-				577D70A05D2D102739E7A169F238B4E8 /* FlintDomainObject.h */,
-				0A39A734E8060CCC6C45EF87429D1296 /* FlintEmailAddress.h */,
-				39E2C1874957939B09799C82452FC44B /* FlintEmailEntryView.h */,
-				50390433D679DF6E7F23C478275F474C /* FlintFixedToolBar.h */,
-				71097107A469608AE86CADED096E58B1 /* FlintHeaderImport.h */,
-				B34231E9C576A725BD231D72553ACD9A /* FlintImageStabilizer.h */,
-				791E3840AC11EA21478F428F05551737 /* FlintInvoice.h */,
-				7C8BFB4D0D4EF526FAAFCE7CAFC54B75 /* FlintLimitTextEntryView.h */,
-				70685257FDBD97E930D16F6AA6BF6572 /* FlintLineTextField.h */,
-				37D3AE2698AF3C59E6E1D6916608A8D0 /* FlintMerchant.h */,
-				D980FDB624321491BB96421A96D4A3C6 /* FlintModelEnum.h */,
-				DF069F4F89D35A75421ADAC334B32987 /* FlintNumberEntryView.h */,
-				569B49B973F2BA2A89126DDF24C9E7F7 /* FlintNumericKeyPadView.h */,
-				EAD49E4B4ABDF1B6F59610DC8112544A /* FlintOrder.h */,
-				9DF9E4092AD5EEE3D7A9FF4D9CE22477 /* FlintOrderItem.h */,
-				B7E8278071695D24F5ABA9EC04D930F8 /* FlintOrders.h */,
-				FAEE8A5D50AB13A97111BEF949DF9EC0 /* FlintPayment.h */,
-				3267D9D934A1098FF83F87FF9C74803D /* FlintPermissions.h */,
-				C7A5032EA11999146EB6C9E72CCB61D3 /* FlintPhoneEntryView.h */,
-				7A2227185C54608D6366F52301C7BD8C /* FlintPhoneNumber.h */,
-				C965B4714A814F97500D1315F5E1AF34 /* FlintReceiptOptionView.h */,
-				25C17E0D4F3103BB54BD22DE61DE72AD /* FlintRoundButton.h */,
-				ABB8481224CB8FD7CFDE89C4BF149C41 /* FlintRoundSelectionView.h */,
-				61C409F838978020E1CBED289AE319A4 /* FlintScannedDigit.h */,
-				876584CE00C1DADE646F7DA4ED8895C3 /* FlintScanResult.h */,
-				7D87E2FDC485294B20E84F644B015291 /* FlintService.h */,
-				007DDEA248C3833EE9C1465AA99AD5A5 /* FlintSignatureView.h */,
-				2C0EAB67F05F309E3CFF934CBB9B9534 /* FlintTextEntryView.h */,
-				5B6CDE7569D3FC6A4D6FA601C8CA976B /* FlintTextField.h */,
-				E5CE86B45F32B584CA10A4D791D19CD4 /* FlintThemeEngine.h */,
-				693CCA1383A12339244159DC6A4E9F4C /* FlintTipInputView.h */,
-				35019EEB6BE1E2DA8B4EC7F9CFA6E76A /* FlintTipItem.h */,
-				0FA7389713743656FE761AEDFB6F2193 /* FlintTipSelectionView.h */,
-				A8E62A1DDFDF21AC601A08FC9DA73444 /* FlintTransaction.h */,
-				3A2B6D3282D175F1E31911EC69A7C9CD /* FlintTransactionLimits.h */,
-				0E8715500435C8B7BA434F2AA492A160 /* FlintUI.h */,
-				7DEC949777CE19367E1A7F6A8EF50286 /* Frameworks */,
-			);
-			path = FlintConnectSDK;
-			sourceTree = "<group>";
-		};
-		A450E7C0BFA5807FCDA48BDE1242850A /* ASCFlatUIColor */ = {
-			isa = PBXGroup;
-			children = (
-				259D51FD5D9C7C7F22AF931D9709D71B /* ASCFlatUIColor.h */,
-				8AECD9CC81AC518FA8BC735E5E5305A4 /* ASCFlatUIColor.m */,
-				BE1AD51F53EE7DBDED6204A3DFA2D26E /* Support Files */,
-			);
-			path = ASCFlatUIColor;
-			sourceTree = "<group>";
-		};
-		AFC71F4CD6EBABDEFD4B44E9EF51B67C /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				A450E7C0BFA5807FCDA48BDE1242850A /* ASCFlatUIColor */,
-				A322AA972EF09AB94A04BD977AA2C0E2 /* FlintConnectSDK */,
-				277CB2ADD0579B899427A42410450A4D /* MAThemeKit */,
-				0D330BF94E4CED3140FB65DB5DF76130 /* STPopup */,
-				306BEBCBA8131827C4DC83021604522F /* SWTableViewCell */,
-				407E7B5AAE6E14129A4E0F7B6F6AAF06 /* TOCropViewController */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BE1AD51F53EE7DBDED6204A3DFA2D26E /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				D432E2E2A6FE417DC529957685F711FA /* ASCFlatUIColor.modulemap */,
-				261895788342A8AC76DEF31AB56FAF96 /* ASCFlatUIColor.xcconfig */,
-				11A54F265B2B0CB726BF84AA78824EF4 /* ASCFlatUIColor-dummy.m */,
-				562EC08E0312E794AC0AFB7717C58DEB /* ASCFlatUIColor-prefix.pch */,
-				6D252BC397B45FF76BAFC82473AAAA9F /* ASCFlatUIColor-umbrella.h */,
-				9B068D18E308D473B506E095639D9D4A /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/ASCFlatUIColor";
 			sourceTree = "<group>";
 		};
 		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
@@ -671,40 +611,104 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		D193BC66DAC320BE43468514A0E9E4E2 /* Support Files */ = {
+		C43C7B93032354368C11C3BEAC6ED9DF /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D46C77BF16564F22282E8A10C90EF1A6 /* Info.plist */,
-				0FF35328EE9F26BC249F2CAE3102C2AE /* TOCropViewController.modulemap */,
-				AD1DFB77986BDFB6484BE62403C52926 /* TOCropViewController.xcconfig */,
-				2F4D55AB0F5EB80AE74AB9B9187EEE4D /* TOCropViewController-dummy.m */,
-				FFF5095A5A7EED4E18F5115500845A2E /* TOCropViewController-prefix.pch */,
-				85378D1C74FB37CA21CE860C32D69268 /* TOCropViewController-umbrella.h */,
+				C33D60A8521EF644B7F1640353A94332 /* Info.plist */,
+				49AD8C66BFD084F4FEC6BC3C9CDF665B /* MAThemeKit.modulemap */,
+				3873EEFE8D27EB89CEF74D6A6A4EBD2A /* MAThemeKit.xcconfig */,
+				9385F761814FE2CA47937ED6DD52C17C /* MAThemeKit-dummy.m */,
+				3A822C2D0E4F952CB2400B2413B2D8FD /* MAThemeKit-prefix.pch */,
+				CEE695724E64292FC5E09D74DCBBDC47 /* MAThemeKit-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/TOCropViewController";
+			path = "../Target Support Files/MAThemeKit";
 			sourceTree = "<group>";
 		};
-		F68264BCACB0401ABEEB463820ACA685 /* Resources */ = {
+		C6D8397C0347D36C5F434A3959A6913B /* ASCFlatUIColor */ = {
 			isa = PBXGroup;
 			children = (
-				A195298D00E7F8D071555E3AC95F1E87 /* Base.lproj */,
-				971D7848DB1A34CC5E9B38E9BA9A0A81 /* de.lproj */,
-				F5A74DB28F510466CD36EFCD97FA9089 /* en.lproj */,
-				7629D49C205E95B8A25DED03AB9EC35F /* es.lproj */,
-				1CC0F170EA17409085C13F3D7EF2AF8E /* fr.lproj */,
-				668CF7766722FE8042ED2C2F5FB79150 /* id.lproj */,
-				9D2E72EEB2F7807AC48FDB6F39AF98B6 /* it.lproj */,
-				1FA9052889319B3C56F0056E0A547B6B /* ja.lproj */,
-				3BA06401EB9F76ED7DC493C4CB30FA54 /* ko.lproj */,
-				C9314B0342BE932320F868ED805B4C49 /* nl.lproj */,
-				57478F833B099083C2002830C95AE429 /* pl.lproj */,
-				9618C561EE70C5C9A1334CADF2153DAE /* pt.lproj */,
-				572586A8224032E6F39A07F393780FDF /* ru.lproj */,
-				1B2121E5343AEAFBEE4C684E70CC31DE /* zh-Hans.lproj */,
-				7F2FE832CB8B3E12B969598C4D9FB88A /* zh-Hant.lproj */,
+				61ACD6A81951899A89C17B91B7C976DA /* ASCFlatUIColor.h */,
+				799966C7055ED09F525069085AFB5777 /* ASCFlatUIColor.m */,
+				2E19FC115C31F65F0959370B57FFB36F /* Support Files */,
+			);
+			path = ASCFlatUIColor;
+			sourceTree = "<group>";
+		};
+		C8DAF35A69B1A62A74A316E3A0A6EFE3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B4838D7CBB594E385EB3E7910AE9147E /* Info.plist */,
+				A18CB7D395D7ADAC3E5EC75E55C2CCEE /* STPopup.modulemap */,
+				AA8BA54AD4F9531ED365F2CC9026385A /* STPopup.xcconfig */,
+				7D619BEFDA85F35A73774D8467A56391 /* STPopup-dummy.m */,
+				B11923E07C655F78FC937C4D4037BA1E /* STPopup-prefix.pch */,
+				82E97A1121DA5186D6931B184442EC77 /* STPopup-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/STPopup";
+			sourceTree = "<group>";
+		};
+		D6AAD88FB1A4EA96AF6A9146C5862A47 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0755AA65713D181CFE9C6E857EB1BB0 /* FlintConnectSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F00DC40451BAE7B2215EFDEF0A03CCCB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1069DEEA8C2963F0C9AD6AC58DE18A27 /* Base.lproj */,
+				56F1BE6B21096F071B55A48FA278D5CA /* de.lproj */,
+				8A8CDE981649621AFDF97C25DCA9FF48 /* en.lproj */,
+				3C02FC7B913805258102106DCDD39D74 /* es.lproj */,
+				F1D4E187C36195FB19A4BF7C912870FE /* fr.lproj */,
+				C1099687580FFCE3D8DA80AB0753DC0C /* id.lproj */,
+				3B97ADDDAEB3F967AA2795C30D2FEC5C /* it.lproj */,
+				5AAD170F95804F077DE943777BF3F086 /* ja.lproj */,
+				155A93A9A4998FF8DBA01978A87A0596 /* ko.lproj */,
+				EC8ADF2AE428267B82FCD1C20C8FF792 /* nl.lproj */,
+				7B0A259723371FEB991C480FE91B03F2 /* pl.lproj */,
+				BF5B8BFB55A4C412E47547DE1D24A38F /* pt.lproj */,
+				EE608219A73C6B4F77CAACAB79747129 /* ru.lproj */,
+				E4870D3766C335326DDA1E837F2C397B /* zh-Hans.lproj */,
+				3FE13ED81B0B9DD4FC7DD5E60E955ADB /* zh-Hant.lproj */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		F173A6516433BA55BA0199E7FC96B6A8 /* STPopup */ = {
+			isa = PBXGroup;
+			children = (
+				970CBE76783D123A07D46577A4420CFD /* STPopup.h */,
+				C6C66B2286F895916119339C092D1071 /* STPopupController.h */,
+				4618B21B4C0F86DCF6097D56C0A7A610 /* STPopupController.m */,
+				B49F2475636F8836E9840888821B0406 /* STPopupLeftBarItem.h */,
+				B650C8102720B57D660562DA406687DA /* STPopupLeftBarItem.m */,
+				3E2AA916DAD2220AA2CAB491D9AC35C3 /* STPopupNavigationBar.h */,
+				4CCDD597497B198B88AAE85D27AD23AC /* STPopupNavigationBar.m */,
+				157FBAB85D85FA0C1D798D28A747F20F /* UIResponder+STPopup.h */,
+				3C6D627E1F80B3EFDEEE10E424274C5E /* UIResponder+STPopup.m */,
+				06971CEA11199122C6408DFF30F26422 /* UIViewController+STPopup.h */,
+				3384E26BEA2278286FB4F5402FEE4A53 /* UIViewController+STPopup.m */,
+				C8DAF35A69B1A62A74A316E3A0A6EFE3 /* Support Files */,
+			);
+			path = STPopup;
+			sourceTree = "<group>";
+		};
+		FB229FB3242D354B1AFDBA57B13C1418 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C6D8397C0347D36C5F434A3959A6913B /* ASCFlatUIColor */,
+				3D48C5E42DCCE34F82C67AEB6838011A /* FlintConnectSDK */,
+				602E2DA71F419BC52D7B4E8C06253F97 /* MAThemeKit */,
+				F173A6516433BA55BA0199E7FC96B6A8 /* STPopup */,
+				72C99308307C9B8A38CCEBAFDD00715E /* SWTableViewCell */,
+				0001CD8A8C64082C718F46CB3A57EE06 /* TOCropViewController */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1166,7 +1170,7 @@
 		};
 		17E1A5A1A7EA85BD704DB228D22D6802 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7B12DCE0D25ADB0BD070C0C67A8284CE /* MAThemeKit.xcconfig */;
+			baseConfigurationReference = 3873EEFE8D27EB89CEF74D6A6A4EBD2A /* MAThemeKit.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1204,7 +1208,7 @@
 		};
 		2444805B98D03B527AE134AFD22C478B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7B12DCE0D25ADB0BD070C0C67A8284CE /* MAThemeKit.xcconfig */;
+			baseConfigurationReference = 3873EEFE8D27EB89CEF74D6A6A4EBD2A /* MAThemeKit.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1231,7 +1235,7 @@
 		};
 		435920AC456E17C4BF1E7A16AA276879 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F9BB38E9292203C1911E5041F1CD0AF1 /* SWTableViewCell.xcconfig */;
+			baseConfigurationReference = 7EB31463F65D80A89B0E1B9D16005B8B /* SWTableViewCell.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1258,7 +1262,7 @@
 		};
 		52168900E0714DAAB436861D4D192FB7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F9BB38E9292203C1911E5041F1CD0AF1 /* SWTableViewCell.xcconfig */;
+			baseConfigurationReference = 7EB31463F65D80A89B0E1B9D16005B8B /* SWTableViewCell.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1285,7 +1289,7 @@
 		};
 		595245FA3DD1C709E2102FEED83825F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AD1DFB77986BDFB6484BE62403C52926 /* TOCropViewController.xcconfig */;
+			baseConfigurationReference = FD3B42E49C63241CA6085914BD90CCAD /* TOCropViewController.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				PRODUCT_NAME = TOCropViewControllerBundle;
@@ -1297,7 +1301,7 @@
 		};
 		665B46BC1D26AE10DED316536DBB92D9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AD1DFB77986BDFB6484BE62403C52926 /* TOCropViewController.xcconfig */;
+			baseConfigurationReference = FD3B42E49C63241CA6085914BD90CCAD /* TOCropViewController.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				PRODUCT_NAME = TOCropViewControllerBundle;
@@ -1309,7 +1313,7 @@
 		};
 		6DC06B8BE98E51A551CF6B9377E5111F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AD1DFB77986BDFB6484BE62403C52926 /* TOCropViewController.xcconfig */;
+			baseConfigurationReference = FD3B42E49C63241CA6085914BD90CCAD /* TOCropViewController.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1386,7 +1390,7 @@
 		};
 		ABAA66D8862974E178AAF8E541DC3AC0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 261895788342A8AC76DEF31AB56FAF96 /* ASCFlatUIColor.xcconfig */;
+			baseConfigurationReference = B040C463AB15D21C39C5F1706D33C526 /* ASCFlatUIColor.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1443,7 +1447,7 @@
 		};
 		E0ABC766E04A9549551E9A9D9405BA03 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5028DFC620C59A3C865D43E58AA6926E /* STPopup.xcconfig */;
+			baseConfigurationReference = AA8BA54AD4F9531ED365F2CC9026385A /* STPopup.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1470,7 +1474,7 @@
 		};
 		E134F2180DEAD39554ED6A174120458E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5028DFC620C59A3C865D43E58AA6926E /* STPopup.xcconfig */;
+			baseConfigurationReference = AA8BA54AD4F9531ED365F2CC9026385A /* STPopup.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1497,7 +1501,7 @@
 		};
 		E51642D9750C62AB3827C124A0BCB856 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AD1DFB77986BDFB6484BE62403C52926 /* TOCropViewController.xcconfig */;
+			baseConfigurationReference = FD3B42E49C63241CA6085914BD90CCAD /* TOCropViewController.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1524,7 +1528,7 @@
 		};
 		F6B542AB65E7D6C809BD572C5F6B2614 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 261895788342A8AC76DEF31AB56FAF96 /* ASCFlatUIColor.xcconfig */;
+			baseConfigurationReference = B040C463AB15D21C39C5F1706D33C526 /* ASCFlatUIColor.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;

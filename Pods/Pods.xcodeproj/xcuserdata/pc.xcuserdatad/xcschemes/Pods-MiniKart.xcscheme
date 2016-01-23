@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '7794033F2D4B303865958A87'
+               BlueprintIdentifier = '66EA20094463F664ABF5DA71'
                BlueprintName = 'Pods-MiniKart'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_MiniKart.framework'>

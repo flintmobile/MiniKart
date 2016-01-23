@@ -89,4 +89,11 @@ typedef void (^FlintServiceCompletion)(FlintServiceStatus status, NSDictionary *
  */
 - (void)stopService;
 
+/**
+ *  Accessing information of the running service
+ *
+ *  @return the dictionary contains different account objects if the service is currently authenticated
+ */
+- (NSDictionary *)userInfo;
+
 @end

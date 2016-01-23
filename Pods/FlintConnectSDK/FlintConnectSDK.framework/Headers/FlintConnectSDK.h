@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 
 #import "FlintHeaderImport.h"
-#import "FlintUI.h"
 
 @interface FlintConnectSDK : NSObject
 

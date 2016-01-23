@@ -1,6 +1,6 @@
 PODS:
   - ASCFlatUIColor (0.1.0)
-  - FlintConnectSDK (0.0.2-beta)
+  - FlintConnectSDK (0.0.3)
   - MAThemeKit (1.0)
   - STPopup (1.6.0)
   - SWTableViewCell (0.3.7)
@@ -16,7 +16,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   ASCFlatUIColor: 4219ca860d305a88f5240b9cd380e002d0e0b672
-  FlintConnectSDK: 45e844c0d273e87292b8af47fc54aaf13534e776
+  FlintConnectSDK: e6659b7ab9874c744def1121cac1d42b097ff036
   MAThemeKit: 559acc98ceadc051cccb1b6bb0c4ca28475eb021
   STPopup: 7975883c48560e4cb16ea1c6f351312ed2cd2bc0
   SWTableViewCell: 2a94aadc9d47b2b611fa064566bf57948b95b579

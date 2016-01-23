@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'CB86100EE4A244D5CA1EFEB0'
+               BlueprintIdentifier = '3C27CEBD4842F8C651811F0E'
                BlueprintName = 'FlintConnectSDK-FlintConnect'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'FlintConnect.bundle'>

@@ -156,7 +156,7 @@
 @property (strong, nonatomic) FlintPhoneNumber *phoneNumber;
 
 /**
- *  TODO: what is this?
+ *  The risk profile the merchant is place on. This determine their limit of transaction as well
  */
 @property (copy, nonatomic) NSString *profileName;
 

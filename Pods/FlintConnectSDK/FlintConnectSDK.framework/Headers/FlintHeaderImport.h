@@ -47,6 +47,9 @@
 #import "FlintLimitTextEntryView.h"
 #import "FlintNumericKeyPadView.h"
 
+#import "FlintUI.h"
+#import "FlintResources.h"
+
 /************************
  *  API
  ***********************/
@@ -82,5 +85,10 @@
 
 #import "FlintCSSConstant.h"
 #import "FlintThemeEngine.h"
+
+/************************
+ *  Risk
+ ***********************/
+#import "FlintRiskDetector.h"
 
 #endif

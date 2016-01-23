@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '5B3388442A83EED778987E45'
+               BlueprintIdentifier = '25D271820CEFB52CE33C6C23'
                BlueprintName = 'ASCFlatUIColor'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'ASCFlatUIColor.framework'>

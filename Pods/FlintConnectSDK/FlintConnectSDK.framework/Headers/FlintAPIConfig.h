@@ -49,8 +49,17 @@ typedef NS_ENUM(NSInteger, FlintAPILogLevel){
 
 /*!
  *  @brief The API Key to start the flint service
+ *
+ *  @discussion This should be provided upon signing up as a partner to use Flint SDK
  */
 @property (copy, nonatomic) NSString *APIKey;
+
+/*!
+ *  @brief The secret key used to sign all connections within flint service
+ *
+ *  @discussion This should be provided upon signing up as a partner to use Flint SDK
+ */
+@property (copy, nonatomic) NSString *secretKey;
 
 /*!
  *  @brief The environment on which flint service run against
